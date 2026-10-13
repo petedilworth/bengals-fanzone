@@ -41,7 +41,7 @@ Order: season strip → scoreboard → What the result means → Main storylines
 - Every number shows its play count. Numbers from fewer than 8 plays are greyed out.
 - Every chart names its source and the date the data was pulled.
 - Cross-check against box scores where two sources cover the same stat (sacks, carries, rushing yards).
-- Label stand-in measures as such. Example: a sack under 2.5 seconds is "likely line", not "line's fault".
+- Label stand-in measures as such. Example: FTN charts a sack as "QB fault"; say "FTN charted it as QB fault", not "Burrow's fault".
 
 ## Code layout
 

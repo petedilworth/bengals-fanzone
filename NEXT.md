@@ -1,10 +1,12 @@
 # Next step
 
-_Last updated: Tue, Oct 13, 2026_
+_Last updated: Tue, Oct 13, 2026 (after step 3)_
 
 ## Where we are
 
-Phase 1, steps 1 and 2 are built on branch `phase-1-week5-page`:
+Steps 1–3 are done on branch `phase-1-week5-page`. Step 3 results are in `docs/access-tests.md`.
+
+Steps 1 and 2:
 - `CLAUDE.md` holds the owner rules and every decision below.
 - The Week 5 brief is rebuilt from `data/weeks/2026-w05.json` and shows on the home page.
 - A GitHub Actions workflow is ready to deploy the site to GitHub Pages.
@@ -22,8 +24,8 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 
 ## What's next
 
-3. Run the five access tests: YouTube transcripts from the cloud, 2026 nflverse play-by-play, 2026 FTN charting (rushers and blitz), time to throw per play, ESPN block win rates.
-4. Line stats pipeline and stats page.
+3. ~~Access tests~~ Done. Still open: YouTube and podcast RSS, blocked by this environment's network policy. Owner allows `youtube.com`, `www.youtube.com` and `feeds.megaphone.fm` in the environment's network settings, then Claude retests.
+4. Line stats pipeline and stats page. Uses nflverse play-by-play, FTN charting and Next Gen Stats. No ESPN, no per-play time to throw.
 5. Media round-up routine (midweek, private, with candidate storylines).
 6. Friday draft routine, then cutover: disable both old tasks the same day.
 
@@ -50,4 +52,6 @@ Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
 | Oct 13 | Stats pulled by GitHub Actions on Monday and Thursday | Thursday catches Monday-night games and data fixes |
 | Oct 13 | Team settings in `data/team.json` | Other teams can be added later at low cost |
 | Oct 13 | Week 5 port: kept 5 of 6 watch items, removed grades, kept "What happened" notes, shortened Alternative view to 1 paragraph | Matches the new rules. Item 6 (fourth-quarter margin) never came up in the game |
+| Oct 13 | "Who is to blame" uses FTN's "QB fault sack" label plus weekly time to throw, not a 2.5-second rule | Per-play time to throw isn't published for 2026 |
+| Oct 13 | ESPN win rates left out of the pipeline | No 2026 table found and no feed |
 | Oct 13 | Kept the Week 5 win-chance bar, with its source shown under it | It came from the NFL data feed. Future weeks drop it unless a real source exists |
