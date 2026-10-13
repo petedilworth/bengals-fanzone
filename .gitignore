@@ -1,2 +1,4 @@
 _site/
 __pycache__/
+# Private research (transcripts, round-ups) never lives in this repo once it is public.
+research/

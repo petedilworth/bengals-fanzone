@@ -21,25 +21,23 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
    - Make this repo public. Then research and round-ups go in a second, private repo.
    - Keep it private and pay for Pro. Then round-ups can live in this repo.
 2. **Turn on Pages.** In the repo on GitHub: Settings → Pages → Source: "GitHub Actions". Then merge the branch to `main`.
+3. **Create the private research repo** (for example `bengals-research`) and give this session access to it, so the transcript workflow has a home.
+4. **Allow domains in this cloud environment** (environment menu in the session title bar → Edit → Network access): `www.youtube.com`, `youtube.com`, `feeds.megaphone.fm`, `huggingface.co`, `cdn-lfs.huggingface.co`, `www.espn.com`, `nflreadr.nflverse.com`. Then Claude can test transcripts and Whisper here before the first Actions run.
 
 ## What's next
 
 3. ~~Access tests~~ Done, two rounds. One item open: full YouTube transcripts. Episode lists and show notes work from here. Owner allows `www.youtube.com`, `youtube.com`, `www.espn.com` and `nflreadr.nflverse.com` in the environment's network settings, then Claude retests transcripts.
 4. Line stats pipeline and stats page. Uses nflverse play-by-play, FTN charting, Pro Football Reference weekly pressures and Next Gen Stats. ESPN win rates read weekly by a Routine from the ESPN page. Per-play time to throw arrives after the season.
    - **Pipeline rule (owner, Oct 13):** PFR data must be picked up even if that takes extra runs. Design: the Actions job runs Mon, Wed, Thu and Sat. Every run pulls every source and records the latest week each source covers. If any source is behind the schedule, the job marks it pending and the next run tries again. The site shows "data through Week N" per source.
-5. Media round-up routine (midweek, private, with candidate storylines). **Full transcripts are required (owner, Oct 13).** Route not yet proven: see the open question below.
+5. Media round-up routine (midweek, private, with candidate storylines). **Full transcripts are required (owner, Oct 13).** Owner chose three routes to try, in this order: Whisper in GitHub Actions, yt-dlp captions, and unblocking YouTube here for a direct test. The transcript pipeline is built (`pipeline/transcribe.py`, `pipeline/yt_captions.py`, `.github/workflows/transcripts.yml`) but not yet run end to end: the Whisper model host is blocked from this environment. It refuses to commit anything to a public repo, so it runs in the private research repo.
 5. Media round-up routine (midweek, private, with candidate storylines).
 6. Friday draft routine, then cutover: disable both old tasks the same day.
 
 Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
 
-## Open question: how to get podcast transcripts
+## Transcript pipeline: first real run
 
-Tested Oct 13: YouTube's app service is open from here and gives episode lists and show notes, but the transcript call refuses a plain client. The usual fixes (posing as the YouTube app, or sending browser headers) were stopped by this session's safety rules, so they are untested, not disproven. Options to put to the owner:
-- A. Download the episode audio from the podcast feed (plain MP3, no bot checks) and transcribe it with open-source Whisper inside a GitHub Action. Self-contained and robust. Costs minutes of Actions time per episode.
-- B. yt-dlp in a GitHub Action pulling YouTube's auto-captions. Simple, but YouTube often blocks cloud servers, and that can break without warning.
-- C. Allow www.youtube.com in this environment and test the transcript libraries here first, then pick A or B.
-- D. A paid transcript service, a few dollars a month.
+Needs the private research repo to exist (see "Blocked on the owner"). Then: copy `pipeline/` and `.github/workflows/transcripts.yml` there, run the workflow by hand once with `days` = 7, and check `research/transcripts/` for the Locked On post-game episode. If Whisper's "base" model misses names (Burrow, Hendrickson), switch `whisper_model` in `pipeline/podcasts.json` to "small" and accept the longer run.
 
 ## How to check the Week 5 page (once live)
 
@@ -65,5 +63,6 @@ Tested Oct 13: YouTube's app service is open from here and gives episode lists a
 | Oct 13 | "Who is to blame" uses FTN's "QB fault sack" label plus weekly time to throw, not a 2.5-second rule | Per-play time to throw isn't published for 2026 |
 | Oct 13 | ESPN win rates: read weekly from ESPN's leaderboard page by a Routine, not by the Actions pipeline | The page exists and updates weekly, but has no feed. Round 2 found it |
 | Oct 13 | Pressure stats come from Pro Football Reference weekly data, not per-play | Per-play data is published after the season |
-| Oct 13 | Podcast round-up uses YouTube (episode list and show notes), not RSS | Every podcast host is blocked here; YouTube's app service is open |
+| Oct 13 | Full transcripts required. Primary route: feed MP3 → Whisper in Actions. Fallback: yt-dlp captions | Show notes are not enough (owner). Whisper has no dependency on YouTube's bot rules |
+| Oct 13 | Stats pipeline runs Mon, Wed, Thu, Sat and retries any lagging source | PFR's file was last rebuilt before Week 5 kicked off; it must be picked up even if that takes extra runs (owner) |
 | Oct 13 | Kept the Week 5 win-chance bar, with its source shown under it | It came from the NFL data feed. Future weeks drop it unless a real source exists |

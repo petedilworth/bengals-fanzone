@@ -1,0 +1,68 @@
+name: Podcast transcripts
+
+# Transcribes the week's Bengals podcasts for the private media round-up.
+# Route 1: podcast feed MP3 → Whisper (robust). Route 2: YouTube auto-captions
+# via yt-dlp (quick, but YouTube may refuse cloud servers; a failure there is
+# not fatal). Transcripts are only committed when this repository is private.
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days back to look"
+        default: "7"
+  schedule:
+    # Tue and Wed 13:17 UTC (9:17 am ET): after Monday's reaction shows post.
+    - cron: "17 13 * * 2,3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: transcripts
+  cancel-in-progress: false
+
+jobs:
+  transcribe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refuse to run in a public repository
+        if: github.event.repository.private == false
+        run: |
+          echo "This repository is public. Transcripts are private research and must not be committed here."
+          echo "Move this workflow to the private research repository."
+          exit 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Cache Whisper model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-base-v1
+
+      - name: Route 1 – feed audio through Whisper
+        run: python3 pipeline/transcribe.py --days "${{ github.event.inputs.days || 7 }}"
+
+      - name: Route 2 – YouTube captions (best effort)
+        continue-on-error: true
+        run: python3 pipeline/yt_captions.py --days "${{ github.event.inputs.days || 7 }}"
+
+      - name: Commit new transcripts
+        run: |
+          git config user.name "transcript bot"
+          git config user.email "noreply@users.noreply.github.com"
+          git add research/transcripts
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git commit -m "Add podcast transcripts $(date -u +%Y-%m-%d)"
+          git push

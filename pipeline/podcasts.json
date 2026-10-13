@@ -1,0 +1,11 @@
+{
+  "_note": "Podcast feeds for the media round-up. The Locked On feed address was decoded from its Google Podcasts link and has not been opened from this environment yet. Confirm it once in a feed reader.",
+  "feeds": [
+    {"name": "Locked On Bengals", "url": "https://feeds.megaphone.fm/lockedonbengals"}
+  ],
+  "youtube_channels": [
+    {"name": "Locked On Bengals", "url": "https://www.youtube.com/@LockedOnBengals/videos"}
+  ],
+  "days_back": 7,
+  "whisper_model": "base"
+}
