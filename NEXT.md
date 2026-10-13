@@ -26,10 +26,20 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 
 3. ~~Access tests~~ Done, two rounds. One item open: full YouTube transcripts. Episode lists and show notes work from here. Owner allows `www.youtube.com`, `youtube.com`, `www.espn.com` and `nflreadr.nflverse.com` in the environment's network settings, then Claude retests transcripts.
 4. Line stats pipeline and stats page. Uses nflverse play-by-play, FTN charting, Pro Football Reference weekly pressures and Next Gen Stats. ESPN win rates read weekly by a Routine from the ESPN page. Per-play time to throw arrives after the season.
+   - **Pipeline rule (owner, Oct 13):** PFR data must be picked up even if that takes extra runs. Design: the Actions job runs Mon, Wed, Thu and Sat. Every run pulls every source and records the latest week each source covers. If any source is behind the schedule, the job marks it pending and the next run tries again. The site shows "data through Week N" per source.
+5. Media round-up routine (midweek, private, with candidate storylines). **Full transcripts are required (owner, Oct 13).** Route not yet proven: see the open question below.
 5. Media round-up routine (midweek, private, with candidate storylines).
 6. Friday draft routine, then cutover: disable both old tasks the same day.
 
 Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
+
+## Open question: how to get podcast transcripts
+
+Tested Oct 13: YouTube's app service is open from here and gives episode lists and show notes, but the transcript call refuses a plain client. The usual fixes (posing as the YouTube app, or sending browser headers) were stopped by this session's safety rules, so they are untested, not disproven. Options to put to the owner:
+- A. Download the episode audio from the podcast feed (plain MP3, no bot checks) and transcribe it with open-source Whisper inside a GitHub Action. Self-contained and robust. Costs minutes of Actions time per episode.
+- B. yt-dlp in a GitHub Action pulling YouTube's auto-captions. Simple, but YouTube often blocks cloud servers, and that can break without warning.
+- C. Allow www.youtube.com in this environment and test the transcript libraries here first, then pick A or B.
+- D. A paid transcript service, a few dollars a month.
 
 ## How to check the Week 5 page (once live)
 

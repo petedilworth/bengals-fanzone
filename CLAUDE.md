@@ -41,7 +41,14 @@ Order: season strip → scoreboard → What the result means → Main storylines
 - Every number shows its play count. Numbers from fewer than 8 plays are greyed out.
 - Every chart names its source and the date the data was pulled.
 - Cross-check against box scores where two sources cover the same stat (sacks, carries, rushing yards).
+- Sources arrive at different times. The pipeline runs more than once a week and keeps re-pulling until every source has the latest game. Pro Football Reference weekly data lags the game by days and must never be skipped. Each chart says which week its data runs through.
 - Label stand-in measures as such. Example: FTN charts a sack as "QB fault"; say "FTN charted it as QB fault", not "Burrow's fault".
+
+## Media round-up
+
+- Full podcast transcripts are required. Show notes and titles are not enough.
+- Sources: Locked On Bengals and other Bengals podcasts, beat writers, national analysts.
+- The round-up is private to the owner. It never goes on the public site.
 
 ## Code layout
 
