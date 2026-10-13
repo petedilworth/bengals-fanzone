@@ -22,6 +22,7 @@ Read `NEXT.md` at the start of every session. It says where we are, what's next 
 - Critique the owner's request: point out what is vague or missing before starting.
 - End each phase with a short plain-language recap and a "how to check this" list the owner can run on a phone.
 - End each session by updating `NEXT.md`.
+- Commit to `main` and push. No branches or pull requests left for the owner to merge.
 - The owner works from a phone. Everything must work at phone width (about 400px).
 - Replies end with a short Devil's Advocate section.
 
@@ -48,7 +49,7 @@ Order: season strip → scoreboard → What the result means → Main storylines
 
 - Full podcast transcripts are required. Show notes and titles are not enough.
 - Sources: Locked On Bengals and other Bengals podcasts, beat writers, national analysts.
-- The round-up is private to the owner. It never goes on the public site.
+- The round-up is private to the owner. It never goes on the public site. Transcripts and round-ups live in the private `bengals-research` repo, with its own `CLAUDE.md`.
 
 ## Code layout
 
@@ -57,6 +58,7 @@ Order: season strip → scoreboard → What the result means → Main storylines
   - `season-2026.json` – schedule and results.
   - `weeks/2026-wNN.json` – one brief per week. Text fields allow `[label](url)` source links and `**bold**`.
 - `site/` – static HTML, CSS and JS. No build step. Reads `data/` at run time.
+- `pipeline/` – stats pull (step 4). The transcript pipeline lives in `bengals-research`.
 - `scripts/build.sh` – copies `site/` and `data/` into `_site/` for preview and deploy.
 - `.github/workflows/pages.yml` – deploys `_site/` to GitHub Pages on push to `main`.
 - `docs/` – the original handover and the Week 5 reference page. History, not rules. This file wins.

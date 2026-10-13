@@ -4,7 +4,7 @@ _Last updated: Tue, Oct 13, 2026 (after step 3, round 2)_
 
 ## Where we are
 
-Steps 1–3 are done on branch `phase-1-week5-page`. Step 3 results are in `docs/access-tests.md`.
+Steps 1–3 are done and merged to `main`. The transcript pipeline lives in the private `bengals-research` repo (connected Oct 13). Step 3 results are in `docs/access-tests.md`.
 
 Steps 1 and 2:
 - `CLAUDE.md` holds the owner rules and every decision below.
@@ -20,8 +20,7 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 1. **The repo is private.** GitHub Pages from a private repo needs a paid GitHub plan (Pro, about US$4 a month). Pick one:
    - Make this repo public. Then research and round-ups go in a second, private repo.
    - Keep it private and pay for Pro. Then round-ups can live in this repo.
-2. **Turn on Pages.** In the repo on GitHub: Settings → Pages → Source: "GitHub Actions". Then merge the branch to `main`.
-3. **Create the private research repo** (for example `bengals-research`) and give this session access to it, so the transcript workflow has a home.
+2. **Turn on Pages.** In the repo on GitHub: Settings → Pages → Source: "GitHub Actions". Until then the "Deploy site" workflow fails on every push to `main`; that is expected.
 4. **Allow domains in this cloud environment** (environment menu in the session title bar → Edit → Network access): `www.youtube.com`, `youtube.com`, `feeds.megaphone.fm`, `huggingface.co`, `cdn-lfs.huggingface.co`, `www.espn.com`, `nflreadr.nflverse.com`. Then Claude can test transcripts and Whisper here before the first Actions run.
 
 ## What's next
@@ -29,7 +28,7 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 3. ~~Access tests~~ Done, two rounds. One item open: full YouTube transcripts. Episode lists and show notes work from here. Owner allows `www.youtube.com`, `youtube.com`, `www.espn.com` and `nflreadr.nflverse.com` in the environment's network settings, then Claude retests transcripts.
 4. Line stats pipeline and stats page. Uses nflverse play-by-play, FTN charting, Pro Football Reference weekly pressures and Next Gen Stats. ESPN win rates read weekly by a Routine from the ESPN page. Per-play time to throw arrives after the season.
    - **Pipeline rule (owner, Oct 13):** PFR data must be picked up even if that takes extra runs. Design: the Actions job runs Mon, Wed, Thu and Sat. Every run pulls every source and records the latest week each source covers. If any source is behind the schedule, the job marks it pending and the next run tries again. The site shows "data through Week N" per source.
-5. Media round-up routine (midweek, private, with candidate storylines). **Full transcripts are required (owner, Oct 13).** Owner chose three routes to try, in this order: Whisper in GitHub Actions, yt-dlp captions, and unblocking YouTube here for a direct test. The transcript pipeline is built (`pipeline/transcribe.py`, `pipeline/yt_captions.py`, `.github/workflows/transcripts.yml`) but not yet run end to end: the Whisper model host is blocked from this environment. It refuses to commit anything to a public repo, so it runs in the private research repo.
+5. Media round-up routine (midweek, private, with candidate storylines). **Full transcripts are required (owner, Oct 13).** Owner chose three routes to try, in this order: Whisper in GitHub Actions, yt-dlp captions, and unblocking YouTube here for a direct test. The transcript pipeline is built in `bengals-research` (`pipeline/transcribe.py`, `pipeline/yt_captions.py`, `.github/workflows/transcripts.yml`) but not yet run end to end: the Whisper model host is blocked from this environment. It refuses to commit anything to a public repo, so it runs in the private research repo.
 5. Media round-up routine (midweek, private, with candidate storylines).
 6. Friday draft routine, then cutover: disable both old tasks the same day.
 
@@ -37,7 +36,7 @@ Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
 
 ## Transcript pipeline: first real run
 
-Needs the private research repo to exist (see "Blocked on the owner"). Then: copy `pipeline/` and `.github/workflows/transcripts.yml` there, run the workflow by hand once with `days` = 7, and check `research/transcripts/` for the Locked On post-game episode. If Whisper's "base" model misses names (Burrow, Hendrickson), switch `whisper_model` in `pipeline/podcasts.json` to "small" and accept the longer run.
+In `bengals-research`: run the "Podcast transcripts" workflow by hand once with `days` = 7 (Actions tab → Podcast transcripts → Run workflow), and check `research/transcripts/` for the Locked On post-game episode. If Whisper's "base" model misses names (Burrow, Hendrickson), switch `whisper_model` in `pipeline/podcasts.json` to "small" and accept the longer run.
 
 ## How to check the Week 5 page (once live)
 
@@ -50,6 +49,7 @@ Needs the private research repo to exist (see "Blocked on the owner"). Then: cop
 
 | Date | Decision | Why |
 |---|---|---|
+| Oct 13 | Claude merges its own work to `main`; nothing waits on the owner to merge | Owner's call, Oct 13 |
 | Oct 13 | A learning project: owner steers, Claude builds, owner never edits code | Success means steering the next project alone |
 | Oct 13 | No hit rate, no grading, watch items are not predictions | Owner's call. Media round-up gives a reality check instead |
 | Oct 13 | Watch list capped at 5 | Keeps the page near a 3-minute read |
