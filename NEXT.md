@@ -34,9 +34,15 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 
 Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
 
-## Transcript pipeline: first real run
+## Transcript pipeline: status of the first real runs (Oct 13)
 
-In `bengals-research`: run the "Podcast transcripts" workflow by hand once with `days` = 7 (Actions tab → Podcast transcripts → Run workflow), and check `research/transcripts/` for the Locked On post-game episode. If Whisper's "base" model misses names (Burrow, Hendrickson), switch `whisper_model` in `pipeline/podcasts.json` to "small" and accept the longer run.
+| Run | What happened |
+|---|---|
+| 1 | Guessed feed address was 404. YouTube route: GitHub's servers get "Sign in to confirm you're not a bot" on every video, so that route is dead from Actions |
+| 2 | Feed now resolved from Apple Podcasts ID 1159723162 (real feed is on Simplecast). 7 episodes found, MP3 downloaded with no bot check, Whisper model downloaded. Crashed on a PyAV version mismatch |
+| 3 | PyAV pinned below 15. Running |
+
+Next check: `research/transcripts/` in `bengals-research`. If Whisper's "base" model misses names (Burrow, Hendrickson), switch `whisper_model` in `pipeline/podcasts.json` to "small" and accept the longer run.
 
 ## How to check the Week 5 page (once live)
 
@@ -63,6 +69,7 @@ In `bengals-research`: run the "Podcast transcripts" workflow by hand once with 
 | Oct 13 | "Who is to blame" uses FTN's "QB fault sack" label plus weekly time to throw, not a 2.5-second rule | Per-play time to throw isn't published for 2026 |
 | Oct 13 | ESPN win rates: read weekly from ESPN's leaderboard page by a Routine, not by the Actions pipeline | The page exists and updates weekly, but has no feed. Round 2 found it |
 | Oct 13 | Pressure stats come from Pro Football Reference weekly data, not per-play | Per-play data is published after the season |
-| Oct 13 | Full transcripts required. Primary route: feed MP3 → Whisper in Actions. Fallback: yt-dlp captions | Show notes are not enough (owner). Whisper has no dependency on YouTube's bot rules |
+| Oct 13 | Full transcripts required. Primary route: feed MP3 → Whisper in Actions. yt-dlp captions kept as best-effort only | Show notes are not enough (owner). YouTube blocks GitHub's servers; the podcast feed does not |
+| Oct 13 | Feeds are resolved from the show's Apple Podcasts ID at run time, with a fixed address as fallback | A guessed feed address cost a run |
 | Oct 13 | Stats pipeline runs Mon, Wed, Thu, Sat and retries any lagging source | PFR's file was last rebuilt before Week 5 kicked off; it must be picked up even if that takes extra runs (owner) |
 | Oct 13 | Kept the Week 5 win-chance bar, with its source shown under it | It came from the NFL data feed. Future weeks drop it unless a real source exists |
