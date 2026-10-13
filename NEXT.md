@@ -25,11 +25,10 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 
 ## What's next
 
-3. ~~Access tests~~ Done, two rounds. One item open: full YouTube transcripts. Episode lists and show notes work from here. Owner allows `www.youtube.com`, `youtube.com`, `www.espn.com` and `nflreadr.nflverse.com` in the environment's network settings, then Claude retests transcripts.
+3. ~~Access tests~~ Done. Transcripts solved by the Whisper route (step 5). Allowing the domains in this environment is still worth doing: it lets Claude test pipeline changes here in minutes instead of 20-minute Actions cycles.
 4. Line stats pipeline and stats page. Uses nflverse play-by-play, FTN charting, Pro Football Reference weekly pressures and Next Gen Stats. ESPN win rates read weekly by a Routine from the ESPN page. Per-play time to throw arrives after the season.
    - **Pipeline rule (owner, Oct 13):** PFR data must be picked up even if that takes extra runs. Design: the Actions job runs Mon, Wed, Thu and Sat. Every run pulls every source and records the latest week each source covers. If any source is behind the schedule, the job marks it pending and the next run tries again. The site shows "data through Week N" per source.
-5. Media round-up routine (midweek, private, with candidate storylines). **Full transcripts are required (owner, Oct 13).** Owner chose three routes to try, in this order: Whisper in GitHub Actions, yt-dlp captions, and unblocking YouTube here for a direct test. The transcript pipeline is built in `bengals-research` (`pipeline/transcribe.py`, `pipeline/yt_captions.py`, `.github/workflows/transcripts.yml`) but not yet run end to end: the Whisper model host is blocked from this environment. It refuses to commit anything to a public repo, so it runs in the private research repo.
-5. Media round-up routine (midweek, private, with candidate storylines).
+5. Media round-up routine (midweek, private, with candidate storylines). **Full transcripts are required (owner, Oct 13), and the Whisper route now delivers them** (see the run table below). The pipeline lives in `bengals-research` and refuses to commit to a public repo.
 6. Friday draft routine, then cutover: disable both old tasks the same day.
 
 Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
@@ -40,9 +39,12 @@ Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
 |---|---|
 | 1 | Guessed feed address was 404. YouTube route: GitHub's servers get "Sign in to confirm you're not a bot" on every video, so that route is dead from Actions |
 | 2 | Feed now resolved from Apple Podcasts ID 1159723162 (real feed is on Simplecast). 7 episodes found, MP3 downloaded with no bot check, Whisper model downloaded. Crashed on a PyAV version mismatch |
-| 3 | PyAV pinned below 15. Running |
+| 3 | PyAV pinned below 15, but pip picked 14.4 and tried to compile it. Failed at install |
+| 4 | PyAV 14.2.0 from its prebuilt wheel. **Worked.** 7 Locked On episodes (4.8 hours of audio, about 62,000 words) in 26 minutes, committed to `research/transcripts/` |
 
-Next check: `research/transcripts/` in `bengals-research`. If Whisper's "base" model misses names (Burrow, Hendrickson), switch `whisper_model` in `pipeline/podcasts.json` to "small" and accept the longer run.
+Quality of the "base" model: readable and the substance is intact; roster names are mangled ("Smajie P Ryan" for Samaje Perine, "Jamar" for Ja'Marr). Fix pushed Oct 13: Whisper is now primed with a roster-name list from `pipeline/podcasts.json`, plus a `fixes` dictionary for known mis-hearings. The Wednesday run tests it on new episodes. Model size ("base" vs "small") is the owner's call.
+
+Next scheduled run: Wed, Oct 14, 9:17 am ET. YouTube captions route stays in the workflow as best-effort and fails harmlessly from Actions.
 
 ## How to check the Week 5 page (once live)
 
