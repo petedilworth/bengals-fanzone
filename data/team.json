@@ -1,0 +1,10 @@
+{
+  "name": "Bengals",
+  "city": "Cincinnati",
+  "abbr": "CIN",
+  "division": "AFC North",
+  "accentLight": "#E8440F",
+  "accentDark": "#FF6B2E",
+  "currentSeason": 2026,
+  "currentWeek": 5
+}

@@ -1,0 +1,86 @@
+{
+  "season": 2026,
+  "week": 5,
+  "status": "final",
+  "label": "Week 5 brief",
+  "updated": "Graded Mon, Oct 12",
+  "game": {
+    "home": {"abbr": "MIA", "score": 24, "record": "0–5"},
+    "away": {"abbr": "CIN", "score": 31, "record": "3–2"},
+    "state": "Final",
+    "kickoff": "Sun, Oct 11 · 1:00 pm ET",
+    "venue": "Hard Rock Stadium · FOX",
+    "line": "Bengals by 7 [CBS Sports](https://www.cbssports.com/nfl/news/bengals-visit-dolphins-with-jamarr-chase-tee-higgins-injured/)",
+    "winChance": {"team": 74, "opp": 26, "source": "NFL data feed (Sportradar), Oct 8"}
+  },
+  "meaning": "Cincinnati won with the run game this brief told it to avoid: 31 carries for 117 yards, a season high [Bengals.com](https://www.bengals.com/news/bengals-feel-the-formula-after-melting-dolphins-joe-burrow-zac-taylor). Burrow had no turnovers, and Jordan Battle, flagged here for missed tackles, made both interceptions [Bengals.com](https://www.bengals.com/news/bengals-dolphins-recap-postgame-notes-quotes-stats-week-5-2026). The brief missed the real problem: Miami ran for 217 yards [Heavy](https://heavy.com/sports/nfl/miami-dolphins/jeff-hafley-nfl-news-offense-history-week-5/), and that run defence now faces Baltimore after the bye.",
+  "storylines": [
+    {
+      "title": "Burrow's late-game turnovers",
+      "fact": "He threw for 428 yards last week, with two interceptions. Both came when Jacksonville did not blitz [AP](https://www.yourvalley.net/stories/burrow-stays-calm-with-bengals-at-2-2-but-injuries-to-chase-and-higgins-will-impact-game-plan,726013). Since 2024 he leads the NFL in fourth-quarter and overtime turnovers [TSN](https://www.tsn.ca/nfl/article/burrow-after-bengals-second-straight-loss-not-armageddon-n1-50105859/).",
+      "why": "**Why it matters:** yardage is not the issue. Decisions against four-man rushes are."
+    },
+    {
+      "title": "Chase and Higgins: the Friday upgrade",
+      "fact": "Both went from no practice early in the week to full practice Friday. Both are questionable [Local 12](https://local12.com/sports/bengals/bengals-jamarr-chase-tee-higgins-injury-report-dolphins-week-5). Chase still has to clear the concussion protocol.",
+      "why": "**Non-obvious:** the worst case is not both out. It is both in and limited, with a plan built around players who tire early."
+    },
+    {
+      "title": "The run game is a symptom, not the disease",
+      "fact": "The Bengals ran 15 times for 23 yards [TSN](https://www.tsn.ca/nfl/article/burrow-after-bengals-second-straight-loss-not-armageddon-n1-50105859/). But Chase Brown caught all 11 of his targets [WCPO](https://www.wcpo.com/sports/football/bengals/well-take-them-day-to-day-taylor-gives-updates-on-chase-higgins-injuries). Short passes are doing the work of runs.",
+      "why": "**Why it matters:** Miami's run defence ranks sixth at 3.6 yards per carry [CBS](https://www.cbssports.com/nfl/news/bengals-visit-dolphins-with-jamarr-chase-tee-higgins-injured/). Forcing carries pays poorly."
+    },
+    {
+      "title": "A thin secondary that misses tackles",
+      "fact": "Safety Kyle Dugger is out and Bryan Cook is questionable [Local 12](https://local12.com/sports/bengals/bengals-jamarr-chase-tee-higgins-injury-report-dolphins-week-5). Jordan Battle missed three tackles last week that let Jacksonville convert third-and-longs [AP](https://www.yourvalley.net/stories/burrow-stays-calm-with-bengals-at-2-2-but-injuries-to-chase-and-higgins-will-impact-game-plan,726013).",
+      "why": "**Why it matters:** Miami's weak passing game (Willis: 56.3%, one touchdown) will hide this. Better offences will not."
+    },
+    {
+      "title": "Last game before the bye",
+      "fact": "After the bye, Cincinnati plays at Baltimore on Oct. 25. A win over a winless team will hide every problem above.",
+      "why": "**Why it matters:** a star who re-injures himself Sunday costs the Baltimore game too."
+    }
+  ],
+  "watch": [
+    {
+      "when": "About 11:30 am ET",
+      "title": "Read the inactives",
+      "text": "Inactives come out 90 minutes before kickoff. Check Chase and Higgins first. If Chase plays, watch whether he runs full routes or gets a managed snap count.",
+      "after": "Both played and neither was held back: Chase took 89% of snaps and Higgins 69% [A to Z Sports](https://atozsports.com/nfl/cincinnati-bengals-news/bengals-week-5-snap-counts-at-dolphins-bj-hill-jamarr-chase-tee-higgins/)."
+    },
+    {
+      "when": "First half",
+      "title": "Does Miami blitz Burrow?",
+      "text": "Both interceptions came with no blitz. Coach Jeff Hafley ran the Packers' defence in 2024 and 2025 [Dolphins notes](https://static.clubs.nfl.com/image/upload/dolphins/roq5llpxnsstbgy9eeuu). Expect disguised coverages and few blitzes.",
+      "after": "Miami sat in shell coverage, gave up short throws and never sacked Burrow [Bengals.com](https://www.bengals.com/news/bengals-dolphins-postgame-quotes-week-5-2026). No blitz count was published."
+    },
+    {
+      "when": "Second half",
+      "title": "Pass rush against Willis",
+      "text": "Cincinnati has 14 sacks, tied for third. Dexter Lawrence has three [CBS](https://www.cbssports.com/nfl/news/bengals-visit-dolphins-with-jamarr-chase-tee-higgins-injured/), but he missed Friday's practice.",
+      "after": "Lawrence played 43 snaps [A to Z Sports](https://atozsports.com/nfl/cincinnati-bengals-news/bengals-week-5-snap-counts-at-dolphins-bj-hill-jamarr-chase-tee-higgins/) and Willis was sacked three times [Heavy](https://heavy.com/sports/nfl/miami-dolphins/jeff-hafley-nfl-news-offense-history-week-5/). Boye Mafe and Barrett Carter had the reported sacks."
+    },
+    {
+      "when": "All game",
+      "title": "Burrow's dropback count",
+      "text": "He dropped back 58 times last week [TSN](https://www.tsn.ca/nfl/article/burrow-after-bengals-second-straight-loss-not-armageddon-n1-50105859/). Near 40 suggests a lead. Near 55 suggests a close game or a failed run plan.",
+      "after": "Burrow threw 32 passes and was not sacked, so about 32 dropbacks [Bengals.com](https://www.bengals.com/news/bengals-feel-the-formula-after-melting-dolphins-joe-burrow-zac-taylor). The low count matched a lead."
+    },
+    {
+      "when": "Special teams",
+      "title": "Meyers does three jobs",
+      "text": "Last week he caught seven passes and returned eight kicks and punts [Fantasy Footballers](https://www.thefantasyfootballers.com/news/640886/tee-higgins-deemed-day-to-day/). If a star sits, his load climbs. Watch his ball security.",
+      "after": "Both stars played, so Meyers got just 19 snaps [A to Z Sports](https://atozsports.com/nfl/cincinnati-bengals-news/bengals-week-5-snap-counts-at-dolphins-bj-hill-jamarr-chase-tee-higgins/). His late mistake was stepping out at the 1 on a punt return [Yahoo](https://sports.yahoo.com/articles/cincinnati-bengals-5-takeaways-31-140200359.html)."
+    }
+  ],
+  "lineFinding": null,
+  "devilsAdvocate": [
+    "**The offence is fine.** Burrow completed 72% of his passes last week [CBS](https://www.cbssports.com/nfl/news/bengals-visit-dolphins-with-jamarr-chase-tee-higgins-injured/). The two losses were by 3 and 5 points. A small sample, not a flaw, may explain the late interceptions.",
+    "**Miami is better than 0–4.** It held Kenneth Walker and Aaron Jones under 100 yards each and lost to Minnesota by five [CBS](https://www.cbssports.com/nfl/news/bengals-visit-dolphins-with-jamarr-chase-tee-higgins-injured/). Seven points on the road is a lot to ask.",
+    "**\"Questionable\" may mean \"playing.\"** If both stars play at full strength, half of this page stops mattering."
+  ],
+  "alternativeView": {
+    "title": "The same game, from Miami",
+    "text": "This is Miami's best chance to win: Cincinnati just lost at home, two stars are hobbled and Burrow makes late mistakes. Miami's run defence ranks sixth [CBS](https://www.cbssports.com/nfl/news/bengals-visit-dolphins-with-jamarr-chase-tee-higgins-injured/), so the plan is to keep it close and wait for the late mistake. The catch: Willis has one touchdown pass all season, so Miami cannot win a shootout."
+  }
+}

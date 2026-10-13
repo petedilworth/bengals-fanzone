@@ -1,0 +1,24 @@
+{
+  "season": 2026,
+  "record": "3–2",
+  "games": [
+    {"week": 1, "date": "Sep 13", "opp": "TB", "home": true, "result": "W", "score": "33–27"},
+    {"week": 2, "date": "Sep 20", "opp": "HOU", "home": false, "result": "W", "score": "20–6"},
+    {"week": 3, "date": "Sep 27", "opp": "PIT", "home": false, "result": "L", "score": "27–30"},
+    {"week": 4, "date": "Oct 4", "opp": "JAX", "home": true, "result": "L", "score": "17–22"},
+    {"week": 5, "date": "Oct 11", "opp": "MIA", "home": false, "result": "W", "score": "31–24"},
+    {"week": 6, "date": "Oct 18", "bye": true},
+    {"week": 7, "date": "Oct 25", "opp": "BAL", "home": false, "time": "1:00 pm"},
+    {"week": 8, "date": "Nov 1", "opp": "TEN", "home": true, "time": "1:00 pm"},
+    {"week": 9, "date": "Nov 8", "opp": "ATL", "home": true, "time": "Madrid", "note": "Madrid, 9:30 am"},
+    {"week": 10, "date": "Nov 15", "opp": "PIT", "home": true, "time": "SNF"},
+    {"week": 11, "date": "Nov 23", "opp": "WAS", "home": false, "time": "MNF"},
+    {"week": 12, "date": "Nov 29", "opp": "NO", "home": true, "time": "1:00 pm"},
+    {"week": 13, "date": "Dec 6", "opp": "CLE", "home": false, "time": "1:00 pm"},
+    {"week": 14, "date": "Dec 13", "opp": "KC", "home": true, "time": "4:25 pm"},
+    {"week": 15, "date": "Dec 20", "opp": "CAR", "home": false, "time": "1:00 pm"},
+    {"week": 16, "date": "Dec 27", "opp": "IND", "home": false, "time": "1:00 pm"},
+    {"week": 17, "date": "Dec 31", "opp": "BAL", "home": true, "time": "TNF"},
+    {"week": 18, "date": "Jan 10", "opp": "CLE", "home": true, "time": "1:00 pm"}
+  ]
+}
