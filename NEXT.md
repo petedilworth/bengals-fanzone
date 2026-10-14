@@ -11,17 +11,15 @@ Steps 1 and 2:
 - The Week 5 brief is rebuilt from `data/weeks/2026-w05.json` and shows on the home page.
 - A GitHub Actions workflow is ready to deploy the site to GitHub Pages.
 
-The site is **not live yet**. Two things block it (see "Blocked on the owner").
+The site is live at https://petedilworth.github.io/bengals-fanzone/ (repo made public and Pages turned on by the owner, Oct 14).
 
 The old artifact and its two scheduled tasks are still running. Leave them on until cutover.
 
-## Blocked on the owner
+## Owner items
 
-1. **The repo is private.** GitHub Pages from a private repo needs a paid GitHub plan (Pro, about US$4 a month). Pick one:
-   - Make this repo public. Then research and round-ups go in a second, private repo.
-   - Keep it private and pay for Pro. Then round-ups can live in this repo.
-2. **Turn on Pages.** In the repo on GitHub: Settings → Pages → Source: "GitHub Actions". Until then the "Deploy site" workflow fails on every push to `main`; that is expected.
-4. **Allow domains in this cloud environment** (environment menu in the session title bar → Edit → Network access): `www.youtube.com`, `youtube.com`, `feeds.megaphone.fm`, `huggingface.co`, `cdn-lfs.huggingface.co`, `www.espn.com`, `nflreadr.nflverse.com`. Then Claude can test transcripts and Whisper here before the first Actions run.
+1. ~~Make the repo public or go Pro~~ Done Oct 14 (public).
+2. ~~Turn on Pages~~ Done Oct 14.
+3. **Optional, not blocking:** allow domains in this cloud environment so Claude can test pipeline changes here instead of through 20-minute Actions cycles. Hosts: `feeds.simplecast.com`, `rss.pdrl.fm`, `itunes.apple.com`, `huggingface.co`, `cdn-lfs.huggingface.co`, `www.espn.com`, `nflreadr.nflverse.com`. Steps are at https://code.claude.com/docs/en/cloud-environments#network-access.
 
 ## What's next
 
