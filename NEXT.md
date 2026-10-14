@@ -1,10 +1,10 @@
 # Next step
 
-_Last updated: Tue, Oct 13, 2026, late evening (transcripts working)_
+_Last updated: Wed, Oct 14, 2026 (step 4 built)_
 
 ## Where we are
 
-Steps 1–3 are done and merged to `main`. The transcript pipeline lives in the private `bengals-research` repo (connected Oct 13). Step 3 results are in `docs/access-tests.md`.
+Steps 1–4 are done and merged to `main`. The transcript pipeline lives in the private `bengals-research` repo (connected Oct 13). Step 3 results are in `docs/access-tests.md`.
 
 Steps 1 and 2:
 - `CLAUDE.md` holds the owner rules and every decision below.
@@ -26,8 +26,10 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 ## What's next
 
 3. ~~Access tests~~ Done. Transcripts solved by the Whisper route (step 5). Allowing the domains in this environment is still worth doing: it lets Claude test pipeline changes here in minutes instead of 20-minute Actions cycles.
-4. Line stats pipeline and stats page. Uses nflverse play-by-play, FTN charting, Pro Football Reference weekly pressures and Next Gen Stats. ESPN win rates read weekly by a Routine from the ESPN page. Per-play time to throw arrives after the season.
-   - **Pipeline rule (owner, Oct 13):** PFR data must be picked up even if that takes extra runs. Design: the Actions job runs Mon, Wed, Thu and Sat. Every run pulls every source and records the latest week each source covers. If any source is behind the schedule, the job marks it pending and the next run tries again. The site shows "data through Week N" per source.
+4. ~~Line stats pipeline and stats page~~ Built Oct 14. `pipeline/build_stats.py` pulls 13 nflverse sources for 2026 and 2025 (play-by-play, FTN, PFR pass/rush/rec/def, Next Gen passing/rushing/receiving, snap counts, injuries, depth charts, rosters), computes the three line questions with ranks and a 2025 baseline, and writes `data/stats/line.json`. `site/stats.html` shows them. Runs in 26 s. Workflow `stats.yml` runs Mon, Wed, Thu, Sat; its first Actions run starts on this push.
+   - Freshness on Oct 14: play-by-play, FTN and Next Gen through Week 5; PFR through Week 4 (pending, as expected). The page shows this per source.
+   - Owner's note (Oct 14): the data must be reusable for other questions and other positions. Done by design: every source is pulled whole and cached; a new question is a new function in `pipeline/nfl/metrics.py` and a new JSON file. Nothing Bengals-specific lives in the pulls.
+   - Not yet: the "one line-stat finding" slot on the home page is still hand-written in the week JSON. Could be fed from `line.json` later.
 5. Media round-up routine (midweek, private, with candidate storylines). **Full transcripts are required (owner, Oct 13), and the Whisper route now delivers them** (see the run table below). The pipeline lives in `bengals-research` and refuses to commit to a public repo.
 6. Friday draft routine, then cutover: disable both old tasks the same day.
 
@@ -45,6 +47,21 @@ Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
 Quality of the "base" model: readable and the substance is intact; roster names are mangled ("Smajie P Ryan" for Samaje Perine, "Jamar" for Ja'Marr). Fix pushed Oct 13: Whisper is now primed with a roster-name list from `pipeline/podcasts.json`, plus a `fixes` dictionary for known mis-hearings. The Wednesday run tests it on new episodes. Owner's call (Oct 13): keep "base" with the name fix. Revisit only if Wednesday's transcripts still mangle names.
 
 Next scheduled run: Wed, Oct 14, 9:17 am ET. YouTube captions route stays in the workflow as best-effort and fails harmlessly from Actions.
+
+## Step 4 recap and how to check it
+
+What was built: a data pipeline that pulls all public nflverse data, a metrics library, and a stats page with three sections: who is to blame for sacks, does the run set up the pass, where to attack the next opponent. Every number carries its play count; under 8 plays is greyed out; every section names its sources; the top of the page says which week each source runs through.
+
+Three findings from the first run (through Week 5):
+- Burrow's sack rate is 7th best (4%), but pressure rate is 21st (24%) and his release is the 3rd fastest in the league (2.57 s). The quick throws hide the line. ESPN agrees: pass block win rate 24th.
+- Play-action has been worse than no play-action: −0.05 EPA per dropback (25th) against +0.19 without it. The fake is not working yet.
+- Baltimore's run defence is 6th overall, but allows 50% success at left end (8 carries, right at the floor). Weak evidence, flagged as such.
+
+How to check on your phone (once Pages is on, or in `_site/` locally):
+- Open `stats.html`. Nothing scrolls sideways except the week-by-week tables.
+- The greyed rows (right tackle, 4 plays) should look faded with the count still readable.
+- The freshness pills at the top: PFR should say "waiting" until its Week 5 file lands, then clear on a later run.
+- Dark mode: bars, ticks and tables all readable.
 
 ## How to check the Week 5 page (once live)
 
@@ -74,5 +91,8 @@ Next scheduled run: Wed, Oct 14, 9:17 am ET. YouTube captions route stays in the
 | Oct 13 | Full transcripts required. Primary route: feed MP3 → Whisper in Actions. yt-dlp captions kept as best-effort only | Show notes are not enough (owner). YouTube blocks GitHub's servers; the podcast feed does not |
 | Oct 13 | Feeds are resolved from the show's Apple Podcasts ID at run time, with a fixed address as fallback | A guessed feed address cost a run |
 | Oct 13 | Whisper "base" model, primed with roster names, plus a mis-hearing fix list | 26 min per 7 episodes and free. "small" is 3x slower for a gain priming may already give |
+| Oct 14 | Stats page: three questions stacked, plain HTML bars, ranks + opponent + 2025 + weekly all shown by default | Owner's picks Oct 14. Charts question unanswered, so the recommended plain-bar option was used |
+| Oct 14 | Pipeline pulls every source whole and caches raw files; metrics are per-question modules | Owner wants the data reusable for other questions and all positions |
+| Oct 14 | Pipeline also fills results and record into the season file from play-by-play | One less thing to type each Monday; the strip updates itself |
 | Oct 13 | Stats pipeline runs Mon, Wed, Thu, Sat and retries any lagging source | PFR's file was last rebuilt before Week 5 kicked off; it must be picked up even if that takes extra runs (owner) |
 | Oct 13 | Kept the Week 5 win-chance bar, with its source shown under it | It came from the NFL data feed. Future weeks drop it unless a real source exists |

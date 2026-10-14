@@ -57,8 +57,10 @@ Order: season strip → scoreboard → What the result means → Main storylines
   - `team.json` – team settings (name, colours, abbreviation). Keeps other teams possible later.
   - `season-2026.json` – schedule and results.
   - `weeks/2026-wNN.json` – one brief per week. Text fields allow `[label](url)` source links and `**bold**`.
-- `site/` – static HTML, CSS and JS. No build step. Reads `data/` at run time.
-- `pipeline/` – stats pull (step 4). The transcript pipeline lives in `bengals-research`.
+- `site/` – static HTML, CSS and JS. No build step. Reads `data/` at run time. `index.html` is the brief, `stats.html` the line stats. Pages only display; all math lives in the pipeline.
+- `pipeline/` – the stats pipeline. `nfl/sources.py` pulls every nflverse source whole (all teams, players, plays) into `data/raw/` (git-ignored) and tracks freshness; `nfl/metrics.py` holds metric functions by question; `build_stats.py` runs it all and writes `data/stats/*.json`. New questions (run game, passing game, any position) add a metrics module and a JSON file; the pulls are already there. The transcript pipeline lives in `bengals-research`.
+- `data/stats/` – pipeline output. `line.json` (three line questions, ranks, 2025 baseline), `sources.json` (what was pulled, through which week), `espn-winrates.json` (entered by hand, dated).
+- `.github/workflows/stats.yml` – runs the pipeline Mon, Wed, Thu, Sat and commits changed data. Also fills in results and the record in `season-2026.json` from play-by-play.
 - `scripts/build.sh` – copies `site/` and `data/` into `_site/` for preview and deploy.
 - `.github/workflows/pages.yml` – deploys `_site/` to GitHub Pages on push to `main`.
 - `docs/` – the original handover and the Week 5 reference page. History, not rules. This file wins.

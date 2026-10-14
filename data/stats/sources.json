@@ -1,0 +1,26 @@
+{
+  "sources": [],
+  "generated": "2026-10-14T01:55:29+00:00",
+  "status": {
+    "pbp": {
+      "through_week": 5,
+      "expected_week": 5,
+      "pending": false
+    },
+    "ftn": {
+      "through_week": 5,
+      "expected_week": 5,
+      "pending": false
+    },
+    "pfr_pass": {
+      "through_week": 4,
+      "expected_week": 5,
+      "pending": true
+    },
+    "ngs_passing": {
+      "through_week": 5,
+      "expected_week": 5,
+      "pending": false
+    }
+  }
+}

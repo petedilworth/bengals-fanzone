@@ -1,0 +1,44 @@
+name: Pull stats
+
+# Pulls every nflverse source and rebuilds data/stats/*.json. Runs four times a week so a
+# source that lags the game (Pro Football Reference, days behind) is picked up on a later run.
+# Each run records which week each source covers; the site shows "through Week N" per source.
+
+on:
+  push:
+    branches: [main]
+    paths: ["pipeline/**", ".github/workflows/stats.yml"]
+  workflow_dispatch:
+  schedule:
+    # Mon, Wed, Thu, Sat at 11:23 UTC (7:23 am ET). Sunday-night data is in by Monday morning.
+    - cron: "23 11 * * 1,3,4,6"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+      - run: pip install -r pipeline/requirements.txt
+      - name: Pull and build
+        run: python3 pipeline/build_stats.py --force
+      - name: Commit changed data
+        run: |
+          git config user.name "stats bot"
+          git config user.email "noreply@users.noreply.github.com"
+          git add data/stats data/season-*.json
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          git commit -m "Stats: $(date -u +%Y-%m-%d) $(python3 -c "import json;s=json.load(open('data/stats/sources.json'))['status'];print(' '.join(f\"{k}=w{v['through_week']}\" for k,v in s.items()))")"
+          git push

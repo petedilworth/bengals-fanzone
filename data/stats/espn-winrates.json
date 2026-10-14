@@ -1,0 +1,12 @@
+{
+  "_note": "Entered by hand from ESPN's win-rate leaderboard. ESPN has no feed. Update the numbers and the date together.",
+  "source": "ESPN 2026 win rates leaderboard",
+  "url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
+  "as_of": "2026-10-13",
+  "through_week": 5,
+  "team": "CIN",
+  "pass_block_win_rate": {"value": 0.46, "rank": 24},
+  "run_block_win_rate": {"value": 0.77, "rank": 1},
+  "pass_rush_win_rate": {"value": 0.48, "rank": 23},
+  "run_stop_win_rate": {"value": 0.31, "rank": 6}
+}
