@@ -1,5 +1,5 @@
 {
-  "downloaded_bytes": 0,
+  "downloaded_bytes": 12250068,
   "sources": [
     {
       "name": "pbp",
@@ -9,9 +9,7 @@
       "file": "data/raw/pbp_2026.parquet",
       "checked": "2026-10-14T16:47:34+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 5961006
     },
     {
       "name": "pbp",
@@ -33,9 +31,7 @@
       "file": "data/raw/ftn_2026.parquet",
       "checked": "2026-10-14T16:47:35+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 175862
     },
     {
       "name": "ftn",
@@ -57,9 +53,7 @@
       "file": "data/raw/pfr_pass_2026.parquet",
       "checked": "2026-10-14T16:47:35+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 17505
     },
     {
       "name": "pfr_pass",
@@ -81,9 +75,7 @@
       "file": "data/raw/pfr_rush_2026.parquet",
       "checked": "2026-10-14T16:47:36+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 20956
     },
     {
       "name": "pfr_rush",
@@ -105,9 +97,7 @@
       "file": "data/raw/pfr_rec_2026.parquet",
       "checked": "2026-10-14T16:47:36+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 26101
     },
     {
       "name": "pfr_rec",
@@ -129,9 +119,7 @@
       "file": "data/raw/pfr_def_2026.parquet",
       "checked": "2026-10-14T16:47:36+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 65932
     },
     {
       "name": "pfr_def",
@@ -153,9 +141,7 @@
       "file": "data/raw/ngs_passing.parquet",
       "checked": "2026-10-14T16:47:37+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 747540
     },
     {
       "name": "ngs_rushing",
@@ -165,9 +151,7 @@
       "file": "data/raw/ngs_rushing.parquet",
       "checked": "2026-10-14T16:47:37+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 395079
     },
     {
       "name": "ngs_receiving",
@@ -177,9 +161,7 @@
       "file": "data/raw/ngs_receiving.parquet",
       "checked": "2026-10-14T16:47:37+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 1154084
     },
     {
       "name": "snap_counts",
@@ -213,9 +195,7 @@
       "file": "data/raw/injuries_2026.parquet",
       "checked": "2026-10-14T16:47:38+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 40878
     },
     {
       "name": "injuries",
@@ -237,9 +217,7 @@
       "file": "data/raw/depth_charts_2026.parquet",
       "checked": "2026-10-14T16:47:38+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 2840837
     },
     {
       "name": "depth_charts",
@@ -261,9 +239,7 @@
       "file": "data/raw/rosters_2026.parquet",
       "checked": "2026-10-14T16:47:38+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 804288
     },
     {
       "name": "rosters",
