@@ -1,6 +1,6 @@
 # Next step
 
-_Last updated: Tue, Oct 13, 2026 (after step 3, round 2)_
+_Last updated: Tue, Oct 13, 2026, late evening (transcripts working)_
 
 ## Where we are
 
@@ -42,7 +42,7 @@ Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
 | 3 | PyAV pinned below 15, but pip picked 14.4 and tried to compile it. Failed at install |
 | 4 | PyAV 14.2.0 from its prebuilt wheel. **Worked.** 7 Locked On episodes (4.8 hours of audio, about 62,000 words) in 26 minutes, committed to `research/transcripts/` |
 
-Quality of the "base" model: readable and the substance is intact; roster names are mangled ("Smajie P Ryan" for Samaje Perine, "Jamar" for Ja'Marr). Fix pushed Oct 13: Whisper is now primed with a roster-name list from `pipeline/podcasts.json`, plus a `fixes` dictionary for known mis-hearings. The Wednesday run tests it on new episodes. Model size ("base" vs "small") is the owner's call.
+Quality of the "base" model: readable and the substance is intact; roster names are mangled ("Smajie P Ryan" for Samaje Perine, "Jamar" for Ja'Marr). Fix pushed Oct 13: Whisper is now primed with a roster-name list from `pipeline/podcasts.json`, plus a `fixes` dictionary for known mis-hearings. The Wednesday run tests it on new episodes. Owner's call (Oct 13): keep "base" with the name fix. Revisit only if Wednesday's transcripts still mangle names.
 
 Next scheduled run: Wed, Oct 14, 9:17 am ET. YouTube captions route stays in the workflow as best-effort and fails harmlessly from Actions.
 
@@ -73,5 +73,6 @@ Next scheduled run: Wed, Oct 14, 9:17 am ET. YouTube captions route stays in the
 | Oct 13 | Pressure stats come from Pro Football Reference weekly data, not per-play | Per-play data is published after the season |
 | Oct 13 | Full transcripts required. Primary route: feed MP3 → Whisper in Actions. yt-dlp captions kept as best-effort only | Show notes are not enough (owner). YouTube blocks GitHub's servers; the podcast feed does not |
 | Oct 13 | Feeds are resolved from the show's Apple Podcasts ID at run time, with a fixed address as fallback | A guessed feed address cost a run |
+| Oct 13 | Whisper "base" model, primed with roster names, plus a mis-hearing fix list | 26 min per 7 episodes and free. "small" is 3x slower for a gain priming may already give |
 | Oct 13 | Stats pipeline runs Mon, Wed, Thu, Sat and retries any lagging source | PFR's file was last rebuilt before Week 5 kicked off; it must be picked up even if that takes extra runs (owner) |
 | Oct 13 | Kept the Week 5 win-chance bar, with its source shown under it | It came from the NFL data feed. Future weeks drop it unless a real source exists |
