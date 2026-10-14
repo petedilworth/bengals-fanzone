@@ -34,6 +34,8 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
    - In `bengals-research`: `research/ROUNDUP.md` (playbook), `research/sources.json`, `pipeline/roundup_inputs.py` (gathers transcripts + public stats into one inputs file; tested, works). First inputs file written for Week 7 at BAL.
    - A standing "Bengals round-up" session with `bengals-research` attached, woken by a Routine every Wednesday 1:17 pm ET. The owner opens that session in the Claude app and replies with the 5 storyline picks.
    - Second podcast feed: candidates found via Apple's directory (The Growler by Paul Dehner Jr., Cincy Jungle's show, The Athletic's Hear That Podcast Growlin', the team's Renee All Dey). Freshness check needs the Full network; pick after that.
+   - **Media page** (owner's idea, Oct 14): `site/media.html` shows a source × topic grid per week, plus consensus and unique lists. Fed by `data/media/<season>-w<NN>.json`, which the round-up session writes (topic and source names only). Owner's picks: public page, grid view, built now. Empty until the first round-up lands.
+   - Note: a Routine's prompt can only be edited from the session it posts into. The Routine says "follow ROUNDUP.md exactly", so new steps go in the playbook, not the prompt.
 6. Friday draft routine, then cutover: disable both old tasks the same day.
 
 Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
@@ -98,6 +100,7 @@ How to check on your phone (once Pages is on, or in `_site/` locally):
 | Oct 14 | Stats page: three questions stacked, plain HTML bars, ranks + opponent + 2025 + weekly all shown by default | Owner's picks Oct 14. Charts question unanswered, so the recommended plain-bar option was used |
 | Oct 14 | Pipeline pulls every source whole and caches raw files; metrics are per-question modules | Owner wants the data reusable for other questions and all positions |
 | Oct 14 | Pulls use parquet, keep ETags and send If-None-Match, never re-pull a finished season, and the Actions cache keeps `data/raw` between runs | Owner: 170 MB per run was too much. Now 35 MB cold, 0 MB when nothing changed, about 6 MB on a normal game week |
+| Oct 14 | Media page is public but carries only topic names, source names and counts; summaries stay in the private repo | Overlap is useful to friends and safe to publish; the summaries are not ours to republish |
 | Oct 14 | Pipeline also fills results and record into the season file from play-by-play | One less thing to type each Monday; the strip updates itself |
 | Oct 13 | Stats pipeline runs Mon, Wed, Thu, Sat and retries any lagging source | PFR's file was last rebuilt before Week 5 kicked off; it must be picked up even if that takes extra runs (owner) |
 | Oct 13 | Kept the Week 5 win-chance bar, with its source shown under it | It came from the NFL data feed. Future weeks drop it unless a real source exists |
