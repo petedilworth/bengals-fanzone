@@ -1,6 +1,6 @@
 # Next step
 
-_Last updated: Wed, Oct 14, 2026 (step 4 built)_
+_Last updated: Wed, Oct 14, 2026 (first round-up ran; moving the Routine to a Full-network environment)_
 
 ## Where we are
 
@@ -25,7 +25,7 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
    2. Name: `bengals-research read`. Expiration: 1 year. **Repository access:** Only select repositories → `bengals-research`. **Permissions → Repository permissions → Contents: Read-only.** Generate, then copy the token.
    3. Go to the `bengals-fanzone` repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**. Name: `RESEARCH_TOKEN`. Value: the token. Save.
    Until it exists, the workflow prints "RESEARCH_TOKEN not set; skipping media sync" and the media page stays empty.
-5. **Switch this environment's Network access to Full** (same dialog as before; pick "Full" instead of "Custom"). Needed before the first round-up run on Wed Oct 14 at 1:17 pm ET.
+5. **Create a new cloud environment with Network access Full** (owner's call, Oct 14: a separate environment named "Bengals research", not a change to this one). Steps: Safari → claude.ai/code → cloud icon → Cloud → Add cloud environment → name "Bengals research", Network access **Full**, leave variables and setup script empty → Create. Then tell Claude "done". Claude then moves the round-up session and its Wednesday Routine into it and retires the old ones.
 
 ## What's next
 
@@ -41,6 +41,8 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
    - Second podcast feed: candidates found via Apple's directory (The Growler by Paul Dehner Jr., Cincy Jungle's show, The Athletic's Hear That Podcast Growlin', the team's Renee All Dey). Freshness check needs the Full network; pick after that.
    - **Media page** (owner's idea, Oct 14): `site/media.html` shows a source × topic grid per week, plus consensus and unique lists. Fed by `data/media/<season>-w<NN>.json`, which the round-up session writes (topic and source names only). Owner's picks: public page, grid view, built now. Empty until the first round-up lands.
    - Note: a Routine's prompt can only be edited from the session it posts into. The Routine says "follow ROUNDUP.md exactly", so new steps go in the playbook, not the prompt.
+   - **First run, Wed Oct 14, 1:17 pm ET: worked, but transcripts only.** It wrote `research/roundups/2026-w06.md` (about 1,800 words, 7 Locked On episodes, stat ideas table, 8 ranked candidate storylines) and the public topics file `research/media/2026-w06.json` (5 sources, 15 topics), committed as `8ea1330`. All 10 written sources answered 403: the environment's network was still Custom. Fix in progress: the new Full-network environment (owner item 5). Until `RESEARCH_TOKEN` exists (owner item 4) the topics file is not copied to the public site, so the media page stays empty.
+   - Why a new environment and not a switch: the owner asked what Full network risks (Oct 14). Answer given: the round-up session reads public sites and has no secrets, and the private repo token is read-only, so the exposure is low. A separate environment keeps the build sessions on the tighter Custom list.
 6. Friday draft routine, then cutover: disable both old tasks the same day.
 
 Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
@@ -109,3 +111,5 @@ How to check on your phone (once Pages is on, or in `_site/` locally):
 | Oct 14 | Pipeline also fills results and record into the season file from play-by-play | One less thing to type each Monday; the strip updates itself |
 | Oct 13 | Stats pipeline runs Mon, Wed, Thu, Sat and retries any lagging source | PFR's file was last rebuilt before Week 5 kicked off; it must be picked up even if that takes extra runs (owner) |
 | Oct 13 | Kept the Week 5 win-chance bar, with its source shown under it | It came from the NFL data feed. Future weeks drop it unless a real source exists |
+| Oct 14 | Round-up weeks are named for the NFL week being written in, bye weeks included (first file is Week 6, "Bye, next at BAL") | One file per week keeps the media grid honest about when a topic was raised |
+| Oct 14 | Round-up Routine runs in its own Full-network environment; build sessions stay on the Custom list | It must read beat-writer sites. Owner weighed the risk and chose a separate environment |
