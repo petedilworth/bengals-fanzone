@@ -19,7 +19,8 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 
 1. ~~Make the repo public or go Pro~~ Done Oct 14 (public).
 2. ~~Turn on Pages~~ Done Oct 14.
-3. ~~Allow domains in this cloud environment~~ Done Oct 14. The transcript feed step, ESPN and nflverse docs now work from here. One host still missing for Whisper model downloads: add **`*.hf.co`** (Hugging Face moved model files to `us.aws.cdn.hf.co` and `cas-server.xethub.hf.co`; the wildcard covers both). Not blocking: Actions downloads the model fine.
+3. ~~Allow domains in this cloud environment~~ Done Oct 14, then superseded: owner chose to set Network access to **Full** for the round-up Routine (it must read beat-writer sites). Until that switch is made, the round-up session cannot read news sites or podcast feeds.
+4. **Switch this environment's Network access to Full** (same dialog as before; pick "Full" instead of "Custom"). Needed before the first round-up run on Wed Oct 14 at 1:17 pm ET.
 
 ## What's next
 
@@ -29,7 +30,10 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
    - ESPN win rates are now pulled by the pipeline (`pipeline/nfl/espn.py`): all 32 teams and the 8 player tables (121 players), with ESPN's own "Through Week N" line. Six Bengals appear in the player tables; the "blame" answer lists the linemen.
    - Owner's note (Oct 14): the data must be reusable for other questions and other positions. Done by design: every source is pulled whole and cached; a new question is a new function in `pipeline/nfl/metrics.py` and a new JSON file. Nothing Bengals-specific lives in the pulls.
    - Not yet: the "one line-stat finding" slot on the home page is still hand-written in the week JSON. Could be fed from `line.json` later.
-5. Media round-up routine (midweek, private, with candidate storylines). **Full transcripts are required (owner, Oct 13), and the Whisper route now delivers them** (see the run table below). The pipeline lives in `bengals-research` and refuses to commit to a public repo.
+5. Media round-up routine. Built Oct 14 (owner's picks: Full network; Wed 1:17 pm ET into a standing session; sources: Bengals.com, Cincy Jungle, WCPO, Local 12, Enquirer and The Athletic headlines only, ESPN/NFL.com/The Ringer/PFF by search, plus a second podcast feed to be chosen once the network is Full).
+   - In `bengals-research`: `research/ROUNDUP.md` (playbook), `research/sources.json`, `pipeline/roundup_inputs.py` (gathers transcripts + public stats into one inputs file; tested, works). First inputs file written for Week 7 at BAL.
+   - A standing "Bengals round-up" session with `bengals-research` attached, woken by a Routine every Wednesday 1:17 pm ET. The owner opens that session in the Claude app and replies with the 5 storyline picks.
+   - Second podcast feed: candidates found via Apple's directory (The Growler by Paul Dehner Jr., Cincy Jungle's show, The Athletic's Hear That Podcast Growlin', the team's Renee All Dey). Freshness check needs the Full network; pick after that.
 6. Friday draft routine, then cutover: disable both old tasks the same day.
 
 Soft goal: first brief on the new site for Week 10 vs Pittsburgh (Sun, Nov 15).
