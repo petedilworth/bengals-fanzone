@@ -1,12 +1,1771 @@
 {
-  "_note": "Entered by hand from ESPN's win-rate leaderboard. ESPN has no feed. Update the numbers and the date together.",
-  "source": "ESPN 2026 win rates leaderboard",
-  "url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-  "as_of": "2026-10-13",
-  "through_week": 5,
-  "team": "CIN",
-  "pass_block_win_rate": {"value": 0.46, "rank": 24},
-  "run_block_win_rate": {"value": 0.77, "rank": 1},
-  "pass_rush_win_rate": {"value": 0.48, "rank": 23},
-  "run_stop_win_rate": {"value": 0.31, "rank": 6}
+ "_note": "Written by pipeline/nfl/espn.py from ESPN's win-rate leaderboard. Change `url` when ESPN starts a new season's article.",
+ "source": "ESPN 2026 win rates leaderboard",
+ "url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
+ "as_of": "2026-10-14",
+ "espn_updated_line": "Through Week 5 games, Oct. 13 at 10 a.m. ET",
+ "team": "CIN",
+ "pass_rush_win_rate": {
+  "value": 0.48,
+  "rank": 23
+ },
+ "run_stop_win_rate": {
+  "value": 0.31,
+  "rank": 6
+ },
+ "pass_block_win_rate": {
+  "value": 0.46,
+  "rank": 24
+ },
+ "run_block_win_rate": {
+  "value": 0.77,
+  "rank": 1
+ },
+ "league": {
+  "Arizona Cardinals": {
+   "pass_rush_win_rate": {
+    "value": 0.51,
+    "rank": 18
+   },
+   "run_stop_win_rate": {
+    "value": 0.29,
+    "rank": 20
+   },
+   "pass_block_win_rate": {
+    "value": 0.3,
+    "rank": 31
+   },
+   "run_block_win_rate": {
+    "value": 0.72,
+    "rank": 21
+   }
+  },
+  "Atlanta Falcons": {
+   "pass_rush_win_rate": {
+    "value": 0.59,
+    "rank": 4
+   },
+   "run_stop_win_rate": {
+    "value": 0.31,
+    "rank": 7
+   },
+   "pass_block_win_rate": {
+    "value": 0.53,
+    "rank": 9
+   },
+   "run_block_win_rate": {
+    "value": 0.73,
+    "rank": 17
+   }
+  },
+  "Baltimore Ravens": {
+   "pass_rush_win_rate": {
+    "value": 0.5,
+    "rank": 19
+   },
+   "run_stop_win_rate": {
+    "value": 0.31,
+    "rank": 11
+   },
+   "pass_block_win_rate": {
+    "value": 0.48,
+    "rank": 21
+   },
+   "run_block_win_rate": {
+    "value": 0.74,
+    "rank": 8
+   }
+  },
+  "Buffalo Bills": {
+   "pass_rush_win_rate": {
+    "value": 0.48,
+    "rank": 24
+   },
+   "run_stop_win_rate": {
+    "value": 0.29,
+    "rank": 14
+   },
+   "pass_block_win_rate": {
+    "value": 0.59,
+    "rank": 2
+   },
+   "run_block_win_rate": {
+    "value": 0.77,
+    "rank": 2
+   }
+  },
+  "Carolina Panthers": {
+   "pass_rush_win_rate": {
+    "value": 0.52,
+    "rank": 14
+   },
+   "run_stop_win_rate": {
+    "value": 0.28,
+    "rank": 24
+   },
+   "pass_block_win_rate": {
+    "value": 0.44,
+    "rank": 27
+   },
+   "run_block_win_rate": {
+    "value": 0.71,
+    "rank": 27
+   }
+  },
+  "Chicago Bears": {
+   "pass_rush_win_rate": {
+    "value": 0.54,
+    "rank": 8
+   },
+   "run_stop_win_rate": {
+    "value": 0.27,
+    "rank": 29
+   },
+   "pass_block_win_rate": {
+    "value": 0.56,
+    "rank": 4
+   },
+   "run_block_win_rate": {
+    "value": 0.74,
+    "rank": 11
+   }
+  },
+  "Cincinnati Bengals": {
+   "pass_rush_win_rate": {
+    "value": 0.48,
+    "rank": 23
+   },
+   "run_stop_win_rate": {
+    "value": 0.31,
+    "rank": 6
+   },
+   "pass_block_win_rate": {
+    "value": 0.46,
+    "rank": 24
+   },
+   "run_block_win_rate": {
+    "value": 0.77,
+    "rank": 1
+   }
+  },
+  "Cleveland Browns": {
+   "pass_rush_win_rate": {
+    "value": 0.48,
+    "rank": 22
+   },
+   "run_stop_win_rate": {
+    "value": 0.34,
+    "rank": 2
+   },
+   "pass_block_win_rate": {
+    "value": 0.47,
+    "rank": 22
+   },
+   "run_block_win_rate": {
+    "value": 0.71,
+    "rank": 26
+   }
+  },
+  "Dallas Cowboys": {
+   "pass_rush_win_rate": {
+    "value": 0.41,
+    "rank": 31
+   },
+   "run_stop_win_rate": {
+    "value": 0.29,
+    "rank": 17
+   },
+   "pass_block_win_rate": {
+    "value": 0.5,
+    "rank": 17
+   },
+   "run_block_win_rate": {
+    "value": 0.69,
+    "rank": 31
+   }
+  },
+  "Denver Broncos": {
+   "pass_rush_win_rate": {
+    "value": 0.51,
+    "rank": 17
+   },
+   "run_stop_win_rate": {
+    "value": 0.29,
+    "rank": 13
+   },
+   "pass_block_win_rate": {
+    "value": 0.47,
+    "rank": 23
+   },
+   "run_block_win_rate": {
+    "value": 0.73,
+    "rank": 19
+   }
+  },
+  "Detroit Lions": {
+   "pass_rush_win_rate": {
+    "value": 0.6,
+    "rank": 3
+   },
+   "run_stop_win_rate": {
+    "value": 0.29,
+    "rank": 19
+   },
+   "pass_block_win_rate": {
+    "value": 0.58,
+    "rank": 3
+   },
+   "run_block_win_rate": {
+    "value": 0.72,
+    "rank": 22
+   }
+  },
+  "Green Bay Packers": {
+   "pass_rush_win_rate": {
+    "value": 0.43,
+    "rank": 29
+   },
+   "run_stop_win_rate": {
+    "value": 0.27,
+    "rank": 28
+   },
+   "pass_block_win_rate": {
+    "value": 0.26,
+    "rank": 32
+   },
+   "run_block_win_rate": {
+    "value": 0.73,
+    "rank": 20
+   }
+  },
+  "Houston Texans": {
+   "pass_rush_win_rate": {
+    "value": 0.49,
+    "rank": 21
+   },
+   "run_stop_win_rate": {
+    "value": 0.32,
+    "rank": 5
+   },
+   "pass_block_win_rate": {
+    "value": 0.53,
+    "rank": 11
+   },
+   "run_block_win_rate": {
+    "value": 0.71,
+    "rank": 24
+   }
+  },
+  "Indianapolis Colts": {
+   "pass_rush_win_rate": {
+    "value": 0.37,
+    "rank": 32
+   },
+   "run_stop_win_rate": {
+    "value": 0.25,
+    "rank": 32
+   },
+   "pass_block_win_rate": {
+    "value": 0.49,
+    "rank": 19
+   },
+   "run_block_win_rate": {
+    "value": 0.73,
+    "rank": 18
+   }
+  },
+  "Jacksonville Jaguars": {
+   "pass_rush_win_rate": {
+    "value": 0.53,
+    "rank": 11
+   },
+   "run_stop_win_rate": {
+    "value": 0.26,
+    "rank": 31
+   },
+   "pass_block_win_rate": {
+    "value": 0.42,
+    "rank": 28
+   },
+   "run_block_win_rate": {
+    "value": 0.74,
+    "rank": 14
+   }
+  },
+  "Kansas City Chiefs": {
+   "pass_rush_win_rate": {
+    "value": 0.45,
+    "rank": 27
+   },
+   "run_stop_win_rate": {
+    "value": 0.29,
+    "rank": 15
+   },
+   "pass_block_win_rate": {
+    "value": 0.52,
+    "rank": 13
+   },
+   "run_block_win_rate": {
+    "value": 0.76,
+    "rank": 3
+   }
+  },
+  "Las Vegas Raiders": {
+   "pass_rush_win_rate": {
+    "value": 0.45,
+    "rank": 26
+   },
+   "run_stop_win_rate": {
+    "value": 0.28,
+    "rank": 23
+   },
+   "pass_block_win_rate": {
+    "value": 0.62,
+    "rank": 1
+   },
+   "run_block_win_rate": {
+    "value": 0.74,
+    "rank": 13
+   }
+  },
+  "Los Angeles Chargers": {
+   "pass_rush_win_rate": {
+    "value": 0.5,
+    "rank": 20
+   },
+   "run_stop_win_rate": {
+    "value": 0.34,
+    "rank": 1
+   },
+   "pass_block_win_rate": {
+    "value": 0.39,
+    "rank": 30
+   },
+   "run_block_win_rate": {
+    "value": 0.75,
+    "rank": 6
+   }
+  },
+  "Los Angeles Rams": {
+   "pass_rush_win_rate": {
+    "value": 0.52,
+    "rank": 13
+   },
+   "run_stop_win_rate": {
+    "value": 0.31,
+    "rank": 8
+   },
+   "pass_block_win_rate": {
+    "value": 0.54,
+    "rank": 6
+   },
+   "run_block_win_rate": {
+    "value": 0.75,
+    "rank": 7
+   }
+  },
+  "Miami Dolphins": {
+   "pass_rush_win_rate": {
+    "value": 0.52,
+    "rank": 15
+   },
+   "run_stop_win_rate": {
+    "value": 0.27,
+    "rank": 27
+   },
+   "pass_block_win_rate": {
+    "value": 0.51,
+    "rank": 15
+   },
+   "run_block_win_rate": {
+    "value": 0.71,
+    "rank": 28
+   }
+  },
+  "Minnesota Vikings": {
+   "pass_rush_win_rate": {
+    "value": 0.63,
+    "rank": 2
+   },
+   "run_stop_win_rate": {
+    "value": 0.32,
+    "rank": 3
+   },
+   "pass_block_win_rate": {
+    "value": 0.52,
+    "rank": 14
+   },
+   "run_block_win_rate": {
+    "value": 0.75,
+    "rank": 5
+   }
+  },
+  "New England Patriots": {
+   "pass_rush_win_rate": {
+    "value": 0.52,
+    "rank": 12
+   },
+   "run_stop_win_rate": {
+    "value": 0.28,
+    "rank": 25
+   },
+   "pass_block_win_rate": {
+    "value": 0.52,
+    "rank": 12
+   },
+   "run_block_win_rate": {
+    "value": 0.74,
+    "rank": 12
+   }
+  },
+  "New Orleans Saints": {
+   "pass_rush_win_rate": {
+    "value": 0.52,
+    "rank": 16
+   },
+   "run_stop_win_rate": {
+    "value": 0.29,
+    "rank": 16
+   },
+   "pass_block_win_rate": {
+    "value": 0.45,
+    "rank": 26
+   },
+   "run_block_win_rate": {
+    "value": 0.73,
+    "rank": 16
+   }
+  },
+  "New York Giants": {
+   "pass_rush_win_rate": {
+    "value": 0.58,
+    "rank": 5
+   },
+   "run_stop_win_rate": {
+    "value": 0.29,
+    "rank": 18
+   },
+   "pass_block_win_rate": {
+    "value": 0.5,
+    "rank": 16
+   },
+   "run_block_win_rate": {
+    "value": 0.74,
+    "rank": 15
+   }
+  },
+  "New York Jets": {
+   "pass_rush_win_rate": {
+    "value": 0.54,
+    "rank": 7
+   },
+   "run_stop_win_rate": {
+    "value": 0.26,
+    "rank": 30
+   },
+   "pass_block_win_rate": {
+    "value": 0.54,
+    "rank": 7
+   },
+   "run_block_win_rate": {
+    "value": 0.7,
+    "rank": 30
+   }
+  },
+  "Philadelphia Eagles": {
+   "pass_rush_win_rate": {
+    "value": 0.44,
+    "rank": 28
+   },
+   "run_stop_win_rate": {
+    "value": 0.32,
+    "rank": 4
+   },
+   "pass_block_win_rate": {
+    "value": 0.48,
+    "rank": 20
+   },
+   "run_block_win_rate": {
+    "value": 0.71,
+    "rank": 23
+   }
+  },
+  "Pittsburgh Steelers": {
+   "pass_rush_win_rate": {
+    "value": 0.43,
+    "rank": 30
+   },
+   "run_stop_win_rate": {
+    "value": 0.31,
+    "rank": 10
+   },
+   "pass_block_win_rate": {
+    "value": 0.53,
+    "rank": 8
+   },
+   "run_block_win_rate": {
+    "value": 0.74,
+    "rank": 9
+   }
+  },
+  "San Francisco 49ers": {
+   "pass_rush_win_rate": {
+    "value": 0.54,
+    "rank": 6
+   },
+   "run_stop_win_rate": {
+    "value": 0.29,
+    "rank": 22
+   },
+   "pass_block_win_rate": {
+    "value": 0.56,
+    "rank": 5
+   },
+   "run_block_win_rate": {
+    "value": 0.76,
+    "rank": 4
+   }
+  },
+  "Seattle Seahawks": {
+   "pass_rush_win_rate": {
+    "value": 0.65,
+    "rank": 1
+   },
+   "run_stop_win_rate": {
+    "value": 0.3,
+    "rank": 12
+   },
+   "pass_block_win_rate": {
+    "value": 0.46,
+    "rank": 25
+   },
+   "run_block_win_rate": {
+    "value": 0.71,
+    "rank": 25
+   }
+  },
+  "Tampa Bay Buccaneers": {
+   "pass_rush_win_rate": {
+    "value": 0.53,
+    "rank": 10
+   },
+   "run_stop_win_rate": {
+    "value": 0.27,
+    "rank": 26
+   },
+   "pass_block_win_rate": {
+    "value": 0.5,
+    "rank": 17
+   },
+   "run_block_win_rate": {
+    "value": 0.74,
+    "rank": 10
+   }
+  },
+  "Tennessee Titans": {
+   "pass_rush_win_rate": {
+    "value": 0.45,
+    "rank": 25
+   },
+   "run_stop_win_rate": {
+    "value": 0.31,
+    "rank": 9
+   },
+   "pass_block_win_rate": {
+    "value": 0.42,
+    "rank": 29
+   },
+   "run_block_win_rate": {
+    "value": 0.7,
+    "rank": 29
+   }
+  },
+  "Washington Commanders": {
+   "pass_rush_win_rate": {
+    "value": 0.53,
+    "rank": 9
+   },
+   "run_stop_win_rate": {
+    "value": 0.29,
+    "rank": 21
+   },
+   "pass_block_win_rate": {
+    "value": 0.53,
+    "rank": 10
+   },
+   "run_block_win_rate": {
+    "value": 0.67,
+    "rank": 32
+   }
+  }
+ },
+ "players": {
+  "Edge pass rush win rate rankings": [
+   {
+    "rank": 1,
+    "name": "Abdul Carter",
+    "team": "NYG",
+    "wins": 31,
+    "plays": 85,
+    "win_rate": 0.36,
+    "double_team_rate": 0.4
+   },
+   {
+    "rank": 2,
+    "name": "Chop Robinson",
+    "team": "MIA",
+    "wins": 20,
+    "plays": 55,
+    "win_rate": 0.36,
+    "double_team_rate": 0.35
+   },
+   {
+    "rank": 3,
+    "name": "Romello Height",
+    "team": "SF",
+    "wins": 18,
+    "plays": 56,
+    "win_rate": 0.32,
+    "double_team_rate": 0.43
+   },
+   {
+    "rank": 4,
+    "name": "Andrew Van Ginkel",
+    "team": "MIN",
+    "wins": 15,
+    "plays": 51,
+    "win_rate": 0.29,
+    "double_team_rate": 0.31
+   },
+   {
+    "rank": 5,
+    "name": "Byron Young",
+    "team": "LAR",
+    "wins": 17,
+    "plays": 60,
+    "win_rate": 0.28,
+    "double_team_rate": 0.36
+   },
+   {
+    "rank": 6,
+    "name": "Trey Hendrickson",
+    "team": "BAL",
+    "wins": 15,
+    "plays": 53,
+    "win_rate": 0.28,
+    "double_team_rate": 0.47
+   },
+   {
+    "rank": 7,
+    "name": "K'Lavon Chaisson",
+    "team": "WAS",
+    "wins": 16,
+    "plays": 57,
+    "win_rate": 0.28,
+    "double_team_rate": 0.25
+   },
+   {
+    "rank": 8,
+    "name": "Maxx Crosby",
+    "team": "LV",
+    "wins": 29,
+    "plays": 107,
+    "win_rate": 0.27,
+    "double_team_rate": 0.49
+   },
+   {
+    "rank": 9,
+    "name": "Mike Green",
+    "team": "BAL",
+    "wins": 15,
+    "plays": 57,
+    "win_rate": 0.26,
+    "double_team_rate": 0.41
+   },
+   {
+    "rank": 10,
+    "name": "Josh Hines-Allen",
+    "team": "JAX",
+    "wins": 22,
+    "plays": 84,
+    "win_rate": 0.26,
+    "double_team_rate": 0.43
+   },
+   {
+    "rank": 11,
+    "name": "Dallas Turner",
+    "team": "MIN",
+    "wins": 20,
+    "plays": 79,
+    "win_rate": 0.25,
+    "double_team_rate": 0.23
+   },
+   {
+    "rank": 12,
+    "name": "Boye Mafe",
+    "team": "CIN",
+    "wins": 23,
+    "plays": 91,
+    "win_rate": 0.25,
+    "double_team_rate": 0.37
+   },
+   {
+    "rank": 13,
+    "name": "DeMarcus Lawrence",
+    "team": "SEA",
+    "wins": 15,
+    "plays": 60,
+    "win_rate": 0.25,
+    "double_team_rate": 0.4
+   },
+   {
+    "rank": 14,
+    "name": "Lukas Van Ness",
+    "team": "GB",
+    "wins": 15,
+    "plays": 61,
+    "win_rate": 0.25,
+    "double_team_rate": 0.34
+   },
+   {
+    "rank": 15,
+    "name": "Will Anderson Jr.",
+    "team": "HOU",
+    "wins": 23,
+    "plays": 94,
+    "win_rate": 0.24,
+    "double_team_rate": 0.45
+   },
+   {
+    "rank": 16,
+    "name": "David Bailey",
+    "team": "NYJ",
+    "wins": 16,
+    "plays": 66,
+    "win_rate": 0.24,
+    "double_team_rate": 0.26
+   },
+   {
+    "rank": 17,
+    "name": "Chase Young",
+    "team": "NO",
+    "wins": 16,
+    "plays": 67,
+    "win_rate": 0.24,
+    "double_team_rate": 0.34
+   },
+   {
+    "rank": 18,
+    "name": "Derick Hall",
+    "team": "SEA",
+    "wins": 15,
+    "plays": 63,
+    "win_rate": 0.24,
+    "double_team_rate": 0.39
+   },
+   {
+    "rank": 19,
+    "name": "Malcolm Koonce",
+    "team": "LV",
+    "wins": 14,
+    "plays": 59,
+    "win_rate": 0.24,
+    "double_team_rate": 0.39
+   },
+   {
+    "rank": 20,
+    "name": "Princely Umanmielen",
+    "team": "CAR",
+    "wins": 11,
+    "plays": 47,
+    "win_rate": 0.23,
+    "double_team_rate": 0.37
+   }
+  ],
+  "DT pass rush win rate rankings": [
+   {
+    "rank": 1,
+    "name": "Jeffery Simmons",
+    "team": "TEN",
+    "wins": 27,
+    "plays": 91,
+    "win_rate": 0.3,
+    "double_team_rate": 0.81
+   },
+   {
+    "rank": 2,
+    "name": "Maason Smith",
+    "team": "ATL",
+    "wins": 19,
+    "plays": 70,
+    "win_rate": 0.27,
+    "double_team_rate": 0.87
+   },
+   {
+    "rank": 3,
+    "name": "Brandon Dorlus",
+    "team": "ATL",
+    "wins": 17,
+    "plays": 63,
+    "win_rate": 0.27,
+    "double_team_rate": 0.82
+   },
+   {
+    "rank": 4,
+    "name": "Alim McNeill",
+    "team": "DET",
+    "wins": 30,
+    "plays": 123,
+    "win_rate": 0.24,
+    "double_team_rate": 0.85
+   },
+   {
+    "rank": 5,
+    "name": "Zach Allen",
+    "team": "DEN",
+    "wins": 21,
+    "plays": 91,
+    "win_rate": 0.23,
+    "double_team_rate": 0.77
+   },
+   {
+    "rank": 6,
+    "name": "Grady Jarrett",
+    "team": "CHI",
+    "wins": 16,
+    "plays": 74,
+    "win_rate": 0.22,
+    "double_team_rate": 0.79
+   },
+   {
+    "rank": 7,
+    "name": "Osa Odighizuwa",
+    "team": "SF",
+    "wins": 18,
+    "plays": 85,
+    "win_rate": 0.21,
+    "double_team_rate": 0.82
+   },
+   {
+    "rank": 8,
+    "name": "DJ Reader",
+    "team": "NYG",
+    "wins": 11,
+    "plays": 53,
+    "win_rate": 0.21,
+    "double_team_rate": 0.74
+   },
+   {
+    "rank": 9,
+    "name": "Milton Williams",
+    "team": "NE",
+    "wins": 14,
+    "plays": 69,
+    "win_rate": 0.2,
+    "double_team_rate": 0.79
+   },
+   {
+    "rank": 10,
+    "name": "Byron Murphy II",
+    "team": "SEA",
+    "wins": 15,
+    "plays": 79,
+    "win_rate": 0.19,
+    "double_team_rate": 0.79
+   },
+   {
+    "rank": 11,
+    "name": "Leonard Williams",
+    "team": "SEA",
+    "wins": 14,
+    "plays": 74,
+    "win_rate": 0.19,
+    "double_team_rate": 0.86
+   },
+   {
+    "rank": 12,
+    "name": "Daron Payne",
+    "team": "WAS",
+    "wins": 14,
+    "plays": 77,
+    "win_rate": 0.18,
+    "double_team_rate": 0.71
+   },
+   {
+    "rank": 13,
+    "name": "Calijah Kancey",
+    "team": "TB",
+    "wins": 11,
+    "plays": 62,
+    "win_rate": 0.18,
+    "double_team_rate": 0.73
+   },
+   {
+    "rank": 14,
+    "name": "Walter Nolen III",
+    "team": "AZ",
+    "wins": 13,
+    "plays": 74,
+    "win_rate": 0.18,
+    "double_team_rate": 0.73
+   },
+   {
+    "rank": 15,
+    "name": "Kobie Turner",
+    "team": "LAR",
+    "wins": 11,
+    "plays": 65,
+    "win_rate": 0.17,
+    "double_team_rate": 0.8
+   },
+   {
+    "rank": 16,
+    "name": "Arik Armstead",
+    "team": "JAX",
+    "wins": 15,
+    "plays": 90,
+    "win_rate": 0.17,
+    "double_team_rate": 0.78
+   },
+   {
+    "rank": 17,
+    "name": "Jonathan Allen",
+    "team": "CIN",
+    "wins": 13,
+    "plays": 79,
+    "win_rate": 0.16,
+    "double_team_rate": 0.78
+   },
+   {
+    "rank": 18,
+    "name": "Deone Walker",
+    "team": "BUF",
+    "wins": 15,
+    "plays": 92,
+    "win_rate": 0.16,
+    "double_team_rate": 0.78
+   },
+   {
+    "rank": 19,
+    "name": "Braden Fiske",
+    "team": "LAR",
+    "wins": 8,
+    "plays": 51,
+    "win_rate": 0.16,
+    "double_team_rate": 0.8
+   },
+   {
+    "rank": 20,
+    "name": "Keeanu Benton",
+    "team": "PIT",
+    "wins": 9,
+    "plays": 58,
+    "win_rate": 0.16,
+    "double_team_rate": 0.63
+   }
+  ],
+  "OT pass block win rate rankings": [
+   {
+    "rank": 1,
+    "name": "Kolton Miller",
+    "team": "LV",
+    "wins": 127,
+    "plays": 136,
+    "win_rate": 0.93,
+    "double_team_rate": 0.53
+   },
+   {
+    "rank": 2,
+    "name": "Tristan Wirfs",
+    "team": "TB",
+    "wins": 110,
+    "plays": 119,
+    "win_rate": 0.92,
+    "double_team_rate": 0.52
+   },
+   {
+    "rank": 3,
+    "name": "Lane Johnson",
+    "team": "PHI",
+    "wins": 73,
+    "plays": 79,
+    "win_rate": 0.92,
+    "double_team_rate": 0.49
+   },
+   {
+    "rank": 4,
+    "name": "Jermaine Eluemunor",
+    "team": "NYG",
+    "wins": 83,
+    "plays": 90,
+    "win_rate": 0.92,
+    "double_team_rate": 0.57
+   },
+   {
+    "rank": 5,
+    "name": "Jawaan Taylor",
+    "team": "ATL",
+    "wins": 69,
+    "plays": 75,
+    "win_rate": 0.92,
+    "double_team_rate": 0.67
+   },
+   {
+    "rank": 6,
+    "name": "Blake Miller",
+    "team": "DET",
+    "wins": 100,
+    "plays": 109,
+    "win_rate": 0.92,
+    "double_team_rate": 0.65
+   },
+   {
+    "rank": 7,
+    "name": "Theo Benedet",
+    "team": "CHI",
+    "wins": 73,
+    "plays": 80,
+    "win_rate": 0.91,
+    "double_team_rate": 0.58
+   },
+   {
+    "rank": 8,
+    "name": "Jordan Mailata",
+    "team": "PHI",
+    "wins": 112,
+    "plays": 123,
+    "win_rate": 0.91,
+    "double_team_rate": 0.51
+   },
+   {
+    "rank": 9,
+    "name": "Spencer Brown",
+    "team": "BUF",
+    "wins": 87,
+    "plays": 96,
+    "win_rate": 0.91,
+    "double_team_rate": 0.52
+   },
+   {
+    "rank": 10,
+    "name": "Dion Dawkins",
+    "team": "BUF",
+    "wins": 96,
+    "plays": 106,
+    "win_rate": 0.91,
+    "double_team_rate": 0.59
+   },
+   {
+    "rank": 11,
+    "name": "Trent Williams",
+    "team": "SF",
+    "wins": 86,
+    "plays": 95,
+    "win_rate": 0.91,
+    "double_team_rate": 0.53
+   },
+   {
+    "rank": 12,
+    "name": "DJ Glaze",
+    "team": "LV",
+    "wins": 122,
+    "plays": 135,
+    "win_rate": 0.9,
+    "double_team_rate": 0.64
+   },
+   {
+    "rank": 13,
+    "name": "Penei Sewell",
+    "team": "DET",
+    "wins": 131,
+    "plays": 145,
+    "win_rate": 0.9,
+    "double_team_rate": 0.59
+   },
+   {
+    "rank": 14,
+    "name": "Ronnie Stanley",
+    "team": "BAL",
+    "wins": 74,
+    "plays": 82,
+    "win_rate": 0.9,
+    "double_team_rate": 0.55
+   },
+   {
+    "rank": 15,
+    "name": "Darnell Wright",
+    "team": "CHI",
+    "wins": 119,
+    "plays": 132,
+    "win_rate": 0.9,
+    "double_team_rate": 0.45
+   },
+   {
+    "rank": 16,
+    "name": "Patrick Paul",
+    "team": "MIA",
+    "wins": 100,
+    "plays": 111,
+    "win_rate": 0.9,
+    "double_team_rate": 0.6
+   },
+   {
+    "rank": 17,
+    "name": "Brian O'Neill",
+    "team": "MIN",
+    "wins": 99,
+    "plays": 110,
+    "win_rate": 0.9,
+    "double_team_rate": 0.48
+   },
+   {
+    "rank": 18,
+    "name": "Dylan Cook",
+    "team": "PIT",
+    "wins": 53,
+    "plays": 59,
+    "win_rate": 0.9,
+    "double_team_rate": 0.68
+   },
+   {
+    "rank": 19,
+    "name": "Amarius Mims",
+    "team": "CIN",
+    "wins": 96,
+    "plays": 107,
+    "win_rate": 0.9,
+    "double_team_rate": 0.53
+   },
+   {
+    "rank": 20,
+    "name": "Colton McKivitz",
+    "team": "SF",
+    "wins": 93,
+    "plays": 104,
+    "win_rate": 0.89,
+    "double_team_rate": 0.54
+   }
+  ],
+  "IOL pass block win rate rankings": [
+   {
+    "rank": 1,
+    "name": "Creed Humphrey",
+    "team": "KC",
+    "wins": 72,
+    "plays": 75,
+    "win_rate": 0.96,
+    "double_team_rate": 0.9
+   },
+   {
+    "rank": 2,
+    "name": "Garrett Bradbury",
+    "team": "CHI",
+    "wins": 126,
+    "plays": 132,
+    "win_rate": 0.95,
+    "double_team_rate": 0.95
+   },
+   {
+    "rank": 3,
+    "name": "Damien Lewis",
+    "team": "CAR",
+    "wins": 77,
+    "plays": 81,
+    "win_rate": 0.95,
+    "double_team_rate": 0.84
+   },
+   {
+    "rank": 4,
+    "name": "Erik McCoy",
+    "team": "NO",
+    "wins": 128,
+    "plays": 135,
+    "win_rate": 0.95,
+    "double_team_rate": 0.92
+   },
+   {
+    "rank": 5,
+    "name": "Lucas Patrick",
+    "team": "WAS",
+    "wins": 66,
+    "plays": 70,
+    "win_rate": 0.94,
+    "double_team_rate": 0.92
+   },
+   {
+    "rank": 6,
+    "name": "Jake Brendel",
+    "team": "SF",
+    "wins": 95,
+    "plays": 101,
+    "win_rate": 0.94,
+    "double_team_rate": 0.93
+   },
+   {
+    "rank": 7,
+    "name": "Jared Wilson",
+    "team": "NE",
+    "wins": 121,
+    "plays": 129,
+    "win_rate": 0.94,
+    "double_team_rate": 0.87
+   },
+   {
+    "rank": 8,
+    "name": "Chris Lindstrom",
+    "team": "ATL",
+    "wins": 73,
+    "plays": 78,
+    "win_rate": 0.94,
+    "double_team_rate": 0.78
+   },
+   {
+    "rank": 9,
+    "name": "Evan Brown",
+    "team": "HOU",
+    "wins": 129,
+    "plays": 138,
+    "win_rate": 0.93,
+    "double_team_rate": 0.91
+   },
+   {
+    "rank": 10,
+    "name": "Tyler Linderbaum",
+    "team": "LV",
+    "wins": 125,
+    "plays": 134,
+    "win_rate": 0.93,
+    "double_team_rate": 0.92
+   },
+   {
+    "rank": 10,
+    "name": "Chris Paul",
+    "team": "WAS",
+    "wins": 125,
+    "plays": 134,
+    "win_rate": 0.93,
+    "double_team_rate": 0.73
+   },
+   {
+    "rank": 12,
+    "name": "Juice Scruggs",
+    "team": "DET",
+    "wins": 134,
+    "plays": 144,
+    "win_rate": 0.93,
+    "double_team_rate": 0.93
+   },
+   {
+    "rank": 13,
+    "name": "Ryan Neuzil",
+    "team": "ATL",
+    "wins": 80,
+    "plays": 86,
+    "win_rate": 0.93,
+    "double_team_rate": 0.83
+   },
+   {
+    "rank": 14,
+    "name": "Tyler Steen",
+    "team": "PHI",
+    "wins": 105,
+    "plays": 113,
+    "win_rate": 0.93,
+    "double_team_rate": 0.84
+   },
+   {
+    "rank": 15,
+    "name": "Zion Johnson",
+    "team": "CLE",
+    "wins": 100,
+    "plays": 108,
+    "win_rate": 0.93,
+    "double_team_rate": 0.78
+   },
+   {
+    "rank": 16,
+    "name": "Joe Thuney",
+    "team": "CHI",
+    "wins": 122,
+    "plays": 132,
+    "win_rate": 0.92,
+    "double_team_rate": 0.83
+   },
+   {
+    "rank": 17,
+    "name": "Spencer Burford",
+    "team": "LV",
+    "wins": 125,
+    "plays": 136,
+    "win_rate": 0.92,
+    "double_team_rate": 0.84
+   },
+   {
+    "rank": 18,
+    "name": "Alijah Vera-Tucker",
+    "team": "NE",
+    "wins": 122,
+    "plays": 133,
+    "win_rate": 0.92,
+    "double_team_rate": 0.8
+   },
+   {
+    "rank": 19,
+    "name": "Tate Ratledge",
+    "team": "DET",
+    "wins": 133,
+    "plays": 145,
+    "win_rate": 0.92,
+    "double_team_rate": 0.86
+   },
+   {
+    "rank": 20,
+    "name": "Alec Anderson",
+    "team": "BUF",
+    "wins": 97,
+    "plays": 106,
+    "win_rate": 0.92,
+    "double_team_rate": 0.8
+   }
+  ],
+  "Edge run stop win rate rankings": [
+   {
+    "rank": 1,
+    "name": "David Bailey",
+    "team": "NYJ",
+    "wins": 27,
+    "plays": 70,
+    "win_rate": 0.39,
+    "double_team_rate": 0.03
+   },
+   {
+    "rank": 2,
+    "name": "Tuli Tuipulotu",
+    "team": "LAC",
+    "wins": 34,
+    "plays": 90,
+    "win_rate": 0.38,
+    "double_team_rate": 0.12
+   },
+   {
+    "rank": 3,
+    "name": "Will Anderson Jr.",
+    "team": "HOU",
+    "wins": 26,
+    "plays": 73,
+    "win_rate": 0.36,
+    "double_team_rate": 0.11
+   },
+   {
+    "rank": 4,
+    "name": "Carl Granderson",
+    "team": "NO",
+    "wins": 20,
+    "plays": 57,
+    "win_rate": 0.35,
+    "double_team_rate": 0.14
+   },
+   {
+    "rank": 5,
+    "name": "Jared Verse",
+    "team": "CLE",
+    "wins": 21,
+    "plays": 65,
+    "win_rate": 0.32,
+    "double_team_rate": 0.12
+   },
+   {
+    "rank": 6,
+    "name": "Isaiah McGuire",
+    "team": "CLE",
+    "wins": 19,
+    "plays": 61,
+    "win_rate": 0.31,
+    "double_team_rate": 0.15
+   },
+   {
+    "rank": 7,
+    "name": "Elijah Ponder",
+    "team": "NE",
+    "wins": 19,
+    "plays": 62,
+    "win_rate": 0.31,
+    "double_team_rate": 0.07
+   },
+   {
+    "rank": 8,
+    "name": "Barryn Sorrell",
+    "team": "GB",
+    "wins": 22,
+    "plays": 73,
+    "win_rate": 0.3,
+    "double_team_rate": 0.21
+   },
+   {
+    "rank": 9,
+    "name": "Maxx Crosby",
+    "team": "LV",
+    "wins": 27,
+    "plays": 92,
+    "win_rate": 0.29,
+    "double_team_rate": 0.11
+   },
+   {
+    "rank": 10,
+    "name": "DeMarcus Lawrence",
+    "team": "SEA",
+    "wins": 15,
+    "plays": 52,
+    "win_rate": 0.29,
+    "double_team_rate": 0.13
+   },
+   {
+    "rank": 10,
+    "name": "Gabe Jacas",
+    "team": "NE",
+    "wins": 15,
+    "plays": 52,
+    "win_rate": 0.29,
+    "double_team_rate": 0.21
+   }
+  ],
+  "DT run stop win rate rankings": [
+   {
+    "rank": 1,
+    "name": "LaCale London",
+    "team": "ATL",
+    "wins": 32,
+    "plays": 66,
+    "win_rate": 0.48,
+    "double_team_rate": 0.55
+   },
+   {
+    "rank": 2,
+    "name": "Grady Jarrett",
+    "team": "CHI",
+    "wins": 29,
+    "plays": 61,
+    "win_rate": 0.48,
+    "double_team_rate": 0.43
+   },
+   {
+    "rank": 3,
+    "name": "Jordan Elliott",
+    "team": "TEN",
+    "wins": 28,
+    "plays": 62,
+    "win_rate": 0.45,
+    "double_team_rate": 0.47
+   },
+   {
+    "rank": 4,
+    "name": "Kobie Turner",
+    "team": "LAR",
+    "wins": 32,
+    "plays": 71,
+    "win_rate": 0.44,
+    "double_team_rate": 0.37
+   },
+   {
+    "rank": 5,
+    "name": "DeWayne Carter",
+    "team": "BUF",
+    "wins": 31,
+    "plays": 70,
+    "win_rate": 0.44,
+    "double_team_rate": 0.36
+   },
+   {
+    "rank": 6,
+    "name": "Teair Tart",
+    "team": "LAC",
+    "wins": 36,
+    "plays": 82,
+    "win_rate": 0.44,
+    "double_team_rate": 0.39
+   },
+   {
+    "rank": 7,
+    "name": "Malcolm Roach",
+    "team": "DEN",
+    "wins": 31,
+    "plays": 72,
+    "win_rate": 0.43,
+    "double_team_rate": 0.29
+   },
+   {
+    "rank": 8,
+    "name": "Jalen Redmond",
+    "team": "MIN",
+    "wins": 28,
+    "plays": 66,
+    "win_rate": 0.42,
+    "double_team_rate": 0.35
+   },
+   {
+    "rank": 9,
+    "name": "Jalen Carter",
+    "team": "PHI",
+    "wins": 36,
+    "plays": 85,
+    "win_rate": 0.42,
+    "double_team_rate": 0.36
+   },
+   {
+    "rank": 10,
+    "name": "Nathan Shepherd",
+    "team": "NO",
+    "wins": 24,
+    "plays": 58,
+    "win_rate": 0.41,
+    "double_team_rate": 0.38
+   }
+  ],
+  "OT run block win rate rankings": [
+   {
+    "rank": 1,
+    "name": "Max Iheanachor",
+    "team": "PIT",
+    "wins": 54,
+    "plays": 62,
+    "win_rate": 0.87,
+    "double_team_rate": 0.52
+   },
+   {
+    "rank": 2,
+    "name": "Dion Dawkins",
+    "team": "BUF",
+    "wins": 109,
+    "plays": 130,
+    "win_rate": 0.84,
+    "double_team_rate": 0.29
+   },
+   {
+    "rank": 3,
+    "name": "Warren McClendon Jr.",
+    "team": "LAR",
+    "wins": 102,
+    "plays": 122,
+    "win_rate": 0.84,
+    "double_team_rate": 0.41
+   },
+   {
+    "rank": 4,
+    "name": "Orlando Brown Jr.",
+    "team": "CIN",
+    "wins": 89,
+    "plays": 107,
+    "win_rate": 0.83,
+    "double_team_rate": 0.31
+   },
+   {
+    "rank": 5,
+    "name": "Anton Harrison",
+    "team": "JAX",
+    "wins": 102,
+    "plays": 123,
+    "win_rate": 0.83,
+    "double_team_rate": 0.24
+   },
+   {
+    "rank": 6,
+    "name": "Kahlil Benson",
+    "team": "KC",
+    "wins": 90,
+    "plays": 109,
+    "win_rate": 0.83,
+    "double_team_rate": 0.47
+   },
+   {
+    "rank": 7,
+    "name": "Will Campbell",
+    "team": "NE",
+    "wins": 93,
+    "plays": 115,
+    "win_rate": 0.81,
+    "double_team_rate": 0.37
+   },
+   {
+    "rank": 8,
+    "name": "Brian O'Neill",
+    "team": "MIN",
+    "wins": 107,
+    "plays": 133,
+    "win_rate": 0.8,
+    "double_team_rate": 0.43
+   },
+   {
+    "rank": 9,
+    "name": "JC Latham",
+    "team": "TEN",
+    "wins": 78,
+    "plays": 97,
+    "win_rate": 0.8,
+    "double_team_rate": 0.43
+   },
+   {
+    "rank": 10,
+    "name": "Penei Sewell",
+    "team": "DET",
+    "wins": 96,
+    "plays": 120,
+    "win_rate": 0.8,
+    "double_team_rate": 0.31
+   }
+  ],
+  "IOL run block win rate rankings": [
+   {
+    "rank": 1,
+    "name": "Dalton Risner",
+    "team": "CIN",
+    "wins": 92,
+    "plays": 107,
+    "win_rate": 0.86,
+    "double_team_rate": 0.53
+   },
+   {
+    "rank": 2,
+    "name": "Corey Bullock",
+    "team": "CAR",
+    "wins": 34,
+    "plays": 41,
+    "win_rate": 0.83,
+    "double_team_rate": 0.49
+   },
+   {
+    "rank": 3,
+    "name": "Chris Lindstrom",
+    "team": "ATL",
+    "wins": 118,
+    "plays": 150,
+    "win_rate": 0.79,
+    "double_team_rate": 0.5
+   },
+   {
+    "rank": 4,
+    "name": "Matthew Bergeron",
+    "team": "ATL",
+    "wins": 124,
+    "plays": 159,
+    "win_rate": 0.78,
+    "double_team_rate": 0.52
+   },
+   {
+    "rank": 5,
+    "name": "Dylan Fairchild",
+    "team": "CIN",
+    "wins": 83,
+    "plays": 107,
+    "win_rate": 0.78,
+    "double_team_rate": 0.48
+   },
+   {
+    "rank": 6,
+    "name": "Jovaughn Gwyn",
+    "team": "BAL",
+    "wins": 62,
+    "plays": 80,
+    "win_rate": 0.78,
+    "double_team_rate": 0.54
+   },
+   {
+    "rank": 7,
+    "name": "Robert Hunt",
+    "team": "CAR",
+    "wins": 65,
+    "plays": 84,
+    "win_rate": 0.77,
+    "double_team_rate": 0.45
+   },
+   {
+    "rank": 8,
+    "name": "Creed Humphrey",
+    "team": "KC",
+    "wins": 85,
+    "plays": 110,
+    "win_rate": 0.77,
+    "double_team_rate": 0.65
+   },
+   {
+    "rank": 9,
+    "name": "Erik McCoy",
+    "team": "NO",
+    "wins": 84,
+    "plays": 109,
+    "win_rate": 0.77,
+    "double_team_rate": 0.54
+   },
+   {
+    "rank": 10,
+    "name": "Connor McGovern",
+    "team": "BUF",
+    "wins": 100,
+    "plays": 130,
+    "win_rate": 0.77,
+    "double_team_rate": 0.43
+   }
+  ]
+ },
+ "team_players": [
+  {
+   "table": "Edge pass rush win rate rankings",
+   "rank": 12,
+   "name": "Boye Mafe",
+   "team": "CIN",
+   "wins": 23,
+   "plays": 91,
+   "win_rate": 0.25,
+   "double_team_rate": 0.37
+  },
+  {
+   "table": "DT pass rush win rate rankings",
+   "rank": 17,
+   "name": "Jonathan Allen",
+   "team": "CIN",
+   "wins": 13,
+   "plays": 79,
+   "win_rate": 0.16,
+   "double_team_rate": 0.78
+  },
+  {
+   "table": "OT pass block win rate rankings",
+   "rank": 19,
+   "name": "Amarius Mims",
+   "team": "CIN",
+   "wins": 96,
+   "plays": 107,
+   "win_rate": 0.9,
+   "double_team_rate": 0.53
+  },
+  {
+   "table": "OT run block win rate rankings",
+   "rank": 4,
+   "name": "Orlando Brown Jr.",
+   "team": "CIN",
+   "wins": 89,
+   "plays": 107,
+   "win_rate": 0.83,
+   "double_team_rate": 0.31
+  },
+  {
+   "table": "IOL run block win rate rankings",
+   "rank": 1,
+   "name": "Dalton Risner",
+   "team": "CIN",
+   "wins": 92,
+   "plays": 107,
+   "win_rate": 0.86,
+   "double_team_rate": 0.53
+  },
+  {
+   "table": "IOL run block win rate rankings",
+   "rank": 5,
+   "name": "Dylan Fairchild",
+   "team": "CIN",
+   "wins": 83,
+   "plays": 107,
+   "win_rate": 0.78,
+   "double_team_rate": 0.48
+  }
+ ]
 }

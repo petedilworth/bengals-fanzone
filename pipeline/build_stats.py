@@ -15,7 +15,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from nfl import metrics, sources  # noqa: E402
+from nfl import espn, metrics, sources  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -128,7 +128,11 @@ def main():
         for k in ("protection", "run_sets_up_pass", "offence_by_gap"):
             line["last_season"][k].pop("weekly", None)
 
-    # 4. Write.
+    # 4. ESPN win rates (article page, no feed). Keeps the last good file if the page changes shape.
+    if not args.no_pull:
+        print("[espn]", espn.refresh(DATA / "stats" / "espn-winrates.json", team))
+
+    # 5. Write.
     (DATA / "stats").mkdir(exist_ok=True)
     (DATA / "stats" / "line.json").write_text(json.dumps(line, indent=1) + "\n")
     total = sources.write_manifest(manifest, {"generated": now, "status": status}, DATA / "stats" / "sources.json")

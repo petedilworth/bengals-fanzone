@@ -54,7 +54,9 @@ function renderProtection(p, last, espn) {
   if (pr) whom.push(`Pressure on ${pct(pr.value)} of dropbacks through Week ${pr.through_week}, ${rank(pr.rank)}.`);
   if (tt) whom.push(`He holds the ball ${num(tt.value)} s on average, ${rank(tt.rank_fastest)} fastest, against ${num(tt.league)} s league-wide.`);
   if (qf) whom.push(`FTN charted ${qf.value} of ${qf.n} sacks as the QB's fault.`);
-  if (espn) whom.push(`ESPN's pass block win rate: ${pct(espn.pass_block_win_rate.value)}, ${rank(espn.pass_block_win_rate.rank)} <a class="src" href="${esc(espn.url)}">ESPN, ${esc(espn.as_of)}</a>.`);
+  if (espn?.pass_block_win_rate) whom.push(`ESPN's pass block win rate: ${pct(espn.pass_block_win_rate.value)}, ${rank(espn.pass_block_win_rate.rank)} <a class="src" href="${esc(espn.url)}">ESPN, ${esc(espn.espn_updated_line || espn.as_of)}</a>.`);
+  const linemen = (espn?.team_players || []).filter(p => /block/.test(p.table));
+  if (linemen.length) whom.push('By player: ' + linemen.map(p => `${esc(p.name)} ${pct(p.win_rate)} ${p.table.includes('pass') ? 'pass' : 'run'} block (${rank(p.rank)} among ${p.table.startsWith('OT') ? 'tackles' : 'interior linemen'}, ${p.plays} plays)`).join('; ') + '.');
   const answer = whom.join(' ');
 
   if (p.weekly?.length) parts.push(pressureChart(p.weekly, pr?.league ?? null, sr?.league ?? null));
@@ -189,7 +191,7 @@ function renderRunPass(r, last) {
 function renderAttack(off, oppDef, ownDef, nextOpp, last, espn) {
   const o = off.overall;
   const bits = [`Cincinnati's designed runs succeed ${pct(o.success)} of the time (${o.n} carries, ${rank(o.rank)}), ${num(o.ypc, 1)} yards a carry against a league ${pct(o.league_success)} and ${num(o.league_ypc, 1)}.`];
-  if (espn) bits.push(`ESPN's run block win rate: ${pct(espn.run_block_win_rate.value)}, ${rank(espn.run_block_win_rate.rank)} <a class="src" href="${esc(espn.url)}">ESPN, ${esc(espn.as_of)}</a>.`);
+  if (espn?.run_block_win_rate) bits.push(`ESPN's run block win rate: ${pct(espn.run_block_win_rate.value)}, ${rank(espn.run_block_win_rate.rank)} <a class="src" href="${esc(espn.url)}">ESPN, ${esc(espn.espn_updated_line || espn.as_of)}</a>.`);
   let best = null;
   if (oppDef && nextOpp.abbr) {
     const cands = oppDef.gaps.filter(g => g.n >= MIN_N && g.success != null && g.league_success != null).map(g => ({ ...g, over: g.success - g.league_success }));

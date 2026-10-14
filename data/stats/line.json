@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T02:04:36+00:00",
+ "generated": "2026-10-14T16:47:34+00:00",
  "season": 2026,
  "team": "CIN",
  "status": {
@@ -14,9 +14,9 @@
    "pending": false
   },
   "pfr_pass": {
-   "through_week": 4,
+   "through_week": 5,
    "expected_week": 5,
-   "pending": true
+   "pending": false
   },
   "ngs_passing": {
    "through_week": 5,
@@ -65,12 +65,12 @@
    }
   ],
   "pressure_rate": {
-   "value": 0.24,
-   "n": 171,
-   "pressures": 41,
-   "rank": 21,
-   "league": 0.231,
-   "through_week": 4
+   "value": 0.221,
+   "n": 204,
+   "pressures": 45,
+   "rank": 16,
+   "league": 0.232,
+   "through_week": 5
   },
   "time_to_throw": {
    "value": 2.57,
@@ -125,6 +125,8 @@
     "dropbacks": 33,
     "sacks": 0,
     "epa": 0.286,
+    "pressures": 4,
+    "blitzed": 7,
     "time_to_throw": 2.56
    }
   ]
@@ -134,14 +136,14 @@
    "n": 34,
    "epa": -0.046,
    "success": 0.471,
-   "rank": 25,
-   "league": 0.096
+   "rank": 26,
+   "league": 0.104
   },
   "no_play_action": {
    "n": 170,
    "epa": 0.186,
    "success": 0.506,
-   "league": 0.055
+   "league": 0.052
   },
   "after_successful_run": {
    "n": 15,

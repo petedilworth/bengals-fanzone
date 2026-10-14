@@ -19,13 +19,14 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 
 1. ~~Make the repo public or go Pro~~ Done Oct 14 (public).
 2. ~~Turn on Pages~~ Done Oct 14.
-3. **Optional, not blocking:** allow domains in this cloud environment so Claude can test pipeline changes here instead of through 20-minute Actions cycles. Hosts: `feeds.simplecast.com`, `rss.pdrl.fm`, `itunes.apple.com`, `huggingface.co`, `cdn-lfs.huggingface.co`, `www.espn.com`, `nflreadr.nflverse.com`. Steps are at https://code.claude.com/docs/en/cloud-environments#network-access.
+3. ~~Allow domains in this cloud environment~~ Done Oct 14. The transcript feed step, ESPN and nflverse docs now work from here. One host still missing for Whisper model downloads: add **`*.hf.co`** (Hugging Face moved model files to `us.aws.cdn.hf.co` and `cas-server.xethub.hf.co`; the wildcard covers both). Not blocking: Actions downloads the model fine.
 
 ## What's next
 
 3. ~~Access tests~~ Done. Transcripts solved by the Whisper route (step 5). Allowing the domains in this environment is still worth doing: it lets Claude test pipeline changes here in minutes instead of 20-minute Actions cycles.
 4. ~~Line stats pipeline and stats page~~ Built Oct 14. `pipeline/build_stats.py` pulls 13 nflverse sources for 2026 and 2025 (play-by-play, FTN, PFR pass/rush/rec/def, Next Gen passing/rushing/receiving, snap counts, injuries, depth charts, rosters), computes the three line questions with ranks and a 2025 baseline, and writes `data/stats/line.json`. `site/stats.html` shows them. Runs in about 25 s. Downloads: 35 MB cold, 0 MB when nothing changed. Workflow `stats.yml` runs Mon, Wed, Thu, Sat.
-   - Freshness on Oct 14: play-by-play, FTN and Next Gen through Week 5; PFR through Week 4. Why: nflverse last rebuilt its PFR file Sun Oct 11, 7:02 am ET, before the 1 pm games; only the Thursday-night teams (DAL, TB) have a Week 5 row. The Wed/Thu/Sat runs re-check and pick it up when nflverse rebuilds. The page says "waiting" until then.
+   - Freshness: PFR lagged (file last built Sun Oct 11, 7:02 am ET, before the 1 pm games) and showed "waiting" until nflverse rebuilt it on Oct 14, when a re-pull picked up Week 5. The retry design worked as intended. Expect the same lag every week: PFR lands Tuesday or Wednesday.
+   - ESPN win rates are now pulled by the pipeline (`pipeline/nfl/espn.py`): all 32 teams and the 8 player tables (121 players), with ESPN's own "Through Week N" line. Six Bengals appear in the player tables; the "blame" answer lists the linemen.
    - Owner's note (Oct 14): the data must be reusable for other questions and other positions. Done by design: every source is pulled whole and cached; a new question is a new function in `pipeline/nfl/metrics.py` and a new JSON file. Nothing Bengals-specific lives in the pulls.
    - Not yet: the "one line-stat finding" slot on the home page is still hand-written in the week JSON. Could be fed from `line.json` later.
 5. Media round-up routine (midweek, private, with candidate storylines). **Full transcripts are required (owner, Oct 13), and the Whisper route now delivers them** (see the run table below). The pipeline lives in `bengals-research` and refuses to commit to a public repo.
@@ -84,7 +85,7 @@ How to check on your phone (once Pages is on, or in `_site/` locally):
 | Oct 13 | Team settings in `data/team.json` | Other teams can be added later at low cost |
 | Oct 13 | Week 5 port: kept 5 of 6 watch items, removed grades, kept "What happened" notes, shortened Alternative view to 1 paragraph | Matches the new rules. Item 6 (fourth-quarter margin) never came up in the game |
 | Oct 13 | "Who is to blame" uses FTN's "QB fault sack" label plus weekly time to throw, not a 2.5-second rule | Per-play time to throw isn't published for 2026 |
-| Oct 13 | ESPN win rates: read weekly from ESPN's leaderboard page by a Routine, not by the Actions pipeline | The page exists and updates weekly, but has no feed. Round 2 found it |
+| Oct 14 | ESPN win rates: read by the pipeline from ESPN's article page (`pipeline/nfl/espn.py`), every team and every listed player kept; last good file kept if the page changes shape | Page is reachable with a plain request. Replaces the hand-typed file and the Routine idea. Column order verified on the page itself: PRWR, RSWR, PBWR, RBWR |
 | Oct 13 | Pressure stats come from Pro Football Reference weekly data, not per-play | Per-play data is published after the season |
 | Oct 13 | Full transcripts required. Primary route: feed MP3 → Whisper in Actions. yt-dlp captions kept as best-effort only | Show notes are not enough (owner). YouTube blocks GitHub's servers; the podcast feed does not |
 | Oct 13 | Feeds are resolved from the show's Apple Podcasts ID at run time, with a fixed address as fallback | A guessed feed address cost a run |
