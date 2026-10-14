@@ -20,7 +20,12 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 1. ~~Make the repo public or go Pro~~ Done Oct 14 (public).
 2. ~~Turn on Pages~~ Done Oct 14.
 3. ~~Allow domains in this cloud environment~~ Done Oct 14, then superseded: owner chose to set Network access to **Full** for the round-up Routine (it must read beat-writer sites). Until that switch is made, the round-up session cannot read news sites or podcast feeds.
-4. **Switch this environment's Network access to Full** (same dialog as before; pick "Full" instead of "Custom"). Needed before the first round-up run on Wed Oct 14 at 1:17 pm ET.
+4. **Create a read-only token so the public site can copy the media topics file.** The round-up session cannot push to the public repo (unattended sessions are refused that permission), so it writes the file to `bengals-research/research/media/` and the public repo's stats workflow copies it. One-time setup, about 3 minutes:
+   1. GitHub → your profile photo → **Settings** → **Developer settings** → **Personal access tokens** → **Fine-grained tokens** → **Generate new token**.
+   2. Name: `bengals-research read`. Expiration: 1 year. **Repository access:** Only select repositories → `bengals-research`. **Permissions → Repository permissions → Contents: Read-only.** Generate, then copy the token.
+   3. Go to the `bengals-fanzone` repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**. Name: `RESEARCH_TOKEN`. Value: the token. Save.
+   Until it exists, the workflow prints "RESEARCH_TOKEN not set; skipping media sync" and the media page stays empty.
+5. **Switch this environment's Network access to Full** (same dialog as before; pick "Full" instead of "Custom"). Needed before the first round-up run on Wed Oct 14 at 1:17 pm ET.
 
 ## What's next
 
