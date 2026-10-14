@@ -3,6 +3,7 @@
 :root {
   --paper: #ECEEF0; --surface: #FFFFFF; --ink: #111418; --muted: #565D66; --rule: #D1D5DA;
   --accent: #E8440F; --accent-ink: #B03406;
+  --s1: #E8440F; --s2: #2F6FD6;
   --board-bg: #111418; --board-ink: #F4F5F6; --board-muted: #A3AAB3;
   --out: #A61B1B; --out-bg: #FBE3E0; --ok: #17663A; --ok-bg: #DAF0E1;
   --font-display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
@@ -14,6 +15,7 @@
   :root:not([data-theme="light"]) {
     --paper: #0D0F12; --surface: #171A1E; --ink: #ECEEF0; --muted: #A1A8B1; --rule: #2B3036;
     --accent: #FF6B2E; --accent-ink: #FF8A57; --board-bg: #1B1F24;
+    --s1: #F05A1C; --s2: #5B8FE6;
     --out: #FFA39B; --out-bg: #3B1B19; --ok: #7DDBA0; --ok-bg: #12301F;
     color-scheme: dark;
   }
@@ -21,6 +23,7 @@
 :root[data-theme="dark"] {
   --paper: #0D0F12; --surface: #171A1E; --ink: #ECEEF0; --muted: #A1A8B1; --rule: #2B3036;
   --accent: #FF6B2E; --accent-ink: #FF8A57; --board-bg: #1B1F24;
+  --s1: #F05A1C; --s2: #5B8FE6;
   --out: #FFA39B; --out-bg: #3B1B19; --ok: #7DDBA0; --ok-bg: #12301F;
   color-scheme: dark;
 }
@@ -156,3 +159,22 @@ main h3 { margin: 18px 0 8px; }
 .bar-value { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.2; white-space: normal; }
 /* A nested .wrap is a flex child: auto margins would stop it stretching, so make it fill its parent. */
 .wrap .wrap { margin-inline: 0; width: 100%; max-width: none; }
+
+/* Line chart: pressure vs sacks by week. Text wears text tokens; the mark carries identity. */
+.chart { position: relative; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 10px 10px 6px; margin-bottom: 16px; }
+.chart svg { display: block; width: 100%; height: auto; font-family: var(--font-data); font-size: 10px; }
+.chart text { fill: var(--muted); }
+.chart .grid { stroke: var(--rule); stroke-width: 1; }
+.chart .ref { stroke-width: 1.5; stroke-dasharray: 4 4; opacity: 0.55; }
+.chart .line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart .dot { stroke: var(--surface); stroke-width: 2; }
+.chart .s1 { stroke: var(--s1); } .chart .s1.dot { fill: var(--s1); }
+.chart .s2 { stroke: var(--s2); } .chart .s2.dot { fill: var(--s2); }
+.chart .hit { fill: transparent; }
+.chart .cross { stroke: var(--ink); stroke-width: 1; opacity: 0; }
+.chart .end { font-size: 10px; fill: var(--ink); font-weight: 500; }
+.legend-row { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.8rem; color: var(--muted); margin-bottom: 4px; }
+.legend-row .sw { display: inline-block; width: 14px; height: 3px; vertical-align: middle; margin-right: 5px; border-radius: 2px; }
+.legend-row .sw.s1 { background: var(--s1); } .legend-row .sw.s2 { background: var(--s2); }
+.chart-tip { position: absolute; pointer-events: none; background: var(--board-bg); color: var(--board-ink); font-family: var(--font-data); font-size: 0.72rem; line-height: 1.4; padding: 6px 8px; border-radius: 4px; white-space: nowrap; display: none; z-index: 2; }
+.chart-tip b { color: var(--board-ink); }

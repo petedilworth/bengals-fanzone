@@ -57,6 +57,8 @@ function renderProtection(p, last, espn) {
   if (espn) whom.push(`ESPN's pass block win rate: ${pct(espn.pass_block_win_rate.value)}, ${rank(espn.pass_block_win_rate.rank)} <a class="src" href="${esc(espn.url)}">ESPN, ${esc(espn.as_of)}</a>.`);
   const answer = whom.join(' ');
 
+  if (p.weekly?.length) parts.push(pressureChart(p.weekly, pr?.league ?? null, sr?.league ?? null));
+
   const tiles = [];
   if (sr) tiles.push(tile('Sack rate', pct(sr.value), sr.rank, `league ${pct(sr.league)}`, sr.n, last?.sack_rate && `2025: ${pct(last.sack_rate.value)}, ${rank(last.sack_rate.rank)}`));
   if (pr) tiles.push(tile('Pressure rate', pct(pr.value), pr.rank, `league ${pct(pr.league)} · through Wk ${pr.through_week}`, pr.n, last?.pressure_rate && `2025: ${pct(last.pressure_rate.value)}, ${rank(last.pressure_rate.rank)}`));
@@ -78,6 +80,82 @@ function renderProtection(p, last, espn) {
   }
   parts.push(`<p class="src-line">Sources: nflverse play-by-play, FTN charting, Pro Football Reference and Next Gen Stats via nflverse. "Pressures" and "Blitzed" show – where PFR has not posted that week yet.</p>`);
   return section('blame', 'Who is to blame for sacks?', answer, parts.join(''));
+}
+
+// Pressure rate and sack rate by week, one axis (both are shares of dropbacks).
+// Two series, fixed colours (--s1 pressure, --s2 sacks), dashed league references,
+// a gap where PFR has not posted the week, legend + end labels, hover tooltip per week.
+function pressureChart(weekly, leaguePressure, leagueSack) {
+  const rows = weekly.map(w => ({
+    ...w, sack: w.dropbacks ? w.sacks / w.dropbacks : null,
+    pressure: w.pressures != null && w.dropbacks ? w.pressures / w.dropbacks : null,
+  }));
+  if (!rows.length) return '';
+  const W = 360, H = 190, L = 34, R = 76, T = 12, B = 30;
+  const vals = rows.flatMap(r => [r.sack, r.pressure]).concat([leaguePressure, leagueSack]).filter(v => v != null);
+  const ymax = Math.max(0.1, Math.ceil((Math.max(...vals) * 1.15) / 0.05) * 0.05);
+  const x = i => L + (rows.length === 1 ? 0 : i * (W - L - R) / (rows.length - 1));
+  const y = v => T + (H - T - B) * (1 - v / ymax);
+  const path = key => {
+    // Break the line where a value is missing, so a gap shows instead of a false slope.
+    let d = '', pen = false;
+    rows.forEach((r, i) => { if (r[key] == null) { pen = false; return; } d += `${pen ? 'L' : 'M'}${x(i).toFixed(1)},${y(r[key]).toFixed(1)}`; pen = true; });
+    return d;
+  };
+  const ticks = []; for (let v = 0; v <= ymax + 1e-9; v += 0.1) ticks.push(v);
+  const grid = ticks.map(v => `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}"/><text x="${L - 6}" y="${(y(v) + 3).toFixed(1)}" text-anchor="end">${Math.round(v * 100)}%</text>`).join('');
+  const xlab = rows.map((r, i) => `<text x="${x(i).toFixed(1)}" y="${H - 16}" text-anchor="middle">Wk ${r.week}</text><text x="${x(i).toFixed(1)}" y="${H - 5}" text-anchor="middle">${esc(r.opp)}</text>`).join('');
+  const dots = key => rows.map((r, i) => r[key] == null ? '' : `<circle class="dot ${key === 'pressure' ? 's1' : 's2'}" cx="${x(i).toFixed(1)}" cy="${y(r[key]).toFixed(1)}" r="4"/>`).join('');
+  const lastOf = key => { for (let i = rows.length - 1; i >= 0; i--) if (rows[i][key] != null) return i; return -1; };
+  // Right-margin labels (line ends and league references) share one column; push apart any closer than 11px.
+  const labels = [];
+  const ip = lastOf('pressure'), is = lastOf('sack');
+  if (ip >= 0) labels.push({ y: y(rows[ip].pressure), text: `Pressure ${Math.round(rows[ip].pressure * 100)}%`, cls: 'end' });
+  if (is >= 0) labels.push({ y: y(rows[is].sack), text: `Sacks ${Math.round(rows[is].sack * 100)}%`, cls: 'end' });
+  if (leaguePressure != null) labels.push({ y: y(leaguePressure), text: `league ${Math.round(leaguePressure * 100)}%`, cls: '' });
+  if (leagueSack != null) labels.push({ y: y(leagueSack), text: `league ${Math.round(leagueSack * 100)}%`, cls: '' });
+  labels.sort((a, b) => a.y - b.y);
+  for (let k = 1; k < labels.length; k++) if (labels[k].y - labels[k - 1].y < 11) labels[k].y = labels[k - 1].y + 11;
+  const refLines = [[leaguePressure, 's1'], [leagueSack, 's2']].filter(([v]) => v != null)
+    .map(([v, cls]) => `<line class="ref ${cls}" x1="${L}" x2="${W - R}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}"/>`).join('');
+  const rightLabels = labels.map(l => `<text class="${l.cls}" x="${W - R + 6}" y="${(l.y + 3).toFixed(1)}">${l.text}</text>`).join('');
+  const hits = rows.map((r, i) => { const w = (W - L - R) / Math.max(1, rows.length - 1); const x0 = Math.max(L, x(i) - w / 2); const x1 = Math.min(W - R, x(i) + w / 2); return `<rect class="hit" data-i="${i}" x="${x0.toFixed(1)}" y="${T}" width="${(x1 - x0).toFixed(1)}" height="${H - T - B}"/>`; }).join('');
+  const missing = rows.filter(r => r.pressure == null).map(r => `Week ${r.week}`);
+  const tipData = rows.map(r => ({ week: r.week, opp: r.opp, dropbacks: r.dropbacks, sacks: r.sacks, pressures: r.pressures ?? null, sack: r.sack, pressure: r.pressure, px: 0 }));
+  return `<div class="legend-row"><span><span class="sw s1"></span>Pressure rate</span><span><span class="sw s2"></span>Sack rate</span><span>dashed = league average</span></div>
+  <div class="chart" data-tips='${esc(JSON.stringify(tipData))}'>
+    <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Pressure rate and sack rate by week">
+      ${grid}${refLines}
+      <path class="line s1" d="${path('pressure')}"/><path class="line s2" d="${path('sack')}"/>
+      ${dots('pressure')}${dots('sack')}${rightLabels}${xlab}
+      <line class="cross" y1="${T}" y2="${H - B}" x1="0" x2="0"/>
+      ${hits}
+    </svg>
+    <div class="chart-tip" role="status"></div>
+  </div>
+  ${missing.length ? `<p class="muted">No pressure count yet for ${missing.join(', ')}: Pro Football Reference has not posted it. The line leaves a gap rather than guess.</p>` : ''}`;
+}
+
+function wireCharts() {
+  document.querySelectorAll('.chart').forEach(chart => {
+    const tips = JSON.parse(chart.dataset.tips || '[]');
+    const tip = chart.querySelector('.chart-tip'), cross = chart.querySelector('.cross'), svg = chart.querySelector('svg');
+    const show = (hit) => {
+      const t = tips[+hit.dataset.i]; if (!t) return;
+      const cx = +hit.getAttribute('x') + +hit.getAttribute('width') / 2;
+      cross.setAttribute('x1', cx); cross.setAttribute('x2', cx); cross.style.opacity = 0.5;
+      tip.innerHTML = `<b>Week ${t.week} ${esc(t.opp)}</b><br>${t.dropbacks} dropbacks<br>Pressure: ${t.pressures == null ? 'not posted' : `${t.pressures} (${pct(t.pressure)})`}<br>Sacks: ${t.sacks} (${pct(t.sack)})`;
+      tip.style.display = 'block';
+      const box = svg.getBoundingClientRect(), scale = box.width / svg.viewBox.baseVal.width;
+      const left = cx * scale, flip = left > box.width * 0.6;
+      tip.style.left = `${flip ? left - tip.offsetWidth - 10 : left + 10}px`; tip.style.top = '8px';
+    };
+    chart.querySelectorAll('.hit').forEach(h => {
+      h.addEventListener('pointerenter', () => show(h));
+      h.addEventListener('pointerdown', () => show(h));
+    });
+    chart.addEventListener('pointerleave', () => { tip.style.display = 'none'; cross.style.opacity = 0; });
+  });
 }
 
 function tile(label, value, rk, sub, n, last) {
@@ -145,6 +223,7 @@ async function main() {
       renderRunPass(line.run_sets_up_pass, last.run_sets_up_pass),
       renderAttack(line.offence_by_gap, line.opponent_defence_by_gap, line.own_defence_by_gap, line.next_opponent, last, espn),
     ].join('');
+    wireCharts();
   } catch (err) {
     el.innerHTML = `<p class="status">Couldn't load the stats (${esc(err.message)}). The pipeline may not have run yet.</p>`;
   }
