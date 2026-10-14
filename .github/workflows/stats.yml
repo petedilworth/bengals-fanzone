@@ -32,8 +32,15 @@ jobs:
           cache: pip
           cache-dependency-path: pipeline/requirements.txt
       - run: pip install -r pipeline/requirements.txt
+      - name: Keep pulled files between runs
+        uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: nflverse-raw-${{ github.run_id }}
+          restore-keys: nflverse-raw-
       - name: Pull and build
-        run: python3 pipeline/build_stats.py --force
+        # No --force: unchanged files answer 304 and cost nothing; finished seasons are never re-pulled.
+        run: python3 pipeline/build_stats.py
       - name: Commit changed data
         run: |
           git config user.name "stats bot"

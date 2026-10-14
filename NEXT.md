@@ -26,7 +26,7 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 ## What's next
 
 3. ~~Access tests~~ Done. Transcripts solved by the Whisper route (step 5). Allowing the domains in this environment is still worth doing: it lets Claude test pipeline changes here in minutes instead of 20-minute Actions cycles.
-4. ~~Line stats pipeline and stats page~~ Built Oct 14. `pipeline/build_stats.py` pulls 13 nflverse sources for 2026 and 2025 (play-by-play, FTN, PFR pass/rush/rec/def, Next Gen passing/rushing/receiving, snap counts, injuries, depth charts, rosters), computes the three line questions with ranks and a 2025 baseline, and writes `data/stats/line.json`. `site/stats.html` shows them. Runs in 26 s. Workflow `stats.yml` runs Mon, Wed, Thu, Sat; its first Actions run starts on this push.
+4. ~~Line stats pipeline and stats page~~ Built Oct 14. `pipeline/build_stats.py` pulls 13 nflverse sources for 2026 and 2025 (play-by-play, FTN, PFR pass/rush/rec/def, Next Gen passing/rushing/receiving, snap counts, injuries, depth charts, rosters), computes the three line questions with ranks and a 2025 baseline, and writes `data/stats/line.json`. `site/stats.html` shows them. Runs in about 25 s. Downloads: 35 MB cold, 0 MB when nothing changed. Workflow `stats.yml` runs Mon, Wed, Thu, Sat.
    - Freshness on Oct 14: play-by-play, FTN and Next Gen through Week 5; PFR through Week 4 (pending, as expected). The page shows this per source.
    - Owner's note (Oct 14): the data must be reusable for other questions and other positions. Done by design: every source is pulled whole and cached; a new question is a new function in `pipeline/nfl/metrics.py` and a new JSON file. Nothing Bengals-specific lives in the pulls.
    - Not yet: the "one line-stat finding" slot on the home page is still hand-written in the week JSON. Could be fed from `line.json` later.
@@ -93,6 +93,7 @@ How to check on your phone (once Pages is on, or in `_site/` locally):
 | Oct 13 | Whisper "base" model, primed with roster names, plus a mis-hearing fix list | 26 min per 7 episodes and free. "small" is 3x slower for a gain priming may already give |
 | Oct 14 | Stats page: three questions stacked, plain HTML bars, ranks + opponent + 2025 + weekly all shown by default | Owner's picks Oct 14. Charts question unanswered, so the recommended plain-bar option was used |
 | Oct 14 | Pipeline pulls every source whole and caches raw files; metrics are per-question modules | Owner wants the data reusable for other questions and all positions |
+| Oct 14 | Pulls use parquet, keep ETags and send If-None-Match, never re-pull a finished season, and the Actions cache keeps `data/raw` between runs | Owner: 170 MB per run was too much. Now 35 MB cold, 0 MB when nothing changed, about 6 MB on a normal game week |
 | Oct 14 | Pipeline also fills results and record into the season file from play-by-play | One less thing to type each Monday; the strip updates itself |
 | Oct 13 | Stats pipeline runs Mon, Wed, Thu, Sat and retries any lagging source | PFR's file was last rebuilt before Week 5 kicked off; it must be picked up even if that takes extra runs (owner) |
 | Oct 13 | Kept the Week 5 win-chance bar, with its source shown under it | It came from the NFL data feed. Future weeks drop it unless a real source exists |

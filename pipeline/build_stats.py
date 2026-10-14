@@ -82,7 +82,7 @@ def main():
     if not args.no_pull:
         for name in sources.SOURCES:
             for yr in ([season, season - 1] if sources.SOURCES[name][2] == "season" else [season]):
-                manifest.append(sources.pull(name, yr, force=args.force))
+                manifest.append(sources.pull(name, yr, force=args.force, static=(yr < season)))
 
     pbp = sources.load("pbp", season)
     ftn = sources.load("ftn", season)
@@ -131,7 +131,8 @@ def main():
     # 4. Write.
     (DATA / "stats").mkdir(exist_ok=True)
     (DATA / "stats" / "line.json").write_text(json.dumps(line, indent=1) + "\n")
-    sources.write_manifest(manifest, {"generated": now, "status": status}, DATA / "stats" / "sources.json")
+    total = sources.write_manifest(manifest, {"generated": now, "status": status}, DATA / "stats" / "sources.json")
+    print(f"downloaded {total/1048576:.1f} MB this run")
     if changed:
         season_path.write_text(json.dumps(season_doc, indent=2, ensure_ascii=False) + "\n")
         print(f"season file: {changed} game(s) updated, record {season_doc['record']}")
