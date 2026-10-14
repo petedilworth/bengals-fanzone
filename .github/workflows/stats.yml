@@ -46,6 +46,7 @@ jobs:
           git config user.name "stats bot"
           git config user.email "noreply@users.noreply.github.com"
           git add data/stats data/season-*.json
-          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          # Timestamps and byte counts change every run; only commit when a number, a week or a result changed.
+          if git diff --cached --quiet -I '"(generated|checked|downloaded|downloaded_bytes|cached|note)": '; then echo "Nothing but run bookkeeping changed"; exit 0; fi
           git commit -m "Stats: $(date -u +%Y-%m-%d) $(python3 -c "import json;s=json.load(open('data/stats/sources.json'))['status'];print(' '.join(f\"{k}=w{v['through_week']}\" for k,v in s.items()))")"
           git push
