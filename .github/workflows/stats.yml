@@ -44,7 +44,7 @@ jobs:
         # No --force: unchanged files answer 304 and cost nothing; finished seasons are never re-pulled.
         run: python3 pipeline/build_stats.py
       - name: Copy media topics from the private research repo
-        # Needs the RESEARCH_TOKEN secret (fine-grained token, Contents: read on bengals-research).
+        # Needs the RESEARCH_TOKEN secret (fine-grained token, Contents: read on bengals-research; created Oct 14, 2026, expires Feb 14, 2027).
         # Without it this step says so and the rest of the run carries on.
         env:
           RESEARCH_TOKEN: ${{ secrets.RESEARCH_TOKEN }}
