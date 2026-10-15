@@ -1,6 +1,6 @@
 # Next step
 
-_Last updated: Wed, Oct 14, 2026 (first round-up ran; moving the Routine to a Full-network environment)_
+_Last updated: Wed, Oct 14, 2026, late evening (round-up moved to the Full-network environment; media page live)_
 
 ## Where we are
 
@@ -20,12 +20,12 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
 1. ~~Make the repo public or go Pro~~ Done Oct 14 (public).
 2. ~~Turn on Pages~~ Done Oct 14.
 3. ~~Allow domains in this cloud environment~~ Done Oct 14, then superseded: owner chose to set Network access to **Full** for the round-up Routine (it must read beat-writer sites). Until that switch is made, the round-up session cannot read news sites or podcast feeds.
-4. **Create a read-only token so the public site can copy the media topics file.** The round-up session cannot push to the public repo (unattended sessions are refused that permission), so it writes the file to `bengals-research/research/media/` and the public repo's stats workflow copies it. One-time setup, about 3 minutes:
+4. ~~Create a read-only token so the public site can copy the media topics file~~ Done Oct 14 evening. `RESEARCH_TOKEN` is a fine-grained token, Contents read-only on `bengals-research`, **expires Sunday, Feb 14, 2027**. Make a new one before then or the media page stops updating. Original steps kept for that day: The round-up session cannot push to the public repo (unattended sessions are refused that permission), so it writes the file to `bengals-research/research/media/` and the public repo's stats workflow copies it. One-time setup, about 3 minutes:
    1. GitHub → your profile photo → **Settings** → **Developer settings** → **Personal access tokens** → **Fine-grained tokens** → **Generate new token**.
    2. Name: `bengals-research read`. Expiration: 1 year. **Repository access:** Only select repositories → `bengals-research`. **Permissions → Repository permissions → Contents: Read-only.** Generate, then copy the token.
    3. Go to the `bengals-fanzone` repo → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**. Name: `RESEARCH_TOKEN`. Value: the token. Save.
    Until it exists, the workflow prints "RESEARCH_TOKEN not set; skipping media sync" and the media page stays empty.
-5. **Create a new cloud environment with Network access Full** (owner's call, Oct 14: a separate environment named "Bengals research", not a change to this one). Steps: Safari → claude.ai/code → cloud icon → Cloud → Add cloud environment → name "Bengals research", Network access **Full**, leave variables and setup script empty → Create. Then tell Claude "done". Claude then moves the round-up session and its Wednesday Routine into it and retires the old ones.
+5. ~~Create a new cloud environment with Network access Full~~ Done Oct 14 evening: environment **Research_full** (`env_01214PPgVVWFrFVB1tfpeSpE`). The round-up session (`session_01MuNbHSfYKMo8oguogyjBio`, titled "Bengals round-up (weekly)") and its Routine (`trig_01GR85DRBoaxqSaEcaS6gT5a`, Wednesdays 1:17 pm ET) live there. The old session is archived and the old Routine is disabled and renamed "OLD …". Build sessions like this one stay in "Cloud test 1" on the Custom domain list.
 
 ## What's next
 
@@ -42,6 +42,9 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
    - **Media page** (owner's idea, Oct 14): `site/media.html` shows a source × topic grid per week, plus consensus and unique lists. Fed by `data/media/<season>-w<NN>.json`, which the round-up session writes (topic and source names only). Owner's picks: public page, grid view, built now. Empty until the first round-up lands.
    - Note: a Routine's prompt can only be edited from the session it posts into. The Routine says "follow ROUNDUP.md exactly", so new steps go in the playbook, not the prompt.
    - **First run, Wed Oct 14, 1:17 pm ET: worked, but transcripts only.** It wrote `research/roundups/2026-w06.md` (about 1,800 words, 7 Locked On episodes, stat ideas table, 8 ranked candidate storylines) and the public topics file `research/media/2026-w06.json` (5 sources, 15 topics), committed as `8ea1330`. All 10 written sources answered 403: the environment's network was still Custom. Fix in progress: the new Full-network environment (owner item 5). Until `RESEARCH_TOKEN` exists (owner item 4) the topics file is not copied to the public site, so the media page stays empty.
+   - **Dry check in Research_full (Oct 14 evening):** 10 of 11 source home pages answered 200. The Enquirer answers 402 (its paywall) at the index. On the real run, two more failed at article level: Cincy Jungle gave the fetch tool a 403 (a plain GET had returned 200) and the fetch tool refused The Athletic's domain. So three of six beat sites are dark: Enquirer, Cincy Jungle, The Athletic. Owner to decide whether to drop them or allow a plain GET fallback.
+   - **Week 7 trial round-up (Oct 14 evening, hand run):** the owner talked to the session directly in the app and made five playbook decisions: word target 2,000; quotes up to about 40 words in the private file (15 words still applies on the site); national keywords vary by week; storylines ranked by effect on the next result; a topic overlap grid added to the round-up format. It wrote `2026-w07.md` (about 2,550 words, 6 episodes, 3 beat sites, 14 national pieces) and `2026-w07.json` (8 sources, 15 topics), plus a review page at https://claude.ai/artifact/S2PoaRosy6KwgxPgVaSacK. The Oct 21 Routine run rewrites Week 7 in place. Usage so far for that session: about $25 notional in one evening, most of it the trial run with subagents reading every transcript. Expect a Wednesday run to cost in that range.
+   - **Media page is live** with Week 6 (copied by the stats workflow after the token was added). Week 7 copies on the next stats run, Thu Oct 15, 7:23 am ET.
    - Why a new environment and not a switch: the owner asked what Full network risks (Oct 14). Answer given: the round-up session reads public sites and has no secrets, and the private repo token is read-only, so the exposure is low. A separate environment keeps the build sessions on the tighter Custom list.
 6. Friday draft routine, then cutover: disable both old tasks the same day.
 
@@ -113,3 +116,6 @@ How to check on your phone (once Pages is on, or in `_site/` locally):
 | Oct 13 | Kept the Week 5 win-chance bar, with its source shown under it | It came from the NFL data feed. Future weeks drop it unless a real source exists |
 | Oct 14 | Round-up weeks are named for the NFL week being written in, bye weeks included (first file is Week 6, "Bye, next at BAL") | One file per week keeps the media grid honest about when a topic was raised |
 | Oct 14 | Round-up Routine runs in its own Full-network environment; build sessions stay on the Custom list | It must read beat-writer sites. Owner weighed the risk and chose a separate environment |
+| Oct 14 | Private round-up may quote up to about 40 words from a transcript, marked "(transcript)". The site keeps the 15-word limit | Owner's call, made in the round-up session. Research needs the context; the public site does not |
+| Oct 14 | Round-up target length 2,000 words; a topic overlap grid is part of the file | Owner's call in the round-up session. The grid is what the owner wanted to see each week |
+| Oct 14 | A site the fetch tool cannot read is left out, never worked around | Three beat sites are dark for now. Owner decides whether a plain GET fallback is acceptable |
