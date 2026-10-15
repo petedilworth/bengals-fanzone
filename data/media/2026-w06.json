@@ -2,146 +2,146 @@
  "week": 6,
  "topics": [
   {
+   "stat_verdict": "supports",
+   "topic": "Shotgun vs under centre",
    "sources": [
     "locked-on",
     "espn",
     "ringer"
-   ],
-   "topic": "Shotgun vs under centre",
-   "stat_verdict": "supports"
+   ]
   },
   {
+   "topic": "Chase Brown slump",
    "sources": [
     "locked-on",
     "espn",
     "nfl-com",
     "pff"
-   ],
-   "topic": "Chase Brown slump"
+   ]
   },
   {
+   "stat_verdict": "needs a new metric",
+   "topic": "Perine downhill role",
    "sources": [
     "locked-on",
     "espn",
     "nfl-com"
-   ],
-   "topic": "Perine downhill role",
-   "stat_verdict": "needs a new metric"
+   ]
   },
   {
-   "sources": [
-    "locked-on",
-    "espn"
-   ],
+   "stat_verdict": "supports",
    "topic": "Offensive line run blocking",
-   "stat_verdict": "supports"
-  },
-  {
    "sources": [
     "locked-on",
     "espn"
-   ],
-   "topic": "Hudson injury, Endries role"
+   ]
   },
   {
+   "topic": "Hudson injury, Endries role",
+   "sources": [
+    "locked-on",
+    "espn"
+   ]
+  },
+  {
+   "topic": "Burrow under pressure",
    "sources": [
     "nfl-com"
-   ],
-   "topic": "Burrow under pressure"
+   ]
   },
   {
+   "topic": "Dropback volume",
    "sources": [
     "ringer"
-   ],
-   "topic": "Dropback volume"
+   ]
   },
   {
+   "topic": "Red-zone fumbles",
    "sources": [
     "locked-on",
     "espn"
-   ],
-   "topic": "Red-zone fumbles"
+   ]
   },
   {
+   "topic": "Tight end heavy game plan",
    "sources": [
     "locked-on",
     "pff"
-   ],
-   "topic": "Tight end heavy game plan"
+   ]
   },
   {
-   "sources": [
-    "locked-on"
-   ],
+   "stat_verdict": "needs a new metric",
    "topic": "Second-and-long play calling",
-   "stat_verdict": "needs a new metric"
-  },
-  {
    "sources": [
     "locked-on"
-   ],
+   ]
+  },
+  {
+   "stat_verdict": "contradicts",
    "topic": "Pass protection vs quick release",
-   "stat_verdict": "contradicts"
-  },
-  {
    "sources": [
     "locked-on"
-   ],
+   ]
+  },
+  {
+   "stat_verdict": "supports",
    "topic": "Explosive runs allowed",
-   "stat_verdict": "supports"
-  },
-  {
    "sources": [
     "locked-on"
-   ],
+   ]
+  },
+  {
+   "stat_verdict": "needs a new metric",
    "topic": "Dexter Lawrence off-field drop",
-   "stat_verdict": "needs a new metric"
-  },
-  {
    "sources": [
     "locked-on"
-   ],
-   "topic": "Secondary communication"
+   ]
   },
   {
+   "topic": "Secondary communication",
    "sources": [
     "locked-on"
-   ],
-   "topic": "Containing mobile quarterbacks"
+   ]
+  },
+  {
+   "topic": "Containing mobile quarterbacks",
+   "sources": [
+    "locked-on"
+   ]
   }
  ],
- "season": 2026,
  "opponent": "Bye, next at BAL",
+ "season": 2026,
  "sources": [
   {
-   "name": "Locked On Bengals",
-   "type": "podcast",
    "id": "locked-on",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
+   "name": "Locked On Bengals",
+   "type": "podcast"
   },
   {
-   "name": "ESPN",
-   "type": "national",
    "id": "espn",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "name": "ESPN",
+   "type": "national"
   },
   {
-   "name": "NFL.com",
-   "type": "national",
    "id": "nfl-com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "name": "NFL.com",
+   "type": "national"
   },
   {
-   "name": "The Ringer",
-   "type": "national",
    "id": "ringer",
-   "url": "https://www.theringer.com/nfl"
+   "url": "https://www.theringer.com/nfl",
+   "name": "The Ringer",
+   "type": "national"
   },
   {
-   "name": "PFF",
-   "type": "national",
    "id": "pff",
-   "url": "https://www.pff.com/nfl"
+   "url": "https://www.pff.com/nfl",
+   "name": "PFF",
+   "type": "national"
   }
  ],
  "written": "2026-10-14"
