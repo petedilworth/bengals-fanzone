@@ -1,0 +1,148 @@
+{
+ "week": 6,
+ "topics": [
+  {
+   "sources": [
+    "locked-on",
+    "espn",
+    "ringer"
+   ],
+   "topic": "Shotgun vs under centre",
+   "stat_verdict": "supports"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "espn",
+    "nfl-com",
+    "pff"
+   ],
+   "topic": "Chase Brown slump"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "espn",
+    "nfl-com"
+   ],
+   "topic": "Perine downhill role",
+   "stat_verdict": "needs a new metric"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "espn"
+   ],
+   "topic": "Offensive line run blocking",
+   "stat_verdict": "supports"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "espn"
+   ],
+   "topic": "Hudson injury, Endries role"
+  },
+  {
+   "sources": [
+    "nfl-com"
+   ],
+   "topic": "Burrow under pressure"
+  },
+  {
+   "sources": [
+    "ringer"
+   ],
+   "topic": "Dropback volume"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "espn"
+   ],
+   "topic": "Red-zone fumbles"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "pff"
+   ],
+   "topic": "Tight end heavy game plan"
+  },
+  {
+   "sources": [
+    "locked-on"
+   ],
+   "topic": "Second-and-long play calling",
+   "stat_verdict": "needs a new metric"
+  },
+  {
+   "sources": [
+    "locked-on"
+   ],
+   "topic": "Pass protection vs quick release",
+   "stat_verdict": "contradicts"
+  },
+  {
+   "sources": [
+    "locked-on"
+   ],
+   "topic": "Explosive runs allowed",
+   "stat_verdict": "supports"
+  },
+  {
+   "sources": [
+    "locked-on"
+   ],
+   "topic": "Dexter Lawrence off-field drop",
+   "stat_verdict": "needs a new metric"
+  },
+  {
+   "sources": [
+    "locked-on"
+   ],
+   "topic": "Secondary communication"
+  },
+  {
+   "sources": [
+    "locked-on"
+   ],
+   "topic": "Containing mobile quarterbacks"
+  }
+ ],
+ "season": 2026,
+ "opponent": "Bye, next at BAL",
+ "sources": [
+  {
+   "name": "Locked On Bengals",
+   "type": "podcast",
+   "id": "locked-on",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
+  },
+  {
+   "name": "ESPN",
+   "type": "national",
+   "id": "espn",
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
+  },
+  {
+   "name": "NFL.com",
+   "type": "national",
+   "id": "nfl-com",
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
+  },
+  {
+   "name": "The Ringer",
+   "type": "national",
+   "id": "ringer",
+   "url": "https://www.theringer.com/nfl"
+  },
+  {
+   "name": "PFF",
+   "type": "national",
+   "id": "pff",
+   "url": "https://www.pff.com/nfl"
+  }
+ ],
+ "written": "2026-10-14"
+}
