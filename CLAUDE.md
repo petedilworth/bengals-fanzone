@@ -11,7 +11,7 @@ Read `NEXT.md` at the start of every session. It says where we are, what's next 
 - Canadian spelling: offence, defence, colour, practised (verb).
 - Short, active sentences in everyday language. No idioms, no jargon.
 - Never use an em dash. Use an en dash with a space on each side ( – ).
-- Cite sources in-line as small linked labels. Keep any direct quote under 15 words.
+- Cite sources in-line as small linked labels. Keep any direct quote under 25 words.
 - Be blunt. Prefer non-obvious insights over headlines.
 - Never invent numbers. If a stat has no real source or model behind it, leave it out.
 - Keep pages short. Don't add sections without asking.

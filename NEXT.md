@@ -118,4 +118,6 @@ How to check on your phone (once Pages is on, or in `_site/` locally):
 | Oct 14 | Round-up Routine runs in its own Full-network environment; build sessions stay on the Custom list | It must read beat-writer sites. Owner weighed the risk and chose a separate environment |
 | Oct 14 | Private round-up may quote up to about 40 words from a transcript, marked "(transcript)". The site keeps the 15-word limit | Owner's call, made in the round-up session. Research needs the context; the public site does not |
 | Oct 14 | Round-up target length 2,000 words; a topic overlap grid is part of the file | Owner's call in the round-up session. The grid is what the owner wanted to see each week |
-| Oct 14 | A site the fetch tool cannot read is left out, never worked around | Three beat sites are dark for now. Owner decides whether a plain GET fallback is acceptable |
+| Oct 15 | Cincy Jungle, the Enquirer and The Athletic dropped from the round-up sources (kept under `dropped` in `sources.json`) | Owner's call. Paywall or tool block; Bengals.com, Local 12 and WCPO cover the beat |
+| Oct 15 | Site quotes up to 25 words (was 15); private round-up up to about 40 | Owner's call |
+| Oct 15 | Wednesday run cost accepted as is | Owner's call: transcripts, not show notes, was the point |
