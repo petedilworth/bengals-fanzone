@@ -1,58 +1,58 @@
 {
- "written": "2026-10-15",
- "season": 2026,
- "opponent": "at BAL",
  "week": 7,
+ "written": "2026-10-15",
  "sources": [
   {
    "name": "Locked On Bengals",
    "type": "podcast",
-   "id": "locked-on",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
+   "id": "locked-on"
   },
   {
    "name": "Bengals.com",
    "type": "beat",
-   "id": "bengals-com",
-   "url": "https://www.bengals.com/news/"
+   "url": "https://www.bengals.com/news/",
+   "id": "bengals-com"
   },
   {
    "name": "WCPO",
    "type": "beat",
-   "id": "wcpo",
-   "url": "https://www.wcpo.com/sports/football/bengals"
+   "url": "https://www.wcpo.com/sports/football/bengals",
+   "id": "wcpo"
   },
   {
    "name": "Local 12",
    "type": "beat",
-   "id": "local12",
-   "url": "https://local12.com/sports/bengals"
+   "url": "https://local12.com/sports/bengals",
+   "id": "local12"
   },
   {
    "name": "ESPN",
    "type": "national",
-   "id": "espn",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "id": "espn"
   },
   {
    "name": "NFL.com",
    "type": "national",
-   "id": "nfl-com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "id": "nfl-com"
   },
   {
    "name": "The Ringer",
    "type": "national",
-   "id": "ringer",
-   "url": "https://www.theringer.com/nfl"
+   "url": "https://www.theringer.com/nfl",
+   "id": "ringer"
   },
   {
    "name": "PFF",
    "type": "national",
-   "id": "pff",
-   "url": "https://www.pff.com/nfl"
+   "url": "https://www.pff.com/nfl",
+   "id": "pff"
   }
  ],
+ "opponent": "at BAL",
+ "season": 2026,
  "topics": [
   {
    "sources": [
@@ -63,6 +63,7 @@
    "topic": "Lamar Jackson containment"
   },
   {
+   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -71,18 +72,17 @@
     "espn",
     "nfl-com"
    ],
-   "topic": "Run defence explosives and tackling",
-   "stat_verdict": "supports"
+   "topic": "Run defence explosives and tackling"
   },
   {
+   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "wcpo",
     "local12",
     "nfl-com"
    ],
-   "topic": "Dexter Lawrence impact",
-   "stat_verdict": "needs a new metric"
+   "topic": "Dexter Lawrence impact"
   },
   {
    "sources": [
@@ -121,26 +121,27 @@
    "topic": "Red-zone fumbles"
   },
   {
+   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn",
     "nfl-com"
    ],
-   "topic": "Perine and Brown split",
-   "stat_verdict": "needs a new metric"
+   "topic": "Perine and Brown split"
   },
   {
+   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "local12",
     "espn",
     "ringer"
    ],
-   "topic": "Shotgun vs under centre",
-   "stat_verdict": "supports"
+   "topic": "Shotgun vs under centre"
   },
   {
+   "stat_verdict": "not testable yet",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -148,16 +149,15 @@
     "espn",
     "ringer"
    ],
-   "topic": "Play-action and the run count",
-   "stat_verdict": "not testable yet"
+   "topic": "Play-action and the run count"
   },
   {
+   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "ringer"
    ],
-   "topic": "Second-and-long play calling",
-   "stat_verdict": "needs a new metric"
+   "topic": "Second-and-long play calling"
   },
   {
    "sources": [
@@ -171,14 +171,14 @@
    "topic": "Hudson and Bozeman replacements"
   },
   {
+   "stat_verdict": "contradicts",
    "sources": [
     "locked-on",
     "bengals-com",
     "local12",
     "espn"
    ],
-   "topic": "Offensive line vs Ravens rush",
-   "stat_verdict": "contradicts"
+   "topic": "Offensive line vs Ravens rush"
   },
   {
    "sources": [
