@@ -1,58 +1,5 @@
 {
  "week": 7,
- "written": "2026-10-15",
- "sources": [
-  {
-   "name": "Locked On Bengals",
-   "type": "podcast",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "id": "locked-on"
-  },
-  {
-   "name": "Bengals.com",
-   "type": "beat",
-   "url": "https://www.bengals.com/news/",
-   "id": "bengals-com"
-  },
-  {
-   "name": "WCPO",
-   "type": "beat",
-   "url": "https://www.wcpo.com/sports/football/bengals",
-   "id": "wcpo"
-  },
-  {
-   "name": "Local 12",
-   "type": "beat",
-   "url": "https://local12.com/sports/bengals",
-   "id": "local12"
-  },
-  {
-   "name": "ESPN",
-   "type": "national",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
-   "id": "espn"
-  },
-  {
-   "name": "NFL.com",
-   "type": "national",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
-   "id": "nfl-com"
-  },
-  {
-   "name": "The Ringer",
-   "type": "national",
-   "url": "https://www.theringer.com/nfl",
-   "id": "ringer"
-  },
-  {
-   "name": "PFF",
-   "type": "national",
-   "url": "https://www.pff.com/nfl",
-   "id": "pff"
-  }
- ],
- "opponent": "at BAL",
- "season": 2026,
  "topics": [
   {
    "sources": [
@@ -63,7 +10,6 @@
    "topic": "Lamar Jackson containment"
   },
   {
-   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -72,17 +18,18 @@
     "espn",
     "nfl-com"
    ],
-   "topic": "Run defence explosives and tackling"
+   "topic": "Run defence explosives and tackling",
+   "stat_verdict": "supports"
   },
   {
-   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "wcpo",
     "local12",
     "nfl-com"
    ],
-   "topic": "Dexter Lawrence impact"
+   "topic": "Dexter Lawrence impact",
+   "stat_verdict": "needs a new metric"
   },
   {
    "sources": [
@@ -121,27 +68,26 @@
    "topic": "Red-zone fumbles"
   },
   {
-   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn",
     "nfl-com"
    ],
-   "topic": "Perine and Brown split"
+   "topic": "Perine and Brown split",
+   "stat_verdict": "needs a new metric"
   },
   {
-   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "local12",
     "espn",
     "ringer"
    ],
-   "topic": "Shotgun vs under centre"
+   "topic": "Shotgun vs under centre",
+   "stat_verdict": "supports"
   },
   {
-   "stat_verdict": "not testable yet",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -149,15 +95,16 @@
     "espn",
     "ringer"
    ],
-   "topic": "Play-action and the run count"
+   "topic": "Play-action and the run count",
+   "stat_verdict": "not testable yet"
   },
   {
-   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "ringer"
    ],
-   "topic": "Second-and-long play calling"
+   "topic": "Second-and-long play calling",
+   "stat_verdict": "needs a new metric"
   },
   {
    "sources": [
@@ -171,14 +118,14 @@
    "topic": "Hudson and Bozeman replacements"
   },
   {
-   "stat_verdict": "contradicts",
    "sources": [
     "locked-on",
     "bengals-com",
     "local12",
     "espn"
    ],
-   "topic": "Offensive line vs Ravens rush"
+   "topic": "Offensive line vs Ravens rush",
+   "stat_verdict": "contradicts"
   },
   {
    "sources": [
@@ -202,5 +149,58 @@
    ],
    "topic": "AFC North race"
   }
- ]
+ ],
+ "written": "2026-10-15",
+ "sources": [
+  {
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
+   "id": "locked-on",
+   "name": "Locked On Bengals",
+   "type": "podcast"
+  },
+  {
+   "url": "https://www.bengals.com/news/",
+   "id": "bengals-com",
+   "name": "Bengals.com",
+   "type": "beat"
+  },
+  {
+   "url": "https://www.wcpo.com/sports/football/bengals",
+   "id": "wcpo",
+   "name": "WCPO",
+   "type": "beat"
+  },
+  {
+   "url": "https://local12.com/sports/bengals",
+   "id": "local12",
+   "name": "Local 12",
+   "type": "beat"
+  },
+  {
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "id": "espn",
+   "name": "ESPN",
+   "type": "national"
+  },
+  {
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "id": "nfl-com",
+   "name": "NFL.com",
+   "type": "national"
+  },
+  {
+   "url": "https://www.theringer.com/nfl",
+   "id": "ringer",
+   "name": "The Ringer",
+   "type": "national"
+  },
+  {
+   "url": "https://www.pff.com/nfl",
+   "id": "pff",
+   "name": "PFF",
+   "type": "national"
+  }
+ ],
+ "opponent": "at BAL",
+ "season": 2026
 }
