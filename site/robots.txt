@@ -1,0 +1,4 @@
+# Pages carry a noindex tag, so crawlers may read them and must not list them.
+# The data folder has no tags to read, so it is closed to crawling outright.
+User-agent: *
+Disallow: /data/
