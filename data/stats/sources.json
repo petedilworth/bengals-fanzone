@@ -1,5 +1,5 @@
 {
-  "downloaded_bytes": 203383,
+  "downloaded_bytes": 13550940,
   "sources": [
     {
       "name": "pbp",
@@ -7,11 +7,9 @@
       "label": "nflverse play-by-play",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.parquet",
       "file": "data/raw/pbp_2026.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:38+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 6998248
     },
     {
       "name": "pbp",
@@ -19,7 +17,7 @@
       "label": "nflverse play-by-play",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2025.parquet",
       "file": "data/raw/pbp_2025.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:39+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
@@ -31,9 +29,9 @@
       "label": "FTN charting (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/ftn_charting_2026.parquet",
       "file": "data/raw/ftn_2026.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:39+00:00",
       "ok": true,
-      "downloaded": 203383
+      "downloaded": 203337
     },
     {
       "name": "ftn",
@@ -41,7 +39,7 @@
       "label": "FTN charting (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/ftn_charting/ftn_charting_2025.parquet",
       "file": "data/raw/ftn_2025.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:39+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
@@ -53,11 +51,9 @@
       "label": "Pro Football Reference weekly passing (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2026.parquet",
       "file": "data/raw/pfr_pass_2026.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:39+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 18264
     },
     {
       "name": "pfr_pass",
@@ -65,7 +61,7 @@
       "label": "Pro Football Reference weekly passing (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_pass_2025.parquet",
       "file": "data/raw/pfr_pass_2025.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:39+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
@@ -77,11 +73,9 @@
       "label": "Pro Football Reference weekly rushing (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2026.parquet",
       "file": "data/raw/pfr_rush_2026.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:39+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 22538
     },
     {
       "name": "pfr_rush",
@@ -89,7 +83,7 @@
       "label": "Pro Football Reference weekly rushing (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rush_2025.parquet",
       "file": "data/raw/pfr_rush_2025.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:39+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
@@ -101,11 +95,9 @@
       "label": "Pro Football Reference weekly receiving (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2026.parquet",
       "file": "data/raw/pfr_rec_2026.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:39+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 28183
     },
     {
       "name": "pfr_rec",
@@ -113,7 +105,7 @@
       "label": "Pro Football Reference weekly receiving (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_rec_2025.parquet",
       "file": "data/raw/pfr_rec_2025.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:40+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
@@ -125,11 +117,9 @@
       "label": "Pro Football Reference weekly defence (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2026.parquet",
       "file": "data/raw/pfr_def_2026.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:40+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 73740
     },
     {
       "name": "pfr_def",
@@ -137,7 +127,7 @@
       "label": "Pro Football Reference weekly defence (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pfr_advstats/advstats_week_def_2025.parquet",
       "file": "data/raw/pfr_def_2025.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:40+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
@@ -149,11 +139,9 @@
       "label": "Next Gen Stats passing (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_passing.parquet",
       "file": "data/raw/ngs_passing.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:40+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 750781
     },
     {
       "name": "ngs_rushing",
@@ -161,11 +149,9 @@
       "label": "Next Gen Stats rushing (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_rushing.parquet",
       "file": "data/raw/ngs_rushing.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:40+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 397000
     },
     {
       "name": "ngs_receiving",
@@ -173,11 +159,9 @@
       "label": "Next Gen Stats receiving (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_receiving.parquet",
       "file": "data/raw/ngs_receiving.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:40+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 1159058
     },
     {
       "name": "snap_counts",
@@ -185,7 +169,7 @@
       "label": "Snap counts (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.parquet",
       "file": "data/raw/snap_counts_2026.parquet",
-      "checked": "2026-10-22T00:42:20+00:00",
+      "checked": "2026-10-22T15:55:41+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
@@ -197,7 +181,7 @@
       "label": "Snap counts (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2025.parquet",
       "file": "data/raw/snap_counts_2025.parquet",
-      "checked": "2026-10-22T00:42:21+00:00",
+      "checked": "2026-10-22T15:55:41+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
@@ -209,11 +193,9 @@
       "label": "Injury reports (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
       "file": "data/raw/injuries_2026.parquet",
-      "checked": "2026-10-22T00:42:21+00:00",
+      "checked": "2026-10-22T15:55:41+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 50234
     },
     {
       "name": "injuries",
@@ -221,7 +203,7 @@
       "label": "Injury reports (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2025.parquet",
       "file": "data/raw/injuries_2025.parquet",
-      "checked": "2026-10-22T00:42:21+00:00",
+      "checked": "2026-10-22T15:55:41+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
@@ -233,11 +215,9 @@
       "label": "Depth charts (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2026.parquet",
       "file": "data/raw/depth_charts_2026.parquet",
-      "checked": "2026-10-22T00:42:21+00:00",
+      "checked": "2026-10-22T15:55:41+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 3026155
     },
     {
       "name": "depth_charts",
@@ -245,7 +225,7 @@
       "label": "Depth charts (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2025.parquet",
       "file": "data/raw/depth_charts_2025.parquet",
-      "checked": "2026-10-22T00:42:21+00:00",
+      "checked": "2026-10-22T15:55:41+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
@@ -257,11 +237,9 @@
       "label": "Weekly rosters (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2026.parquet",
       "file": "data/raw/rosters_2026.parquet",
-      "checked": "2026-10-22T00:42:21+00:00",
+      "checked": "2026-10-22T15:55:41+00:00",
       "ok": true,
-      "downloaded": 0,
-      "cached": true,
-      "note": "unchanged (304)"
+      "downloaded": 823402
     },
     {
       "name": "rosters",
@@ -269,14 +247,14 @@
       "label": "Weekly rosters (via nflverse)",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2025.parquet",
       "file": "data/raw/rosters_2025.parquet",
-      "checked": "2026-10-22T00:42:21+00:00",
+      "checked": "2026-10-22T15:55:41+00:00",
       "ok": true,
       "downloaded": 0,
       "cached": true,
       "note": "finished season, never re-pulled"
     }
   ],
-  "generated": "2026-10-22T00:42:20+00:00",
+  "generated": "2026-10-22T15:55:38+00:00",
   "status": {
     "pbp": {
       "through_week": 5,

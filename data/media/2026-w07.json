@@ -1,6 +1,7 @@
 {
+ "opponent": "at BAL",
+ "season": 2026,
  "week": 7,
- "written": "2026-10-21",
  "sources": [
   {
    "name": "Locked On Bengals",
@@ -51,10 +52,8 @@
    "url": "https://www.pff.com/nfl"
   }
  ],
- "opponent": "at BAL",
  "topics": [
   {
-   "topic": "Lamar Jackson containment",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -62,10 +61,10 @@
     "nfl-com",
     "ringer",
     "pff"
-   ]
+   ],
+   "topic": "Lamar Jackson containment"
   },
   {
-   "topic": "AFC North race",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -73,122 +72,123 @@
     "espn",
     "nfl-com",
     "ringer"
-   ]
+   ],
+   "topic": "AFC North race"
   },
   {
-   "topic": "Ravens run game vs Henry",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn",
     "nfl-com",
     "ringer"
-   ]
+   ],
+   "topic": "Ravens run game vs Henry"
   },
   {
    "stat_verdict": "needs a new metric",
-   "topic": "Dexter Lawrence impact",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn",
     "nfl-com",
     "ringer"
-   ]
+   ],
+   "topic": "Dexter Lawrence impact"
   },
   {
-   "topic": "Hudson and Bozeman replacements",
    "sources": [
     "locked-on",
     "bengals-com",
     "wcpo",
     "local12"
-   ]
+   ],
+   "topic": "Hudson and Bozeman replacements"
   },
   {
-   "topic": "Safety depth returning",
    "sources": [
     "locked-on",
     "bengals-com",
     "local12",
     "ringer",
     "pff"
-   ]
+   ],
+   "topic": "Safety depth returning"
   },
   {
-   "topic": "Special teams miscues",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn",
     "nfl-com"
-   ]
+   ],
+   "topic": "Special teams miscues"
   },
   {
-   "topic": "Ravens offensive line and penalties",
    "sources": [
     "locked-on",
     "espn",
     "nfl-com"
-   ]
+   ],
+   "topic": "Ravens offensive line and penalties"
   },
   {
    "stat_verdict": "needs a new metric",
-   "topic": "Offensive line vs Ravens rush",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn"
-   ]
+   ],
+   "topic": "Offensive line vs Ravens rush"
   },
   {
    "stat_verdict": "supports",
-   "topic": "Run defence explosives and tackling",
    "sources": [
     "locked-on",
     "bengals-com",
     "ringer"
-   ]
+   ],
+   "topic": "Run defence explosives and tackling"
   },
   {
-   "topic": "Trade deadline targets",
    "sources": [
     "locked-on",
     "espn",
     "pff"
-   ]
+   ],
+   "topic": "Trade deadline targets"
   },
   {
-   "topic": "Ravens late-game collapses",
    "sources": [
     "espn",
     "nfl-com"
-   ]
+   ],
+   "topic": "Ravens late-game collapses"
   },
   {
    "stat_verdict": "needs a new metric",
-   "topic": "Chase slot alignment",
    "sources": [
     "locked-on",
     "nfl-com"
-   ]
+   ],
+   "topic": "Chase slot alignment"
   },
   {
    "stat_verdict": "needs a new metric",
-   "topic": "Blitz rate and dime usage",
    "sources": [
     "bengals-com",
     "ringer"
-   ]
+   ],
+   "topic": "Blitz rate and dime usage"
   },
   {
    "stat_verdict": "contradicts",
-   "topic": "Run game efficiency",
    "sources": [
     "locked-on",
     "espn"
-   ]
+   ],
+   "topic": "Run game efficiency"
   }
  ],
- "season": 2026
+ "written": "2026-10-21"
 }
