@@ -1,57 +1,55 @@
 {
- "opponent": "at BAL",
- "season": 2026,
- "week": 7,
  "sources": [
   {
-   "name": "Locked On Bengals",
-   "type": "podcast",
    "id": "locked-on",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
+   "name": "Locked On Bengals",
+   "type": "podcast"
   },
   {
-   "name": "Bengals.com",
-   "type": "beat",
    "id": "bengals-com",
-   "url": "https://www.bengals.com/news/"
+   "url": "https://www.bengals.com/news/",
+   "name": "Bengals.com",
+   "type": "beat"
   },
   {
-   "name": "WCPO",
-   "type": "beat",
    "id": "wcpo",
-   "url": "https://www.wcpo.com/sports/football/bengals"
+   "url": "https://www.wcpo.com/sports/football/bengals",
+   "name": "WCPO",
+   "type": "beat"
   },
   {
-   "name": "Local 12",
-   "type": "beat",
    "id": "local12",
-   "url": "https://local12.com/sports/bengals"
+   "url": "https://local12.com/sports/bengals",
+   "name": "Local 12",
+   "type": "beat"
   },
   {
-   "name": "ESPN",
-   "type": "national",
    "id": "espn",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "name": "ESPN",
+   "type": "national"
   },
   {
-   "name": "NFL.com",
-   "type": "national",
    "id": "nfl-com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "name": "NFL.com",
+   "type": "national"
   },
   {
-   "name": "The Ringer",
-   "type": "national",
    "id": "ringer",
-   "url": "https://www.theringer.com/nfl"
+   "url": "https://www.theringer.com/nfl",
+   "name": "The Ringer",
+   "type": "national"
   },
   {
-   "name": "PFF",
-   "type": "national",
    "id": "pff",
-   "url": "https://www.pff.com/nfl"
+   "url": "https://www.pff.com/nfl",
+   "name": "PFF",
+   "type": "national"
   }
  ],
+ "week": 7,
  "topics": [
   {
    "sources": [
@@ -190,5 +188,7 @@
    "topic": "Run game efficiency"
   }
  ],
- "written": "2026-10-21"
+ "written": "2026-10-21",
+ "season": 2026,
+ "opponent": "at BAL"
 }

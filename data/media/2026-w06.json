@@ -1,39 +1,37 @@
 {
- "opponent": "Bye, next at BAL",
- "season": 2026,
- "week": 6,
  "sources": [
   {
-   "name": "Locked On Bengals",
-   "type": "podcast",
    "id": "locked-on",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
+   "name": "Locked On Bengals",
+   "type": "podcast"
   },
   {
-   "name": "ESPN",
-   "type": "national",
    "id": "espn",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "name": "ESPN",
+   "type": "national"
   },
   {
-   "name": "NFL.com",
-   "type": "national",
    "id": "nfl-com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "name": "NFL.com",
+   "type": "national"
   },
   {
-   "name": "The Ringer",
-   "type": "national",
    "id": "ringer",
-   "url": "https://www.theringer.com/nfl"
+   "url": "https://www.theringer.com/nfl",
+   "name": "The Ringer",
+   "type": "national"
   },
   {
-   "name": "PFF",
-   "type": "national",
    "id": "pff",
-   "url": "https://www.pff.com/nfl"
+   "url": "https://www.pff.com/nfl",
+   "name": "PFF",
+   "type": "national"
   }
  ],
+ "week": 6,
  "topics": [
   {
    "stat_verdict": "supports",
@@ -144,5 +142,7 @@
    "topic": "Containing mobile quarterbacks"
   }
  ],
- "written": "2026-10-14"
+ "written": "2026-10-14",
+ "season": 2026,
+ "opponent": "Bye, next at BAL"
 }
