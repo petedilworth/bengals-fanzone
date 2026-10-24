@@ -1,0 +1,90 @@
+{
+  "season": 2026,
+  "week": 7,
+  "status": "preview",
+  "label": "Week 7 brief",
+  "updated": "Sat, Oct 24, 9 am ET",
+  "game": {
+    "home": {
+      "abbr": "BAL",
+      "record": "4–2"
+    },
+    "away": {
+      "abbr": "CIN",
+      "record": "3–2"
+    },
+    "state": "Preview",
+    "kickoff": "Sun, Oct 25 · 1:00 pm ET",
+    "venue": "M&T Bank Stadium · CBS",
+    "line": "Bengals by 1.5, total 48.5 [ESPN](https://www.espn.com/nfl/game/_/gameId/401873012/bengals-ravens)",
+    "winChance": {
+      "team": 54,
+      "opp": 46,
+      "source": "ESPN matchup predictor, Oct 24"
+    }
+  },
+  "storylines": [
+    {
+      "title": "Two quarterbacks, two plans",
+      "fact": "Lamar Jackson is questionable with a high ankle sprain. He practised on a limited basis all week. \"I can't call it right now,\" he said Friday [ESPN](https://www.espn.com/nfl/story/_/id/50260001/ravens-lamar-jackson-high-ankle-sprain-unsure-play). Baltimore is 11–2 against Cincinnati with him and 0–3 without him [ESPN](https://www.espn.com/nfl/story/_/id/50241195/lamar-jackson-practice-unclear-vs-bengals-week-7).",
+      "why": "**Why it matters:** the bye-week plan was to contain Jackson. If Tyler Huntley starts, the plan flips: crowd the line against Derrick Henry and make Huntley throw. He averages 6.0 yards a pass to Jackson's 10.1 [Bengals.com](https://www.bengals.com/news/bengals-ravens-preview-scouting-report-week-7-2026)."
+    },
+    {
+      "title": "Hendrickson against his old team",
+      "fact": "Trey Hendrickson's 30% pass rush win rate is third in the NFL [ESPN](https://www.espn.com/nfl/story/_/id/50250751/ravens-hendrickson-facing-bengals-not-me). He lines up across from Orlando Brown Jr., who has allowed two sacks in five games. Baltimore is 4–2 against Burrow when it sacks him three or more times [ESPN](https://www.espn.com/nfl/story/_/id/50229521/week-7-picks-predictions-schedule-fantasy-odds-2026).",
+      "why": "**Non-obvious:** the answer is not Brown winning every snap. Burrow's release is the third fastest in the league at 2.57 seconds [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html). Quick throws take Hendrickson out of the game."
+    },
+    {
+      "title": "Baltimore's line cannot stay on schedule",
+      "fact": "The Ravens offence has an NFL-worst 31 flags: 13 false starts and 13 holds, plus three delays of game at Cleveland [ESPN](https://www.espn.com/nfl/story/_/id/50218886/nfl-power-rankings-week-7-teams-biggest-issue-offense). Cincinnati pressures 40% of dropbacks while blitzing only 18% of the time [Bengals.com](https://www.bengals.com/news/bengals-stats-bye-week-2026-joe-burrow-dexter-lawrence-ii-boye-mafe).",
+      "why": "**Non-obvious:** centre Cam Jurgens is cleared from his concussion and practised fully [Bengals.com](https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report). ESPN argues his return may hurt: his stand-in blocked better in pass protection [ESPN](https://www.espn.com/nfl/story/_/id/50229521/week-7-picks-predictions-schedule-fantasy-odds-2026)."
+    },
+    {
+      "title": "Whoever leads by 10 may still lose",
+      "fact": "Baltimore has blown 16 double-digit leads since 2020, the most in the NFL. In those fourth quarters, passers threw 17 touchdowns and no interceptions [ESPN](https://www.espn.com/nfl/story/_/id/50219611/ravens-nfl-worst-blowing-double-digit-leads). Cincinnati let winless Miami back from 28–10 two weeks ago [Local 12](https://local12.com/sports/bengals/bengals-bye-week-zac-taylor-injuries-late-game-issues-ravens).",
+      "why": "**Why it matters:** neither team closes. A fast start proves nothing here. The last 10 minutes decide it."
+    },
+    {
+      "title": "Run at the middle of the dime",
+      "fact": "Cincinnati's busiest run gap is the middle: 41 carries, 41% success, exactly league average. Baltimore allows 45% success there on 22 carries, its weakest inside gap [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html). It also plays a six-defensive-back dime on 32% of snaps, second most [Bengals.com](https://www.bengals.com/news/bengals-ravens-preview-scouting-report-week-7-2026).",
+      "why": "**Why it matters:** dime means fewer big bodies in the box. The run the Bengals use most is the one Baltimore stops worst. Small sample: 22 carries."
+    }
+  ],
+  "watch": [
+    {
+      "when": "About 11:30 am ET",
+      "title": "Jackson on the inactive list",
+      "text": "His decision may wait until inactives come out [ESPN](https://www.espn.com/nfl/player/_/id/3916387/lamar-jackson). It decides which defensive plan Cincinnati uses. Also check left tackle Ronnie Stanley: he missed Friday's practice but has no game status [Bengals.com](https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report)."
+    },
+    {
+      "when": "First quarter",
+      "title": "Ravens flags on early downs",
+      "text": "Count false starts and delays. Each one turns a Henry run into a passing down, which is where Cincinnati's four-man rush wins."
+    },
+    {
+      "when": "Early downs",
+      "title": "Where the Bengals run",
+      "text": "Watch if carries go up the middle or to the edges. The numbers point inside. A lean on outside runs means the staff sees something the numbers do not."
+    },
+    {
+      "when": "Passing downs",
+      "title": "Hendrickson on Brown, and the clock in Burrow's head",
+      "text": "Three sacks is Baltimore's winning number. Watch for chips from a tight end or back on Brown's side, and how fast Burrow lets it go."
+    },
+    {
+      "when": "Fourth quarter",
+      "title": "Who protects a lead",
+      "text": "If either team leads by 10, watch the other quarterback's passing. Both teams have given up late leads this year."
+    }
+  ],
+  "lineFinding": "Burrow is good against four rushers and poor against more. With four, the offence gains 0.21 expected points a dropback on 144 plays. With five or more, it loses 0.11 on 53 plays [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html). Baltimore's four-man rush ranks 19th in ESPN's pass rush win rate [ESPN](https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking), so sending extra rushers is its cheapest way to Burrow. No outlet has raised this split in three weeks.",
+  "devilsAdvocate": [
+    "**The pass rush may be weaker than it looks.** Cincinnati pressures 40% of dropbacks, but ESPN ranks its pass rush win rate 23rd [ESPN](https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking). Both cannot describe Sunday. If the win rate is right, Baltimore's line holds.",
+    "**The run numbers are thin.** The middle-gap edge rests on 22 Baltimore carries and a Bengals run game ranked 15th [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html). One stuffed drive and the staff will throw.",
+    "**Jackson on one leg is still Jackson.** He averages 10.1 yards a pass, best in the league, and he does it from the pocket [Bengals.com](https://www.bengals.com/news/bengals-ravens-preview-scouting-report-week-7-2026). A plan built for a hobbled runner may face a sharp passer."
+  ],
+  "alternativeView": {
+    "title": "The same game, from Baltimore",
+    "text": "Baltimore sees a home game against a team that has lost six of its last eight to the Ravens [ESPN](https://www.espn.com/nfl/story/_/id/50229521/week-7-picks-predictions-schedule-fantasy-odds-2026). Its plan writes itself: run Henry, put Hendrickson on Brown and wait for Cincinnati's late mistakes. The worry is its own line. If the flags keep coming, even a healthy Jackson spends the day on third-and-long."
+  }
+}
