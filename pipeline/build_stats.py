@@ -21,11 +21,30 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 
 
-def next_opponent(season, current_week):
+def next_opponent(season, current_week=None):
+    """First scheduled game without a result. Does not depend on team.json's currentWeek,
+    which moves to the coming week as soon as its brief goes up."""
     for g in season["games"]:
-        if g["week"] > current_week and not g.get("bye") and not g.get("result"):
+        if not g.get("bye") and not g.get("result"):
             return g["opp"], g["week"]
     return None, None
+
+
+def league_week(df, week_col, game_col, min_games=13):
+    """Latest regular-season week with at least `min_games` games in the file: the most
+    byes in one week is six teams, so 13 games means the week has been played. A week
+    with only Thursday's game in it does not count yet."""
+    if df is None or week_col not in df.columns or game_col not in df.columns:
+        return 0
+    d = df
+    for c in ("season_type", "game_type"):
+        if c in d.columns:
+            d = d[d[c] == "REG"]
+    counts = d.groupby(week_col)[game_col].nunique()
+    if game_col in ("team", "team_abbr"):
+        counts = counts / 2
+    done = counts[counts >= min_games]
+    return int(done.index.max()) if len(done) else 0
 
 
 def ftn_through_week(ftn, team):
@@ -103,14 +122,26 @@ def main():
         "pfr_pass": sources.through_week(pfr, team, "team"),
         "ngs_passing": sources.through_week(ngs, team, "team_abbr"),
     }
-    status = {k: {"through_week": v, "expected_week": expected, "pending": v < expected} for k, v in fresh.items()}
+    league = {
+        "pbp": league_week(pbp, "week", "game_id"),
+        "ftn": league_week(ftn, "week", "nflverse_game_id"),
+        "pfr_pass": league_week(pfr, "week", "team"),
+        "ngs_passing": league_week(ngs, "week", "team_abbr"),
+    }
+    byes = [g["week"] for g in season_doc["games"] if g.get("bye")]
+    # through_week is the league's latest played week in the file (ranks, averages, the
+    # opponent); team_through_week is our team's latest game in it. "pending" still means
+    # our latest game is missing, which is what the re-pull loop waits for.
+    status = {k: {"through_week": max(league[k], fresh[k]), "team_through_week": fresh[k],
+                  "expected_week": expected, "pending": fresh[k] < expected} for k in fresh}
     for k, v in status.items():
-        print(f"[{k}] through week {v['through_week']} (expected {expected}){' - PENDING' if v['pending'] else ''}")
+        print(f"[{k}] league through week {v['through_week']}, {team} through week {v['team_through_week']} "
+              f"(expected {expected}){' - PENDING' if v['pending'] else ''}")
 
     # 3. Metrics.
     opp, opp_week = next_opponent(season_doc, team_doc["currentWeek"])
     line = {
-        "generated": now, "season": season, "team": team, "status": status,
+        "generated": now, "season": season, "team": team, "status": status, "bye_weeks": byes,
         "next_opponent": {"abbr": opp, "week": opp_week},
         "protection": metrics.protection(pbp, ftn, pfr, ngs, team),
         "run_sets_up_pass": metrics.run_sets_up_pass(pbp, ftn, team),

@@ -38,11 +38,18 @@ function weeklyTable(rows, cols) {
     rows.map(r => `<tr>${cols.map(c => `<td${c.cls ? ` class="${c.cls}"` : ''}>${c.f(r)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
 
-function renderFreshness(st, generated) {
+function renderFreshness(st, generated, byes, team) {
   const names = { pbp: 'Play-by-play', ftn: 'FTN charting', pfr_pass: 'PFR pressures', ngs_passing: 'Next Gen Stats' };
-  return Object.entries(st).map(([k, v]) =>
+  const pills = Object.entries(st).map(([k, v]) =>
     `<span class="pill ${v.pending ? 'q' : 'ok'}">${names[k] || k}: through Week ${v.through_week}${v.pending ? ' (waiting)' : ''}</span>`
-  ).join(' ') + `<span class="meta">Built ${esc(generated.slice(0, 10))}</span>`;
+  ).join(' ');
+  // A bye between our last game and the league's latest week: say why our own numbers stop earlier.
+  const vals = Object.values(st);
+  const lg = Math.max(...vals.map(v => v.through_week));
+  const ours = Math.max(...vals.map(v => v.team_through_week ?? v.through_week));
+  const bye = (byes || []).find(w => w > ours && w <= lg);
+  const note = bye ? `<p class="meta">Week ${bye} was the ${esc(team)} bye. Their own numbers end at Week ${ours}. League ranks, averages and the next opponent include every game through Week ${lg}.</p>` : '';
+  return pills + `<span class="meta">Built ${esc(generated.slice(0, 10))}</span>` + note;
 }
 
 function renderProtection(p, last, espn) {
@@ -218,7 +225,7 @@ async function main() {
   const el = document.getElementById('stats');
   try {
     const [line, espn] = await Promise.all([getJSON('data/stats/line.json'), getJSON('data/stats/espn-winrates.json').catch(() => null)]);
-    document.getElementById('freshness').innerHTML = renderFreshness(line.status, line.generated);
+    document.getElementById('freshness').innerHTML = renderFreshness(line.status, line.generated, line.bye_weeks, line.team === 'CIN' ? 'Bengals' : line.team);
     const last = line.last_season || {};
     el.innerHTML = [
       renderProtection(line.protection, last.protection, espn),
