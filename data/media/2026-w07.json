@@ -1,5 +1,8 @@
 {
+ "written": "2026-10-21",
  "season": 2026,
+ "week": 7,
+ "opponent": "at BAL",
  "topics": [
   {
    "sources": [
@@ -138,57 +141,54 @@
    "topic": "Run game efficiency"
   }
  ],
- "opponent": "at BAL",
  "sources": [
   {
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "name": "Locked On Bengals",
+   "id": "locked-on",
    "type": "podcast",
-   "id": "locked-on"
+   "name": "Locked On Bengals",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
   },
   {
-   "url": "https://www.bengals.com/news/",
+   "id": "bengals-com",
+   "type": "beat",
    "name": "Bengals.com",
-   "type": "beat",
-   "id": "bengals-com"
+   "url": "https://www.bengals.com/news/"
   },
   {
-   "url": "https://www.wcpo.com/sports/football/bengals",
+   "id": "wcpo",
+   "type": "beat",
    "name": "WCPO",
-   "type": "beat",
-   "id": "wcpo"
+   "url": "https://www.wcpo.com/sports/football/bengals"
   },
   {
-   "url": "https://local12.com/sports/bengals",
+   "id": "local12",
+   "type": "beat",
    "name": "Local 12",
-   "type": "beat",
-   "id": "local12"
+   "url": "https://local12.com/sports/bengals"
   },
   {
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "id": "espn",
+   "type": "national",
    "name": "ESPN",
-   "type": "national",
-   "id": "espn"
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
   },
   {
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "id": "nfl-com",
+   "type": "national",
    "name": "NFL.com",
-   "type": "national",
-   "id": "nfl-com"
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
   },
   {
-   "url": "https://www.theringer.com/nfl",
+   "id": "ringer",
+   "type": "national",
    "name": "The Ringer",
-   "type": "national",
-   "id": "ringer"
+   "url": "https://www.theringer.com/nfl"
   },
   {
-   "url": "https://www.pff.com/nfl",
-   "name": "PFF",
+   "id": "pff",
    "type": "national",
-   "id": "pff"
+   "name": "PFF",
+   "url": "https://www.pff.com/nfl"
   }
- ],
- "week": 7,
- "written": "2026-10-21"
+ ]
 }
