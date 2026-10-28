@@ -1,7 +1,54 @@
 {
- "written": "2026-10-21",
- "season": 2026,
- "week": 7,
+ "sources": [
+  {
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
+   "type": "podcast",
+   "id": "locked-on",
+   "name": "Locked On Bengals"
+  },
+  {
+   "url": "https://www.bengals.com/news/",
+   "type": "beat",
+   "id": "bengals-com",
+   "name": "Bengals.com"
+  },
+  {
+   "url": "https://www.wcpo.com/sports/football/bengals",
+   "type": "beat",
+   "id": "wcpo",
+   "name": "WCPO"
+  },
+  {
+   "url": "https://local12.com/sports/bengals",
+   "type": "beat",
+   "id": "local12",
+   "name": "Local 12"
+  },
+  {
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "type": "national",
+   "id": "espn",
+   "name": "ESPN"
+  },
+  {
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "type": "national",
+   "id": "nfl-com",
+   "name": "NFL.com"
+  },
+  {
+   "url": "https://www.theringer.com/nfl",
+   "type": "national",
+   "id": "ringer",
+   "name": "The Ringer"
+  },
+  {
+   "url": "https://www.pff.com/nfl",
+   "type": "national",
+   "id": "pff",
+   "name": "PFF"
+  }
+ ],
  "opponent": "at BAL",
  "topics": [
   {
@@ -37,7 +84,6 @@
    "topic": "Ravens run game vs Henry"
   },
   {
-   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -45,7 +91,8 @@
     "nfl-com",
     "ringer"
    ],
-   "topic": "Dexter Lawrence impact"
+   "topic": "Dexter Lawrence impact",
+   "stat_verdict": "needs a new metric"
   },
   {
    "sources": [
@@ -84,22 +131,22 @@
    "topic": "Ravens offensive line and penalties"
   },
   {
-   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn"
    ],
-   "topic": "Offensive line vs Ravens rush"
+   "topic": "Offensive line vs Ravens rush",
+   "stat_verdict": "needs a new metric"
   },
   {
-   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
     "ringer"
    ],
-   "topic": "Run defence explosives and tackling"
+   "topic": "Run defence explosives and tackling",
+   "stat_verdict": "supports"
   },
   {
    "sources": [
@@ -117,78 +164,31 @@
    "topic": "Ravens late-game collapses"
   },
   {
-   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "nfl-com"
    ],
-   "topic": "Chase slot alignment"
+   "topic": "Chase slot alignment",
+   "stat_verdict": "needs a new metric"
   },
   {
-   "stat_verdict": "needs a new metric",
    "sources": [
     "bengals-com",
     "ringer"
    ],
-   "topic": "Blitz rate and dime usage"
+   "topic": "Blitz rate and dime usage",
+   "stat_verdict": "needs a new metric"
   },
   {
-   "stat_verdict": "contradicts",
    "sources": [
     "locked-on",
     "espn"
    ],
-   "topic": "Run game efficiency"
+   "topic": "Run game efficiency",
+   "stat_verdict": "contradicts"
   }
  ],
- "sources": [
-  {
-   "id": "locked-on",
-   "type": "podcast",
-   "name": "Locked On Bengals",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
-  },
-  {
-   "id": "bengals-com",
-   "type": "beat",
-   "name": "Bengals.com",
-   "url": "https://www.bengals.com/news/"
-  },
-  {
-   "id": "wcpo",
-   "type": "beat",
-   "name": "WCPO",
-   "url": "https://www.wcpo.com/sports/football/bengals"
-  },
-  {
-   "id": "local12",
-   "type": "beat",
-   "name": "Local 12",
-   "url": "https://local12.com/sports/bengals"
-  },
-  {
-   "id": "espn",
-   "type": "national",
-   "name": "ESPN",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
-  },
-  {
-   "id": "nfl-com",
-   "type": "national",
-   "name": "NFL.com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
-  },
-  {
-   "id": "ringer",
-   "type": "national",
-   "name": "The Ringer",
-   "url": "https://www.theringer.com/nfl"
-  },
-  {
-   "id": "pff",
-   "type": "national",
-   "name": "PFF",
-   "url": "https://www.pff.com/nfl"
-  }
- ]
+ "season": 2026,
+ "written": "2026-10-21",
+ "week": 7
 }
