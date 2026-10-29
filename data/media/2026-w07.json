@@ -1,55 +1,5 @@
 {
- "sources": [
-  {
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "type": "podcast",
-   "id": "locked-on",
-   "name": "Locked On Bengals"
-  },
-  {
-   "url": "https://www.bengals.com/news/",
-   "type": "beat",
-   "id": "bengals-com",
-   "name": "Bengals.com"
-  },
-  {
-   "url": "https://www.wcpo.com/sports/football/bengals",
-   "type": "beat",
-   "id": "wcpo",
-   "name": "WCPO"
-  },
-  {
-   "url": "https://local12.com/sports/bengals",
-   "type": "beat",
-   "id": "local12",
-   "name": "Local 12"
-  },
-  {
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
-   "type": "national",
-   "id": "espn",
-   "name": "ESPN"
-  },
-  {
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
-   "type": "national",
-   "id": "nfl-com",
-   "name": "NFL.com"
-  },
-  {
-   "url": "https://www.theringer.com/nfl",
-   "type": "national",
-   "id": "ringer",
-   "name": "The Ringer"
-  },
-  {
-   "url": "https://www.pff.com/nfl",
-   "type": "national",
-   "id": "pff",
-   "name": "PFF"
-  }
- ],
- "opponent": "at BAL",
+ "written": "2026-10-21",
  "topics": [
   {
    "sources": [
@@ -188,7 +138,57 @@
    "stat_verdict": "contradicts"
   }
  ],
+ "opponent": "at BAL",
+ "week": 7,
  "season": 2026,
- "written": "2026-10-21",
- "week": 7
+ "sources": [
+  {
+   "id": "locked-on",
+   "name": "Locked On Bengals",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
+   "type": "podcast"
+  },
+  {
+   "id": "bengals-com",
+   "name": "Bengals.com",
+   "url": "https://www.bengals.com/news/",
+   "type": "beat"
+  },
+  {
+   "id": "wcpo",
+   "name": "WCPO",
+   "url": "https://www.wcpo.com/sports/football/bengals",
+   "type": "beat"
+  },
+  {
+   "id": "local12",
+   "name": "Local 12",
+   "url": "https://local12.com/sports/bengals",
+   "type": "beat"
+  },
+  {
+   "id": "espn",
+   "name": "ESPN",
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "type": "national"
+  },
+  {
+   "id": "nfl-com",
+   "name": "NFL.com",
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "type": "national"
+  },
+  {
+   "id": "ringer",
+   "name": "The Ringer",
+   "url": "https://www.theringer.com/nfl",
+   "type": "national"
+  },
+  {
+   "id": "pff",
+   "name": "PFF",
+   "url": "https://www.pff.com/nfl",
+   "type": "national"
+  }
+ ]
 }
