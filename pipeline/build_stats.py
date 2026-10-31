@@ -4,6 +4,7 @@
 Outputs (all under data/):
   stats/sources.json  - what was pulled, when, and which week each source runs through
   stats/line.json     - the three offensive-line questions, this season and last, with ranks
+  stats/expected-points.json - five situations and five recent plays for the brief's explainer
   season-<year>.json  - results and scores filled in from play-by-play for finished games
 
 Usage: python3 pipeline/build_stats.py [--force] [--no-pull]
@@ -15,7 +16,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from nfl import espn, metrics, sources  # noqa: E402
+from nfl import espn, expected_points, metrics, sources  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -166,6 +167,8 @@ def main():
     # 5. Write.
     (DATA / "stats").mkdir(exist_ok=True)
     (DATA / "stats" / "line.json").write_text(json.dumps(line, indent=1) + "\n")
+    ep = {"generated": now, **expected_points.build(pbp, pbp_prev, team, opp, season)}
+    (DATA / "stats" / "expected-points.json").write_text(json.dumps(ep, indent=1, ensure_ascii=False) + "\n")
     total = sources.write_manifest(manifest, {"generated": now, "status": status}, DATA / "stats" / "sources.json")
     print(f"downloaded {total/1048576:.1f} MB this run")
     if changed:

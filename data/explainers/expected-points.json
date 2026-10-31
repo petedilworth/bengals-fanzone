@@ -1,0 +1,14 @@
+{
+  "_note": "Standing explainer shown in every brief, right after Main storylines. The numbers under it come from data/stats/expected-points.json, which the stats pipeline rebuilds each run.",
+  "title": "Expected points, explained",
+  "summary": "What this brief means by expected points, with 10 examples from this matchup",
+  "body": [
+    "**Expected points** is what a moment in a game is worth. It answers one question: on average, how many points will the team with the ball score next? It weighs the down, the distance, the field position and the time left, using many past NFL seasons of plays [nflfastR](https://www.nflfastr.com/articles/beginners_guide.html). A value below zero means the other team is more likely to score next.",
+    "**Expected points added** is the change one play makes. Gain 10 yards on third-and-8 and the drive lives, so the play adds a lot. Gain the same 10 yards on third-and-15 and you punt, so it adds little. That is why this brief judges plays by points added, not yards.",
+    "Turnovers move the number most, because they flip who has the ball."
+  ],
+  "situationsTitle": "What a spot is worth",
+  "situationsNote": "Average expected points for the team with the ball, from every league play in that spot in {seasons}, early in a half.",
+  "playsTitle": "What a play was worth",
+  "playsNote": "From each team's last game. The number is the points the play added, or took away, for the team named."
+}

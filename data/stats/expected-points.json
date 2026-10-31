@@ -1,0 +1,118 @@
+{
+ "generated": "2026-10-31T12:21:54+00:00",
+ "season": 2026,
+ "team": "CIN",
+ "opponent": "TEN",
+ "situations": [
+  {
+   "label": "1st-and-10 at your own 25",
+   "why": "Where most drives start after a touchback.",
+   "ep": 1.1,
+   "n": 1504
+  },
+  {
+   "label": "3rd-and-8 at your own 30",
+   "why": "The passing down a pass rush wants to force.",
+   "ep": 0.2,
+   "n": 190
+  },
+  {
+   "label": "3rd-and-2 near midfield",
+   "why": "Short yardage: run it or throw it quick.",
+   "ep": 2.1,
+   "n": 229
+  },
+  {
+   "label": "1st-and-10 at the opponent's 25",
+   "why": "The edge of field-goal range.",
+   "ep": 4.4,
+   "n": 884
+  },
+  {
+   "label": "1st-and-goal at the 5",
+   "why": "Touchdown or settle for three.",
+   "ep": 5.8,
+   "n": 309
+  }
+ ],
+ "situations_seasons": "2025–26",
+ "plays": [
+  {
+   "team": "CIN",
+   "side": "offence",
+   "note": "Best offensive play",
+   "week": 7,
+   "offence": "CIN",
+   "defence": "BAL",
+   "quarter": 4,
+   "clock": "12:52",
+   "situation": "2nd-and-6 at CIN 33",
+   "text": "J.Burrow pass deep middle to T.Higgins to BAL 23 for 44 yards",
+   "ep_before": 1.1,
+   "epa": 3.2,
+   "for_team": 3.2
+  },
+  {
+   "team": "CIN",
+   "side": "offence",
+   "note": "Costliest offensive play",
+   "week": 7,
+   "offence": "CIN",
+   "defence": "BAL",
+   "quarter": 1,
+   "clock": "11:17",
+   "situation": "3rd-and-1 at BAL 47",
+   "text": "S.Perine right guard to BAL 49 for -2 yards",
+   "ep_before": 2.4,
+   "epa": -2.5,
+   "for_team": -2.5
+  },
+  {
+   "team": "CIN",
+   "side": "defence",
+   "note": "Best defensive play",
+   "week": 7,
+   "offence": "BAL",
+   "defence": "CIN",
+   "quarter": 4,
+   "clock": "07:25",
+   "situation": "1st-and-10 at BAL 35",
+   "text": "T.Huntley pass short right intended for Z.Flowers INTERCEPTED by D.Knight at BAL 38. D.Knight to BAL 24 for 14 yards",
+   "ep_before": 1.8,
+   "epa": -6.0,
+   "for_team": 6.0
+  },
+  {
+   "team": "TEN",
+   "side": "offence",
+   "note": "Best offensive play",
+   "week": 7,
+   "offence": "TEN",
+   "defence": "CLE",
+   "quarter": 4,
+   "clock": "02:33",
+   "situation": "4th-and-8 at CLE 43",
+   "text": "C.Ward pass deep middle to E.Ayomanor to CLE 17 for 26 yards",
+   "ep_before": 0.2,
+   "epa": 4.4,
+   "for_team": 4.4
+  },
+  {
+   "team": "TEN",
+   "side": "offence",
+   "note": "Costliest offensive play",
+   "week": 7,
+   "offence": "TEN",
+   "defence": "CLE",
+   "quarter": 2,
+   "clock": "07:07",
+   "situation": "1st-and-10 at CLE 44",
+   "text": "C.Ward pass deep right intended for E.Ayomanor INTERCEPTED by D.Ward at CLE 22. D.Ward to CLE 22 for no gain",
+   "ep_before": 3.0,
+   "epa": -3.6,
+   "for_team": -3.6
+  }
+ ],
+ "source": "nflverse play-by-play (nflfastR expected points model)",
+ "source_url": "https://github.com/nflverse/nflverse-data/releases/tag/pbp"
+}

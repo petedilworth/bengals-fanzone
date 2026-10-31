@@ -63,11 +63,38 @@ function renderBoard(team, w) {
   </header>`;
 }
 
+// Standing "expected points" explainer: words from data/explainers, numbers from the pipeline.
+function renderExplainer(team, w, ep, ex) {
+  const sign = v => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(1);
+  const sit = ep.situations.filter(s => s.ep != null).map(s => `
+    <li><span class="ep-val">${sign(s.ep)}</span><div><h3>${esc(s.label)}</h3><p>${esc(s.why)} <span class="n">${s.n.toLocaleString('en-CA')} plays</span></p></div></li>`).join('');
+  const plays = ep.plays.map(p => `
+    <li><span class="ep-val ${p.for_team >= 0 ? 'up' : 'down'}">${sign(p.for_team)}</span><div>
+      <h3>${esc(p.team)} · ${esc(p.note)}</h3>
+      <p class="ep-where">Week ${p.week}, ${esc(p.offence)} vs ${esc(p.defence)} · Q${p.quarter} ${esc(p.clock)} · ${esc(p.situation)} · worth ${sign(p.ep_before)} to ${esc(p.offence)} before the snap</p>
+      <p>${esc(p.text)}</p>
+    </div></li>`).join('');
+  return `
+  <section class="explain" aria-labelledby="ep-h">
+    <details>
+      <summary><h2 id="ep-h">${esc(ex.title)}</h2><span class="lede">${esc(ex.summary)}</span></summary>
+      ${ex.body.map(b => `<p>${rich(b)}</p>`).join('')}
+      <h3 class="ep-sub">${esc(ex.situationsTitle)}</h3>
+      <p class="note">${esc(ex.situationsNote.replace('{seasons}', ep.situations_seasons))}</p>
+      <ul class="ep-list">${sit}</ul>
+      <h3 class="ep-sub">${esc(ex.playsTitle)}</h3>
+      <p class="note">${esc(ex.playsNote)}</p>
+      <ul class="ep-list">${plays}</ul>
+      <p class="note">Source: <a class="src" href="${esc(ep.source_url)}">nflverse</a> play-by-play, nflfastR expected points model. Pulled ${esc(ep.generated.slice(0, 10))}.</p>
+    </details>
+  </section>`;
+}
+
 function section(id, title, lede, body) {
   return `<section aria-labelledby="${id}"><div class="section-head"><h2 id="${id}">${title}</h2>${lede ? `<p class="lede">${lede}</p>` : ''}</div>${body}</section>`;
 }
 
-function renderBrief(team, w) {
+function renderBrief(team, w, ep, ex) {
   const parts = [renderBoard(team, w)];
 
   if (w.meaning) parts.push(section('meaning', 'What the result means', '', `<p class="meaning">${rich(w.meaning)}</p>`));
@@ -77,6 +104,8 @@ function renderBrief(team, w) {
       <li><span class="rank" aria-hidden="true">${i + 1}</span><div>
         <h3>${esc(s.title)}</h3><p>${rich(s.fact)}</p>${s.why ? `<p class="read">${rich(s.why)}</p>` : ''}
       </div></li>`).join('')}</ol>`));
+
+  if (ep && ex) parts.push(renderExplainer(team, w, ep, ex));
 
   parts.push(section('watch', 'Things to watch', 'In game order.',
     `<ul class="watch">${w.watch.map(c => `
@@ -111,7 +140,11 @@ async function main() {
     renderStrip(team, season);
     const wk = String(team.currentWeek).padStart(2, '0');
     const w = await getJSON(`weeks/${team.currentSeason}-w${wk}.json`);
-    brief.innerHTML = renderBrief(team, w);
+    // The explainer is optional: skip it if either file is missing, or if the pipeline's
+    // examples are for a different opponent than this brief (e.g. Monday before the switch).
+    const opp = w.game.home.abbr === team.abbr ? w.game.away.abbr : w.game.home.abbr;
+    const [ep, ex] = await Promise.all([getJSON('stats/expected-points.json').catch(() => null), getJSON('explainers/expected-points.json').catch(() => null)]);
+    brief.innerHTML = renderBrief(team, w, ep && ep.opponent === opp ? ep : null, ex);
   } catch (err) {
     brief.innerHTML = `<p class="status">Couldn't load the brief (${esc(err.message)}). Try again in a minute.</p>`;
   }

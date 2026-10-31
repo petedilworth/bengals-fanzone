@@ -28,12 +28,13 @@ Read `NEXT.md` at the start of every session. It says where we are, what's next 
 
 ## The weekly brief (home page)
 
-Order: season strip → scoreboard → What the result means → Main storylines → Things to watch → one line-stat finding → Devil's Advocate and Alternative view.
+Order: season strip → scoreboard → What the result means → Main storylines → Expected points, explained (collapsed) → Things to watch → one line-stat finding → Devil's Advocate and Alternative view.
 
 - **Storylines:** 5, ranked by how much each could change the result, 2–3 lines each (a sourced fact, then one "why it matters" line). Across the five: at least one on defence, at least one led by the line stats, at least one the media round-up did not cover. One storyline can meet more than one rule.
 - **Things to watch:** at most 5, in game order, each with why it matters. Not predictions. Not graded.
 - **Devil's Advocate:** 3 bullets. **Alternative view:** 1 paragraph, usually the opponent's side.
 - **Length:** the whole page is a 3-minute read, about 600–800 words.
+- **Expected points, explained:** a standing collapsed section (owner's ask, Oct 31). Words in `data/explainers/expected-points.json`; 5 situations and 5 real plays in `data/stats/expected-points.json`, rebuilt by the pipeline each run for the next opponent. Hidden if the examples are for a different opponent than the brief. Not counted in the 3-minute read.
 - Not on the home page: position room, sources list, past weeks (own page), hit rate, grading.
 
 ## Stats
@@ -60,7 +61,8 @@ Order: season strip → scoreboard → What the result means → Main storylines
 - `site/` – static HTML, CSS and JS. No build step. Reads `data/` at run time. `index.html` is the brief, `stats.html` the line stats, `media.html` who's talking about what. Pages only display; all math lives in the pipeline.
 - `pipeline/` – the stats pipeline. `nfl/sources.py` pulls every nflverse source whole (all teams, players, plays) into `data/raw/` (git-ignored) and tracks freshness; `nfl/metrics.py` holds metric functions by question; `build_stats.py` runs it all and writes `data/stats/*.json`. New questions (run game, passing game, any position) add a metrics module and a JSON file; the pulls are already there. The transcript pipeline lives in `bengals-research`.
 - `data/media/` – one file per game week of media topics (topic names, which sources raised each) plus `index.json`. Written by the private round-up session each Wednesday. Topic and source names only: never a summary, quote or number from a source. `site/media.html` renders it as a source × topic grid.
-- `data/stats/` – pipeline output. `line.json` (three line questions, ranks, 2025 baseline), `sources.json` (what was pulled, through which week), `espn-winrates.json` (entered by hand, dated).
+- `data/explainers/` – standing explainer text shown in every brief (expected points).
+- `data/stats/` – pipeline output. `expected-points.json` (examples for the explainer, from `nfl/expected_points.py`), `line.json` (three line questions, ranks, 2025 baseline), `sources.json` (what was pulled, through which week), `espn-winrates.json` (entered by hand, dated).
 - `.github/workflows/stats.yml` – runs the pipeline Mon, Wed, Thu, Sat and commits changed data. Also fills in results and the record in `season-2026.json` from play-by-play.
 - `scripts/build.sh` – copies `site/` and `data/` into `_site/` for preview and deploy.
 - `.github/workflows/pages.yml` – deploys `_site/` to GitHub Pages on push to `main`.
