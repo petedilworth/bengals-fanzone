@@ -1,6 +1,6 @@
 # Next step
 
-_Last updated: Sat, Oct 24, 2026 (first new-site brief live: Week 7 at BAL)_
+_Last updated: Sat, Oct 31, 2026 (Week 7 closed out, Week 8 brief live)_
 
 ## Where we are
 
@@ -52,6 +52,10 @@ The old artifact and its two scheduled tasks are still running. Leave them on un
      - Lesson for step 6: writing a brief needs a network that reaches news sites. The Friday routine must run in Research_full, not in the build environment.
      - Step 6 (Friday draft routine) is still unbuilt. Week 8 vs TEN is the next chance to test it with a dry run.
      - Oct 24, later: the brief's line-stat finding was rewritten after ESPN's Week 6 win rates moved Baltimore's pass rush from 19th to 10th.
+   - **Week 7 closed out (Oct 31):** won 35–13 at Baltimore. Each watch item has its "What happened" line and the page has a "What the result means" paragraph. Storyline 4 (blown leads) came true on Baltimore's side; the line-stat finding (blitz) was wrong. The Week 8 round-up said Baltimore was the first team to lose by 20 after leading by 13 at half; ESPN says third (1941 Eagles, 1950 Colts). Fixed on the site, not in the private round-up file.
+   - **Week 8 vs TEN (Sun Nov 1), written by hand Oct 31 (route B again).** Owner picked round-up storylines 1 to 5 (ranked on the page: don't spot them a half; pressure Ward with four; Pollard not Ward; run wide left; shotgun identity). Line-stat finding: the blitz split collapsed from −0.11 to +0.04 after one game, a small-sample lesson. Line Bengals −12.5 (opened −6.5), total 46.5, ESPN predictor 86%. Saturday facts from the round-up session again; ESPN and nflverse play-by-play checked here directly. About 700 words.
+     - **Monday job:** close out Week 8 the same way, set currentWeek 9 (Atlanta in Madrid, Nov 8, 9:30 am ET).
+     - Two hand-written weeks now exist as worked examples for step 6. The pattern: round-up storylines → owner picks → Saturday fact check in Research_full → brief JSON → phone render check → push.
    - **Stats now say "through Week 6" (Oct 24, owner's ask).** The data already held Week 6 for every team that played; the label read the Bengals' last game, so the bye froze it at Week 5. `through_week` is now the league's latest played week (13 or more games in the file); `team_through_week` keeps the Bengals' own; `pending` still waits on the Bengals' latest game. The stats page adds one line under the pills when a bye sits between the two. Fixed with it: the next opponent is now the first game with no result, not "after currentWeek", which had jumped to Tennessee the day before the Baltimore game.
    - **Search engines:** all three pages carry `noindex` since the first build; `site/robots.txt` (Oct 21) keeps crawlers out of `data/`. The site is unlisted, not private: anyone with the link can open it, and the repo shows on the owner's GitHub profile. A real lock would mean Cloudflare Pages + Access on a domain the owner buys; declined for now.
    - **Media page is live** with Week 6 (copied by the stats workflow after the token was added). Week 7 copies on the next stats run, Thu Oct 15, 7:23 am ET.

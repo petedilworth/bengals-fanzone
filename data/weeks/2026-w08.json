@@ -1,0 +1,90 @@
+{
+  "season": 2026,
+  "week": 8,
+  "status": "preview",
+  "label": "Week 8 brief",
+  "updated": "Sat, Oct 31",
+  "game": {
+    "home": {
+      "abbr": "CIN",
+      "record": "4–2"
+    },
+    "away": {
+      "abbr": "TEN",
+      "record": "1–6"
+    },
+    "state": "Preview",
+    "kickoff": "Sun, Nov 1 · 1:00 pm ET",
+    "venue": "Paycor Stadium · CBS",
+    "line": "Bengals by 12.5, total 46.5 [ESPN](https://www.espn.com/nfl/game/_/gameId/401873031/titans-bengals)",
+    "winChance": {
+      "team": 86,
+      "opp": 14,
+      "source": "ESPN matchup predictor, Oct 31"
+    }
+  },
+  "storylines": [
+    {
+      "title": "Do not spot the worst team a half",
+      "fact": "The Bengals had 59 yards in the first half at Baltimore, the fewest in any first half of a Burrow game [ESPN](https://www.espn.com/nfl/story/_/id/50281493/jamarr-chase-fiery-half-speech-inspires-bengals-win). Tennessee led Cleveland 14–0 last week and still lost [ESPN](https://www.espn.com/nfl/story/_/id/50239544/week-7-sunday-games-takeaways-questions-2026).",
+      "why": "**Why it matters:** the Titans have not won two in a row since November 2022. They can steal a half. A slow start gives them the second one too."
+    },
+    {
+      "title": "Pressure Ward with four",
+      "fact": "Cam Ward is pressured on 35.5% of dropbacks, averages 5.7 yards a pass and has five interceptions [Bengals.com](https://www.bengals.com/news/tennesse-titans-scouting-report-week-8-2026-game-preview). Tennessee's pass block win rate ranks 28th [ESPN](https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking). Cincinnati pressures 39% of dropbacks while rarely blitzing [Bengals.com](https://www.bengals.com/news/tennesse-titans-scouting-report-week-8-2026-game-preview).",
+      "why": "**Why it matters:** four rushers leave seven in coverage. A young quarterback under pressure with nowhere to throw is how this defence gets turnovers."
+    },
+    {
+      "title": "Pollard, not Ward",
+      "fact": "Tennessee ran for 141 yards and three touchdowns in Cleveland [ESPN](https://www.espn.com/nfl/story/_/id/50239544/week-7-sunday-games-takeaways-questions-2026). Cincinnati's run defence allows 34% success, third best, but runs off the offence's right tackle succeed 41% of the time, 25th, on 17 carries [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html).",
+      "why": "**Why it matters:** Tennessee has no passing game to fall back on. Stop Pollard early and its plan is gone."
+    },
+    {
+      "title": "Run wide left",
+      "fact": "Tennessee allows 53% success on runs to the offence's left end (32 carries) and 47% at left tackle (17), but only 33% up the middle (49), fifth best. Cincinnati's best gap is left tackle: 50% on 14 carries [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html).",
+      "why": "**Non-obvious:** this is the reverse of last week. The middle that worked in Baltimore is Tennessee's strength. No outlet has mapped it."
+    },
+    {
+      "title": "Shotgun is who they are",
+      "fact": "Burrow took three snaps under centre across the five touchdown drives in Baltimore [Bengals.com](https://www.bengals.com/news/bengals-keep-their-cool-ravens-joe-burrow-jamarr-chase-zac-taylor). Play-action, the closest stand-in the line stats have, gains 0.07 expected points a dropback, 20th, against 0.23 without it [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html).",
+      "why": "**Why it matters:** a weak opponent tempts a coach back to his experiment. If the under-centre looks return with a lead, that is a choice, not a need."
+    }
+  ],
+  "watch": [
+    {
+      "when": "First half",
+      "title": "How many plays before the break",
+      "text": "Last week the Bengals ran 19 plays before half [Bengals.com](https://www.bengals.com/news/postgame-quick-hits-ja-marr-chase-second-half-stats-ravens-week-7-2026). A normal count means the slow start was Baltimore, not a habit."
+    },
+    {
+      "when": "Early downs",
+      "title": "Which way the Bengals run",
+      "text": "The numbers point left, away from the middle. Count carries to each side of the line."
+    },
+    {
+      "when": "Titans third downs",
+      "title": "Ward against a four-man rush",
+      "text": "Baltimore converted 9 of 16 third downs last week [ESPN](https://www.espn.com/nfl/boxscore/_/gameId/401873012), almost all before half. Watch if the four-man rush gets home before Ward finds the sticks."
+    },
+    {
+      "when": "All game",
+      "title": "Pollard on the edges",
+      "text": "Watch where his carries go. Inside runs into Lawrence and Allen. Outside is where this defence has leaked."
+    },
+    {
+      "when": "With a lead",
+      "title": "Under centre or not",
+      "text": "Count the snaps with Burrow under centre once Cincinnati is ahead. It shows what the staff still wants to test."
+    }
+  ],
+  "lineFinding": "Last week this page said Burrow struggles when teams send five or more rushers. Baltimore did, on 11 of 32 dropbacks. The split moved from −0.11 to +0.04 expected points a dropback, now on 63 plays [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html). One game turned a weakness into a wash. That is what a small sample looks like. Against four rushers, the offence still gains 0.25 on 166 plays.",
+  "devilsAdvocate": [
+    "**A 1–6 team is not a free win.** Tennessee led Cleveland by 14 and lost by three [ESPN](https://www.espn.com/nfl/story/_/id/50239544/week-7-sunday-games-takeaways-questions-2026). The line opened at Bengals by 6.5 and is now 12.5 [ESPN](https://www.espn.com/nfl/game/_/gameId/401873031/titans-bengals). Receiver Carnell Tate and back Tyjae Spears are out, but Ward and Pollard play [Bengals.com](https://www.bengals.com/news/bengals-titans-week-8-2026-injury-report). If the rest of the move is a reaction to one half in Baltimore, the market may be overrating that half.",
+    "**The run-left map is thin.** It rests on 17 Titans carries and 14 Bengals carries at left tackle. A handful of plays could reverse it.",
+    "**The big second half may be the outlier.** Before Baltimore, Burrow's release was 2.57 seconds and the offence lived on short throws. One game at 3.06 seconds is not a new identity yet [NFL.com](https://www.nfl.com/news/week-8-nfl-mvp-tracker-joe-burrow-jared-goff-caleb-williams)."
+  ],
+  "alternativeView": {
+    "title": "The same game, from Tennessee",
+    "text": "From Nashville, this is a game to shorten. Run Pollard, keep Ward out of third-and-long and keep Burrow on the sideline. It worked in Cleveland for a half. The catch is the matchup: Cincinnati's run defence ranks third in success allowed [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html), and Tennessee's run blocking ranks 30th by ESPN's win rate [ESPN](https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking)."
+  }
+}

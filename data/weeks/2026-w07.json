@@ -1,19 +1,21 @@
 {
   "season": 2026,
   "week": 7,
-  "status": "preview",
+  "status": "final",
   "label": "Week 7 brief",
-  "updated": "Sat, Oct 24, 9 am ET",
+  "updated": "Closed out Sat, Oct 31",
   "game": {
     "home": {
       "abbr": "BAL",
-      "record": "4–2"
+      "score": 13,
+      "record": "4–3"
     },
     "away": {
       "abbr": "CIN",
-      "record": "3–2"
+      "score": 35,
+      "record": "4–2"
     },
-    "state": "Preview",
+    "state": "Final",
     "kickoff": "Sun, Oct 25 · 1:00 pm ET",
     "venue": "M&T Bank Stadium · CBS",
     "line": "Bengals by 1.5, total 48.5 [ESPN](https://www.espn.com/nfl/game/_/gameId/401873012/bengals-ravens)",
@@ -54,27 +56,32 @@
     {
       "when": "About 11:30 am ET",
       "title": "Jackson on the inactive list",
-      "text": "His decision may wait until inactives come out [ESPN](https://www.espn.com/nfl/player/_/id/3916387/lamar-jackson). It decides which defensive plan Cincinnati uses. Also check left tackle Ronnie Stanley: he missed Friday's practice but has no game status [Bengals.com](https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report)."
+      "text": "His decision may wait until inactives come out [ESPN](https://www.espn.com/nfl/player/_/id/3916387/lamar-jackson). It decides which defensive plan Cincinnati uses. Also check left tackle Ronnie Stanley: he missed Friday's practice but has no game status [Bengals.com](https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report).",
+      "after": "Jackson did not play. Tyler Huntley threw all 38 Ravens passes [nflverse](https://github.com/nflverse/nflverse-data/releases/tag/pbp), so the plan built for Huntley was the one that ran."
     },
     {
       "when": "First quarter",
       "title": "Ravens flags on early downs",
-      "text": "Count false starts and delays. Each one turns a Henry run into a passing down, which is where Cincinnati's four-man rush wins."
+      "text": "Count false starts and delays. Each one turns a Henry run into a passing down, which is where Cincinnati's four-man rush wins.",
+      "after": "Baltimore had five pre-snap penalties [ESPN](https://www.espn.com/nfl/story/_/id/50281972/after-loss-jesse-minter-says-ravens-need-identity-check) and 10 accepted penalties in all, to Cincinnati's one [Bengals.com](https://www.bengals.com/news/bengals-keep-their-cool-ravens-joe-burrow-jamarr-chase-zac-taylor)."
     },
     {
       "when": "Early downs",
       "title": "Where the Bengals run",
-      "text": "Watch if carries go up the middle or to the edges. The numbers point inside. A lean on outside runs means the staff sees something the numbers do not."
+      "text": "Watch if carries go up the middle or to the edges. The numbers point inside. A lean on outside runs means the staff sees something the numbers do not.",
+      "after": "Only 19 designed runs, 14 of them after half. Up the middle, 4 of 5 succeeded, the best of any gap [nflverse](https://github.com/nflverse/nflverse-data/releases/tag/pbp). Too few carries to prove the map."
     },
     {
       "when": "Passing downs",
       "title": "Hendrickson on Brown, and the clock in Burrow's head",
-      "text": "Three sacks is Baltimore's winning number. Watch for chips from a tight end or back on Brown's side, and how fast Burrow lets it go."
+      "text": "Three sacks is Baltimore's winning number. Watch for chips from a tight end or back on Brown's side, and how fast Burrow lets it go.",
+      "after": "Brown allowed two pressures on 34 dropbacks against Hendrickson [Bengals.com](https://www.bengals.com/news/bengals-keep-their-cool-ravens-joe-burrow-jamarr-chase-zac-taylor). Burrow was sacked once, not by Hendrickson [nflverse](https://github.com/nflverse/nflverse-data/releases/tag/pbp)."
     },
     {
       "when": "Fourth quarter",
       "title": "Who protects a lead",
-      "text": "If either team leads by 10, watch the other quarterback's passing. Both teams have given up late leads this year."
+      "text": "If either team leads by 10, watch the other quarterback's passing. Both teams have given up late leads this year.",
+      "after": "Nobody protected a lead. Baltimore's 13–0 became 14–13 by the end of the third quarter and 35–13 at the end [nflverse](https://github.com/nflverse/nflverse-data/releases/tag/pbp)."
     }
   ],
   "lineFinding": "Burrow is good against four rushers and poor against more. With four, the offence gains 0.21 expected points a dropback on 144 plays. With five or more, it loses 0.11 on 53 plays [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html). After Week 6, Baltimore's pass rush win rate rose to 10th, from 19th a week earlier [ESPN](https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking). A four-man rush that wins has no reason to blitz, and four is the look Burrow handles best. No outlet has raised this split in three weeks.",
@@ -86,5 +93,6 @@
   "alternativeView": {
     "title": "The same game, from Baltimore",
     "text": "Baltimore sees a home game against a team that has lost six of its last eight to the Ravens [ESPN](https://www.espn.com/nfl/story/_/id/50229521/week-7-picks-predictions-schedule-fantasy-odds-2026). Its plan writes itself: run Henry, put Hendrickson on Brown and wait for Cincinnati's late mistakes. The worry is its own line. If the flags keep coming, even a healthy Jackson spends the day on third-and-long."
-  }
+  },
+  "meaning": "Storyline 4 came true, on Baltimore's side. The Ravens led 13–0 at half and lost by 22. Only two teams had ever lost by 20 or more after leading by 13 or more at half: the 1941 Eagles and the 1950 Colts [ESPN](https://www.espn.com/nfl/story/_/id/50281972/after-loss-jesse-minter-says-ravens-need-identity-check). Burrow went 6 of 12 for 43 yards before half, then 16 of 18 for 249 and four touchdowns after [Bengals.com](https://www.bengals.com/news/postgame-quick-hits-ja-marr-chase-second-half-stats-ravens-week-7-2026). Baltimore converted 9 of 16 third downs [ESPN](https://www.espn.com/nfl/boxscore/_/gameId/401873012), all but one of them before half [nflverse](https://github.com/nflverse/nflverse-data/releases/tag/pbp). The brief was right about Baltimore's flags and about Brown holding up. It expected Baltimore to win with four rushers. Instead the Ravens blitzed on 11 of 32 dropbacks, and Burrow beat it after half [stats page](https://petedilworth.github.io/bengals-fanzone/stats.html). It never saw the first half coming: 19 Bengals plays before the break [Bengals.com](https://www.bengals.com/news/postgame-quick-hits-ja-marr-chase-second-half-stats-ravens-week-7-2026)."
 }
