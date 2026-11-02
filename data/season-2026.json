@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "record": "4–2",
+  "record": "5–2",
   "games": [
     {
       "week": 1,
@@ -61,7 +61,9 @@
       "date": "Nov 1",
       "opp": "TEN",
       "home": true,
-      "time": "1:00 pm"
+      "time": "1:00 pm",
+      "result": "W",
+      "score": "43–36"
     },
     {
       "week": 9,

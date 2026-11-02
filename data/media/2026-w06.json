@@ -1,12 +1,41 @@
 {
  "week": 6,
- "season": 2026,
- "opponent": "Bye, next at BAL",
- "written": "2026-10-14",
+ "sources": [
+  {
+   "name": "Locked On Bengals",
+   "type": "podcast",
+   "id": "locked-on",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
+  },
+  {
+   "name": "ESPN",
+   "type": "national",
+   "id": "espn",
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
+  },
+  {
+   "name": "NFL.com",
+   "type": "national",
+   "id": "nfl-com",
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
+  },
+  {
+   "name": "The Ringer",
+   "type": "national",
+   "id": "ringer",
+   "url": "https://www.theringer.com/nfl"
+  },
+  {
+   "name": "PFF",
+   "type": "national",
+   "id": "pff",
+   "url": "https://www.pff.com/nfl"
+  }
+ ],
  "topics": [
   {
-   "topic": "Shotgun vs under centre",
    "stat_verdict": "supports",
+   "topic": "Shotgun vs under centre",
    "sources": [
     "locked-on",
     "espn",
@@ -23,8 +52,8 @@
    ]
   },
   {
-   "topic": "Perine downhill role",
    "stat_verdict": "needs a new metric",
+   "topic": "Perine downhill role",
    "sources": [
     "locked-on",
     "espn",
@@ -32,8 +61,8 @@
    ]
   },
   {
-   "topic": "Offensive line run blocking",
    "stat_verdict": "supports",
+   "topic": "Offensive line run blocking",
    "sources": [
     "locked-on",
     "espn"
@@ -73,29 +102,29 @@
    ]
   },
   {
+   "stat_verdict": "needs a new metric",
    "topic": "Second-and-long play calling",
-   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on"
    ]
   },
   {
-   "topic": "Pass protection vs quick release",
    "stat_verdict": "contradicts",
+   "topic": "Pass protection vs quick release",
    "sources": [
     "locked-on"
    ]
   },
   {
-   "topic": "Explosive runs allowed",
    "stat_verdict": "supports",
+   "topic": "Explosive runs allowed",
    "sources": [
     "locked-on"
    ]
   },
   {
-   "topic": "Dexter Lawrence off-field drop",
    "stat_verdict": "needs a new metric",
+   "topic": "Dexter Lawrence off-field drop",
    "sources": [
     "locked-on"
    ]
@@ -113,36 +142,7 @@
    ]
   }
  ],
- "sources": [
-  {
-   "type": "podcast",
-   "name": "Locked On Bengals",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "id": "locked-on"
-  },
-  {
-   "type": "national",
-   "name": "ESPN",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
-   "id": "espn"
-  },
-  {
-   "type": "national",
-   "name": "NFL.com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
-   "id": "nfl-com"
-  },
-  {
-   "type": "national",
-   "name": "The Ringer",
-   "url": "https://www.theringer.com/nfl",
-   "id": "ringer"
-  },
-  {
-   "type": "national",
-   "name": "PFF",
-   "url": "https://www.pff.com/nfl",
-   "id": "pff"
-  }
- ]
+ "opponent": "Bye, next at BAL",
+ "season": 2026,
+ "written": "2026-10-14"
 }

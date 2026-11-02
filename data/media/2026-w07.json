@@ -1,8 +1,55 @@
 {
  "week": 7,
- "season": 2026,
- "opponent": "at BAL",
- "written": "2026-10-21",
+ "sources": [
+  {
+   "name": "Locked On Bengals",
+   "type": "podcast",
+   "id": "locked-on",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
+  },
+  {
+   "name": "Bengals.com",
+   "type": "beat",
+   "id": "bengals-com",
+   "url": "https://www.bengals.com/news/"
+  },
+  {
+   "name": "WCPO",
+   "type": "beat",
+   "id": "wcpo",
+   "url": "https://www.wcpo.com/sports/football/bengals"
+  },
+  {
+   "name": "Local 12",
+   "type": "beat",
+   "id": "local12",
+   "url": "https://local12.com/sports/bengals"
+  },
+  {
+   "name": "ESPN",
+   "type": "national",
+   "id": "espn",
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
+  },
+  {
+   "name": "NFL.com",
+   "type": "national",
+   "id": "nfl-com",
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
+  },
+  {
+   "name": "The Ringer",
+   "type": "national",
+   "id": "ringer",
+   "url": "https://www.theringer.com/nfl"
+  },
+  {
+   "name": "PFF",
+   "type": "national",
+   "id": "pff",
+   "url": "https://www.pff.com/nfl"
+  }
+ ],
  "topics": [
   {
    "topic": "Lamar Jackson containment",
@@ -37,8 +84,8 @@
    ]
   },
   {
-   "topic": "Dexter Lawrence impact",
    "stat_verdict": "needs a new metric",
+   "topic": "Dexter Lawrence impact",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -84,8 +131,8 @@
    ]
   },
   {
-   "topic": "Offensive line vs Ravens rush",
    "stat_verdict": "needs a new metric",
+   "topic": "Offensive line vs Ravens rush",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -93,8 +140,8 @@
    ]
   },
   {
-   "topic": "Run defence explosives and tackling",
    "stat_verdict": "supports",
+   "topic": "Run defence explosives and tackling",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -117,78 +164,31 @@
    ]
   },
   {
-   "topic": "Chase slot alignment",
    "stat_verdict": "needs a new metric",
+   "topic": "Chase slot alignment",
    "sources": [
     "locked-on",
     "nfl-com"
    ]
   },
   {
-   "topic": "Blitz rate and dime usage",
    "stat_verdict": "needs a new metric",
+   "topic": "Blitz rate and dime usage",
    "sources": [
     "bengals-com",
     "ringer"
    ]
   },
   {
-   "topic": "Run game efficiency",
    "stat_verdict": "contradicts",
+   "topic": "Run game efficiency",
    "sources": [
     "locked-on",
     "espn"
    ]
   }
  ],
- "sources": [
-  {
-   "type": "podcast",
-   "name": "Locked On Bengals",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "id": "locked-on"
-  },
-  {
-   "type": "beat",
-   "name": "Bengals.com",
-   "url": "https://www.bengals.com/news/",
-   "id": "bengals-com"
-  },
-  {
-   "type": "beat",
-   "name": "WCPO",
-   "url": "https://www.wcpo.com/sports/football/bengals",
-   "id": "wcpo"
-  },
-  {
-   "type": "beat",
-   "name": "Local 12",
-   "url": "https://local12.com/sports/bengals",
-   "id": "local12"
-  },
-  {
-   "type": "national",
-   "name": "ESPN",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
-   "id": "espn"
-  },
-  {
-   "type": "national",
-   "name": "NFL.com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
-   "id": "nfl-com"
-  },
-  {
-   "type": "national",
-   "name": "The Ringer",
-   "url": "https://www.theringer.com/nfl",
-   "id": "ringer"
-  },
-  {
-   "type": "national",
-   "name": "PFF",
-   "url": "https://www.pff.com/nfl",
-   "id": "pff"
-  }
- ]
+ "opponent": "at BAL",
+ "season": 2026,
+ "written": "2026-10-21"
 }
