@@ -1,46 +1,17 @@
 {
+ "season": 2026,
+ "opponent": "Bye, next at BAL",
+ "written": "2026-10-14",
  "week": 6,
- "sources": [
-  {
-   "name": "Locked On Bengals",
-   "type": "podcast",
-   "id": "locked-on",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
-  },
-  {
-   "name": "ESPN",
-   "type": "national",
-   "id": "espn",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
-  },
-  {
-   "name": "NFL.com",
-   "type": "national",
-   "id": "nfl-com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
-  },
-  {
-   "name": "The Ringer",
-   "type": "national",
-   "id": "ringer",
-   "url": "https://www.theringer.com/nfl"
-  },
-  {
-   "name": "PFF",
-   "type": "national",
-   "id": "pff",
-   "url": "https://www.pff.com/nfl"
-  }
- ],
  "topics": [
   {
-   "stat_verdict": "supports",
    "topic": "Shotgun vs under centre",
    "sources": [
     "locked-on",
     "espn",
     "ringer"
-   ]
+   ],
+   "stat_verdict": "supports"
   },
   {
    "topic": "Chase Brown slump",
@@ -52,21 +23,21 @@
    ]
   },
   {
-   "stat_verdict": "needs a new metric",
    "topic": "Perine downhill role",
    "sources": [
     "locked-on",
     "espn",
     "nfl-com"
-   ]
+   ],
+   "stat_verdict": "needs a new metric"
   },
   {
-   "stat_verdict": "supports",
    "topic": "Offensive line run blocking",
    "sources": [
     "locked-on",
     "espn"
-   ]
+   ],
+   "stat_verdict": "supports"
   },
   {
    "topic": "Hudson injury, Endries role",
@@ -102,32 +73,32 @@
    ]
   },
   {
-   "stat_verdict": "needs a new metric",
    "topic": "Second-and-long play calling",
    "sources": [
     "locked-on"
-   ]
+   ],
+   "stat_verdict": "needs a new metric"
   },
   {
-   "stat_verdict": "contradicts",
    "topic": "Pass protection vs quick release",
    "sources": [
     "locked-on"
-   ]
+   ],
+   "stat_verdict": "contradicts"
   },
   {
-   "stat_verdict": "supports",
    "topic": "Explosive runs allowed",
    "sources": [
     "locked-on"
-   ]
+   ],
+   "stat_verdict": "supports"
   },
   {
-   "stat_verdict": "needs a new metric",
    "topic": "Dexter Lawrence off-field drop",
    "sources": [
     "locked-on"
-   ]
+   ],
+   "stat_verdict": "needs a new metric"
   },
   {
    "topic": "Secondary communication",
@@ -142,7 +113,36 @@
    ]
   }
  ],
- "opponent": "Bye, next at BAL",
- "season": 2026,
- "written": "2026-10-14"
+ "sources": [
+  {
+   "id": "locked-on",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
+   "type": "podcast",
+   "name": "Locked On Bengals"
+  },
+  {
+   "id": "espn",
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "type": "national",
+   "name": "ESPN"
+  },
+  {
+   "id": "nfl-com",
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "type": "national",
+   "name": "NFL.com"
+  },
+  {
+   "id": "ringer",
+   "url": "https://www.theringer.com/nfl",
+   "type": "national",
+   "name": "The Ringer"
+  },
+  {
+   "id": "pff",
+   "url": "https://www.pff.com/nfl",
+   "type": "national",
+   "name": "PFF"
+  }
+ ]
 }

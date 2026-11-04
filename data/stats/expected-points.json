@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T20:49:11+00:00",
+ "generated": "2026-11-04T18:41:55+00:00",
  "season": 2026,
  "team": "CIN",
  "opponent": "ATL",
@@ -8,13 +8,13 @@
    "label": "1st-and-10 at your own 25",
    "why": "Where most drives start after a touchback.",
    "ep": 1.1,
-   "n": 1555
+   "n": 1560
   },
   {
    "label": "3rd-and-8 at your own 30",
    "why": "The passing down a pass rush wants to force.",
    "ep": 0.2,
-   "n": 197
+   "n": 199
   },
   {
    "label": "3rd-and-2 near midfield",
@@ -26,13 +26,13 @@
    "label": "1st-and-10 at the opponent's 25",
    "why": "The edge of field-goal range.",
    "ep": 4.4,
-   "n": 914
+   "n": 917
   },
   {
    "label": "1st-and-goal at the 5",
    "why": "Touchdown or settle for three.",
    "ep": 5.8,
-   "n": 315
+   "n": 318
   }
  ],
  "situations_seasons": "2025–26",
