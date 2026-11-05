@@ -1,8 +1,4 @@
 {
- "season": 2026,
- "opponent": "vs TEN",
- "written": "2026-10-28",
- "week": 8,
  "topics": [
   {
    "topic": "Halftime adjustments",
@@ -29,6 +25,7 @@
    ]
   },
   {
+   "stat_verdict": "supports",
    "topic": "Burrow efficiency",
    "sources": [
     "locked-on",
@@ -37,8 +34,7 @@
     "local12",
     "espn",
     "nfl-com"
-   ],
-   "stat_verdict": "supports"
+   ]
   },
   {
    "topic": "Chase gravity and Higgins one-on-ones",
@@ -63,6 +59,7 @@
    ]
   },
   {
+   "stat_verdict": "supports",
    "topic": "Hendrickson vs Orlando Brown",
    "sources": [
     "locked-on",
@@ -71,10 +68,10 @@
     "espn",
     "nfl-com",
     "pff"
-   ],
-   "stat_verdict": "supports"
+   ]
   },
   {
+   "stat_verdict": "contradicts",
    "topic": "Lawrence and Mafe",
    "sources": [
     "locked-on",
@@ -82,18 +79,17 @@
     "espn",
     "nfl-com",
     "pff"
-   ],
-   "stat_verdict": "contradicts"
+   ]
   },
   {
+   "stat_verdict": "supports",
    "topic": "Titans preview and Pollard",
    "sources": [
     "bengals-com",
     "espn",
     "nfl-com",
     "ringer"
-   ],
-   "stat_verdict": "supports"
+   ]
   },
   {
    "topic": "Tight end room after All",
@@ -105,23 +101,23 @@
    ]
   },
   {
+   "stat_verdict": "not testable yet",
    "topic": "Run defence explosives and tackling",
    "sources": [
     "locked-on",
     "bengals-com",
     "nfl-com",
     "pff"
-   ],
-   "stat_verdict": "not testable yet"
+   ]
   },
   {
+   "stat_verdict": "supports",
    "topic": "Shotgun vs under centre",
    "sources": [
     "locked-on",
     "bengals-com",
     "nfl-com"
-   ],
-   "stat_verdict": "supports"
+   ]
   },
   {
    "topic": "Third-down defence",
@@ -132,12 +128,12 @@
    ]
   },
   {
+   "stat_verdict": "supports",
    "topic": "Run game efficiency",
    "sources": [
     "locked-on",
     "espn"
-   ],
-   "stat_verdict": "supports"
+   ]
   },
   {
    "topic": "Trade deadline targets",
@@ -147,61 +143,65 @@
    ]
   },
   {
+   "stat_verdict": "needs a new metric",
    "topic": "Chase slot alignment",
    "sources": [
     "locked-on"
-   ],
-   "stat_verdict": "needs a new metric"
+   ]
   }
  ],
+ "week": 8,
  "sources": [
   {
    "id": "locked-on",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
    "type": "podcast",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
    "name": "Locked On Bengals"
   },
   {
    "id": "bengals-com",
-   "url": "https://www.bengals.com/news/",
    "type": "beat",
+   "url": "https://www.bengals.com/news/",
    "name": "Bengals.com"
   },
   {
    "id": "wcpo",
-   "url": "https://www.wcpo.com/sports/football/bengals",
    "type": "beat",
+   "url": "https://www.wcpo.com/sports/football/bengals",
    "name": "WCPO"
   },
   {
    "id": "local12",
-   "url": "https://local12.com/sports/bengals",
    "type": "beat",
+   "url": "https://local12.com/sports/bengals",
    "name": "Local 12"
   },
   {
    "id": "espn",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
    "type": "national",
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
    "name": "ESPN"
   },
   {
    "id": "nfl-com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
    "type": "national",
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
    "name": "NFL.com"
   },
   {
    "id": "ringer",
-   "url": "https://www.theringer.com/nfl",
    "type": "national",
+   "url": "https://www.theringer.com/nfl",
    "name": "The Ringer"
   },
   {
    "id": "pff",
-   "url": "https://www.pff.com/nfl",
    "type": "national",
+   "url": "https://www.pff.com/nfl",
    "name": "PFF"
   }
- ]
+ ],
+ "written": "2026-10-28",
+ "opponent": "vs TEN",
+ "season": 2026
 }
