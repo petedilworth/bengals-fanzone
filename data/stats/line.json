@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T18:50:04+00:00",
+ "generated": "2026-11-07T16:54:43+00:00",
  "season": 2026,
  "team": "CIN",
  "status": {
@@ -82,7 +82,7 @@
   "time_to_throw": {
    "value": 2.66,
    "n": 267,
-   "league": 2.84,
+   "league": 2.83,
    "rank_fastest": 4
   },
   "weekly": [
@@ -164,19 +164,19 @@
    "epa": 0.043,
    "success": 0.523,
    "rank": 22,
-   "league": 0.102
+   "league": 0.104
   },
   "no_play_action": {
    "n": 245,
    "epa": 0.271,
    "success": 0.547,
-   "league": 0.039
+   "league": 0.037
   },
   "after_successful_run": {
    "n": 22,
    "epa": 0.655,
    "success": 0.727,
-   "league": 0.159
+   "league": 0.162
   },
   "after_failed_run": {
    "n": 59,
@@ -257,7 +257,7 @@
     "success": 0.333,
     "ypc": 3.3,
     "league_success": 0.442,
-    "league_epa": -0.006,
+    "league_epa": -0.007,
     "rank": null
    },
    {
@@ -266,8 +266,8 @@
     "epa": -0.133,
     "success": 0.438,
     "ypc": 3.7,
-    "league_success": 0.404,
-    "league_epa": -0.032,
+    "league_success": 0.403,
+    "league_epa": -0.035,
     "rank": 16
    },
    {
@@ -287,7 +287,7 @@
     "success": 0.449,
     "ypc": 3.6,
     "league_success": 0.413,
-    "league_epa": -0.092,
+    "league_epa": -0.093,
     "rank": 8
    },
    {
@@ -306,8 +306,8 @@
     "epa": -0.3,
     "success": 0.333,
     "ypc": 3.0,
-    "league_success": 0.392,
-    "league_epa": -0.064,
+    "league_success": 0.391,
+    "league_epa": -0.058,
     "rank": null
    },
    {
@@ -316,8 +316,8 @@
     "epa": -0.154,
     "success": 0.444,
     "ypc": 3.2,
-    "league_success": 0.424,
-    "league_epa": 0.009,
+    "league_success": 0.422,
+    "league_epa": 0.008,
     "rank": 11
    }
   ],
@@ -391,7 +391,7 @@
     "success": 0.483,
     "ypc": 6.0,
     "league_success": 0.442,
-    "league_epa": -0.006,
+    "league_epa": -0.007,
     "rank": 22
    },
    {
@@ -400,9 +400,9 @@
     "epa": 0.029,
     "success": 0.353,
     "ypc": 5.7,
-    "league_success": 0.404,
-    "league_epa": -0.032,
-    "rank": 10
+    "league_success": 0.403,
+    "league_epa": -0.035,
+    "rank": 11
    },
    {
     "gap": "left guard",
@@ -421,7 +421,7 @@
     "success": 0.5,
     "ypc": 5.0,
     "league_success": 0.413,
-    "league_epa": -0.092,
+    "league_epa": -0.093,
     "rank": 28
    },
    {
@@ -440,8 +440,8 @@
     "epa": -0.266,
     "success": 0.364,
     "ypc": 3.8,
-    "league_success": 0.392,
-    "league_epa": -0.064,
+    "league_success": 0.391,
+    "league_epa": -0.058,
     "rank": 13
    },
    {
@@ -450,8 +450,8 @@
     "epa": -0.173,
     "success": 0.381,
     "ypc": 3.5,
-    "league_success": 0.424,
-    "league_epa": 0.009,
+    "league_success": 0.422,
+    "league_epa": 0.008,
     "rank": 9
    }
   ],
@@ -532,7 +532,7 @@
     "success": 0.435,
     "ypc": 6.4,
     "league_success": 0.442,
-    "league_epa": -0.006,
+    "league_epa": -0.007,
     "rank": 18
    },
    {
@@ -541,8 +541,8 @@
     "epa": -0.383,
     "success": 0.133,
     "ypc": 2.3,
-    "league_success": 0.404,
-    "league_epa": -0.032,
+    "league_success": 0.403,
+    "league_epa": -0.035,
     "rank": 1
    },
    {
@@ -562,7 +562,7 @@
     "success": 0.353,
     "ypc": 3.7,
     "league_success": 0.413,
-    "league_epa": -0.092,
+    "league_epa": -0.093,
     "rank": 9
    },
    {
@@ -581,8 +581,8 @@
     "epa": 0.083,
     "success": 0.444,
     "ypc": 6.2,
-    "league_success": 0.392,
-    "league_epa": -0.064,
+    "league_success": 0.391,
+    "league_epa": -0.058,
     "rank": 24
    },
    {
@@ -591,8 +591,8 @@
     "epa": -0.157,
     "success": 0.438,
     "ypc": 4.5,
-    "league_success": 0.424,
-    "league_epa": 0.009,
+    "league_success": 0.422,
+    "league_epa": 0.008,
     "rank": 19
    }
   ],
