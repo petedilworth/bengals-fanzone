@@ -1,148 +1,148 @@
 {
- "week": 6,
- "sources": [
-  {
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "type": "podcast",
-   "id": "locked-on",
-   "name": "Locked On Bengals"
-  },
-  {
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
-   "type": "national",
-   "id": "espn",
-   "name": "ESPN"
-  },
-  {
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
-   "type": "national",
-   "id": "nfl-com",
-   "name": "NFL.com"
-  },
-  {
-   "url": "https://www.theringer.com/nfl",
-   "type": "national",
-   "id": "ringer",
-   "name": "The Ringer"
-  },
-  {
-   "url": "https://www.pff.com/nfl",
-   "type": "national",
-   "id": "pff",
-   "name": "PFF"
-  }
- ],
- "written": "2026-10-14",
- "opponent": "Bye, next at BAL",
  "topics": [
   {
    "stat_verdict": "supports",
+   "topic": "Shotgun vs under centre",
    "sources": [
     "locked-on",
     "espn",
     "ringer"
-   ],
-   "topic": "Shotgun vs under centre"
+   ]
   },
   {
+   "topic": "Chase Brown slump",
    "sources": [
     "locked-on",
     "espn",
     "nfl-com",
     "pff"
-   ],
-   "topic": "Chase Brown slump"
+   ]
   },
   {
    "stat_verdict": "needs a new metric",
+   "topic": "Perine downhill role",
    "sources": [
     "locked-on",
     "espn",
     "nfl-com"
-   ],
-   "topic": "Perine downhill role"
+   ]
   },
   {
    "stat_verdict": "supports",
+   "topic": "Offensive line run blocking",
    "sources": [
     "locked-on",
     "espn"
-   ],
-   "topic": "Offensive line run blocking"
+   ]
   },
   {
+   "topic": "Hudson injury, Endries role",
    "sources": [
     "locked-on",
     "espn"
-   ],
-   "topic": "Hudson injury, Endries role"
+   ]
   },
   {
+   "topic": "Burrow under pressure",
    "sources": [
     "nfl-com"
-   ],
-   "topic": "Burrow under pressure"
+   ]
   },
   {
+   "topic": "Dropback volume",
    "sources": [
     "ringer"
-   ],
-   "topic": "Dropback volume"
+   ]
   },
   {
+   "topic": "Red-zone fumbles",
    "sources": [
     "locked-on",
     "espn"
-   ],
-   "topic": "Red-zone fumbles"
+   ]
   },
   {
+   "topic": "Tight end heavy game plan",
    "sources": [
     "locked-on",
     "pff"
-   ],
-   "topic": "Tight end heavy game plan"
+   ]
   },
   {
    "stat_verdict": "needs a new metric",
+   "topic": "Second-and-long play calling",
    "sources": [
     "locked-on"
-   ],
-   "topic": "Second-and-long play calling"
+   ]
   },
   {
    "stat_verdict": "contradicts",
+   "topic": "Pass protection vs quick release",
    "sources": [
     "locked-on"
-   ],
-   "topic": "Pass protection vs quick release"
+   ]
   },
   {
    "stat_verdict": "supports",
+   "topic": "Explosive runs allowed",
    "sources": [
     "locked-on"
-   ],
-   "topic": "Explosive runs allowed"
+   ]
   },
   {
    "stat_verdict": "needs a new metric",
+   "topic": "Dexter Lawrence off-field drop",
    "sources": [
     "locked-on"
-   ],
-   "topic": "Dexter Lawrence off-field drop"
+   ]
   },
   {
+   "topic": "Secondary communication",
    "sources": [
     "locked-on"
-   ],
-   "topic": "Secondary communication"
+   ]
   },
   {
+   "topic": "Containing mobile quarterbacks",
    "sources": [
     "locked-on"
-   ],
-   "topic": "Containing mobile quarterbacks"
+   ]
   }
  ],
+ "week": 6,
+ "sources": [
+  {
+   "name": "Locked On Bengals",
+   "type": "podcast",
+   "id": "locked-on",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
+  },
+  {
+   "name": "ESPN",
+   "type": "national",
+   "id": "espn",
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
+  },
+  {
+   "name": "NFL.com",
+   "type": "national",
+   "id": "nfl-com",
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
+  },
+  {
+   "name": "The Ringer",
+   "type": "national",
+   "id": "ringer",
+   "url": "https://www.theringer.com/nfl"
+  },
+  {
+   "name": "PFF",
+   "type": "national",
+   "id": "pff",
+   "url": "https://www.pff.com/nfl"
+  }
+ ],
+ "opponent": "Bye, next at BAL",
+ "written": "2026-10-14",
  "season": 2026
 }

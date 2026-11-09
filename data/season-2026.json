@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "record": "5–2",
+  "record": "6–2",
   "games": [
     {
       "week": 1,
@@ -71,7 +71,9 @@
       "opp": "ATL",
       "home": true,
       "time": "Madrid",
-      "note": "Madrid, 9:30 am"
+      "note": "Madrid, 9:30 am",
+      "result": "W",
+      "score": "34–17"
     },
     {
       "week": 10,
