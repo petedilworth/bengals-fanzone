@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T21:29:35+00:00",
+ "generated": "2026-11-11T18:45:43+00:00",
  "season": 2026,
  "team": "CIN",
  "status": {
@@ -10,16 +10,16 @@
    "pending": false
   },
   "ftn": {
-   "through_week": 8,
-   "team_through_week": 8,
+   "through_week": 9,
+   "team_through_week": 9,
    "expected_week": 9,
-   "pending": true
+   "pending": false
   },
   "pfr_pass": {
-   "through_week": 8,
-   "team_through_week": 8,
+   "through_week": 9,
+   "team_through_week": 9,
    "expected_week": 9,
-   "pending": true
+   "pending": false
   },
   "ngs_passing": {
    "through_week": 9,
@@ -44,7 +44,7 @@
    "league": 0.064
   },
   "qb_fault_sacks": {
-   "value": 2,
+   "value": 3,
    "n": 15,
    "label": "FTN charted as QB fault"
   },
@@ -58,26 +58,26 @@
    },
    {
     "label": "4",
-    "n": 204,
-    "epa": 0.286,
-    "sacks": 7,
-    "sack_rate": 0.034
+    "n": 226,
+    "epa": 0.305,
+    "sacks": 8,
+    "sack_rate": 0.035
    },
    {
     "label": "5 or more",
-    "n": 78,
-    "epa": 0.055,
-    "sacks": 6,
-    "sack_rate": 0.077
+    "n": 88,
+    "epa": 0.117,
+    "sacks": 7,
+    "sack_rate": 0.08
    }
   ],
   "pressure_rate": {
-   "value": 0.242,
-   "n": 289,
-   "pressures": 70,
-   "rank": 22,
-   "league": 0.223,
-   "through_week": 8
+   "value": 0.237,
+   "n": 321,
+   "pressures": 76,
+   "rank": 21,
+   "league": 0.225,
+   "through_week": 9
   },
   "time_to_throw": {
    "value": 2.66,
@@ -162,23 +162,25 @@
     "dropbacks": 32,
     "sacks": 2,
     "epa": 0.519,
+    "pressures": 6,
+    "blitzed": 8,
     "time_to_throw": 2.7
    }
   ]
  },
  "run_sets_up_pass": {
   "play_action": {
-   "n": 44,
-   "epa": 0.043,
-   "success": 0.523,
+   "n": 46,
+   "epa": 0.022,
+   "success": 0.5,
    "rank": 22,
-   "league": 0.104
+   "league": 0.093
   },
   "no_play_action": {
-   "n": 277,
-   "epa": 0.3,
-   "success": 0.552,
-   "league": 0.035
+   "n": 275,
+   "epa": 0.305,
+   "success": 0.556,
+   "league": 0.033
   },
   "after_successful_run": {
    "n": 26,
@@ -190,7 +192,7 @@
    "n": 65,
    "epa": 0.209,
    "success": 0.569,
-   "league": 0.067
+   "league": 0.064
   },
   "after_pass": {
    "n": 207,
@@ -258,7 +260,9 @@
     "week": 9,
     "opp": "ATL",
     "dropbacks": 32,
-    "epa": 0.519
+    "epa": 0.519,
+    "pa_n": 2,
+    "pa_epa": -0.449
    }
   ]
  },
@@ -270,8 +274,8 @@
     "epa": -0.513,
     "success": 0.286,
     "ypc": 2.9,
-    "league_success": 0.434,
-    "league_epa": -0.019,
+    "league_success": 0.433,
+    "league_epa": -0.022,
     "rank": null
    },
    {
@@ -280,8 +284,8 @@
     "epa": -0.051,
     "success": 0.474,
     "ypc": 4.5,
-    "league_success": 0.4,
-    "league_epa": -0.042,
+    "league_success": 0.397,
+    "league_epa": -0.044,
     "rank": 9
    },
    {
@@ -290,8 +294,8 @@
     "epa": -0.046,
     "success": 0.412,
     "ypc": 3.9,
-    "league_success": 0.404,
-    "league_epa": -0.084,
+    "league_success": 0.405,
+    "league_epa": -0.079,
     "rank": 16
    },
    {
@@ -300,7 +304,7 @@
     "epa": -0.103,
     "success": 0.417,
     "ypc": 3.7,
-    "league_success": 0.413,
+    "league_success": 0.412,
     "league_epa": -0.098,
     "rank": 11
    },
@@ -311,7 +315,7 @@
     "success": 0.435,
     "ypc": 4.2,
     "league_success": 0.38,
-    "league_epa": -0.124,
+    "league_epa": -0.123,
     "rank": 7
    },
    {
@@ -320,8 +324,8 @@
     "epa": -0.318,
     "success": 0.286,
     "ypc": 3.0,
-    "league_success": 0.392,
-    "league_epa": -0.053,
+    "league_success": 0.39,
+    "league_epa": -0.054,
     "rank": null
    },
    {
@@ -331,8 +335,8 @@
     "success": 0.5,
     "ypc": 4.2,
     "league_success": 0.416,
-    "league_epa": -0.005,
-    "rank": 5
+    "league_epa": -0.006,
+    "rank": 6
    }
   ],
   "overall": {
@@ -411,8 +415,8 @@
     "epa": -0.082,
     "success": 0.4,
     "ypc": 3.9,
-    "league_success": 0.434,
-    "league_epa": -0.019,
+    "league_success": 0.433,
+    "league_epa": -0.022,
     "rank": 13
    },
    {
@@ -421,8 +425,8 @@
     "epa": -0.192,
     "success": 0.333,
     "ypc": 3.4,
-    "league_success": 0.4,
-    "league_epa": -0.042,
+    "league_success": 0.397,
+    "league_epa": -0.044,
     "rank": 7
    },
    {
@@ -431,8 +435,8 @@
     "epa": -0.091,
     "success": 0.296,
     "ypc": 4.0,
-    "league_success": 0.404,
-    "league_epa": -0.084,
+    "league_success": 0.405,
+    "league_epa": -0.079,
     "rank": 6
    },
    {
@@ -441,7 +445,7 @@
     "epa": -0.238,
     "success": 0.32,
     "ypc": 2.3,
-    "league_success": 0.413,
+    "league_success": 0.412,
     "league_epa": -0.098,
     "rank": 4
    },
@@ -452,8 +456,8 @@
     "success": 0.333,
     "ypc": 3.0,
     "league_success": 0.38,
-    "league_epa": -0.124,
-    "rank": 14
+    "league_epa": -0.123,
+    "rank": 13
    },
    {
     "gap": "right tackle",
@@ -461,8 +465,8 @@
     "epa": -0.37,
     "success": 0.278,
     "ypc": 2.4,
-    "league_success": 0.392,
-    "league_epa": -0.053,
+    "league_success": 0.39,
+    "league_epa": -0.054,
     "rank": 4
    },
    {
@@ -472,7 +476,7 @@
     "success": 0.583,
     "ypc": 8.2,
     "league_success": 0.416,
-    "league_epa": -0.005,
+    "league_epa": -0.006,
     "rank": 29
    }
   ],
@@ -552,8 +556,8 @@
     "epa": 0.304,
     "success": 0.467,
     "ypc": 6.8,
-    "league_success": 0.434,
-    "league_epa": -0.019,
+    "league_success": 0.433,
+    "league_epa": -0.022,
     "rank": 21
    },
    {
@@ -562,8 +566,8 @@
     "epa": -0.284,
     "success": 0.158,
     "ypc": 2.7,
-    "league_success": 0.4,
-    "league_epa": -0.042,
+    "league_success": 0.397,
+    "league_epa": -0.044,
     "rank": 1
    },
    {
@@ -572,8 +576,8 @@
     "epa": -0.172,
     "success": 0.3,
     "ypc": 4.4,
-    "league_success": 0.404,
-    "league_epa": -0.084,
+    "league_success": 0.405,
+    "league_epa": -0.079,
     "rank": 7
    },
    {
@@ -582,7 +586,7 @@
     "epa": -0.004,
     "success": 0.366,
     "ypc": 3.7,
-    "league_success": 0.413,
+    "league_success": 0.412,
     "league_epa": -0.098,
     "rank": 9
    },
@@ -593,7 +597,7 @@
     "success": 0.278,
     "ypc": 3.4,
     "league_success": 0.38,
-    "league_epa": -0.124,
+    "league_epa": -0.123,
     "rank": 6
    },
    {
@@ -602,8 +606,8 @@
     "epa": 0.068,
     "success": 0.45,
     "ypc": 5.8,
-    "league_success": 0.392,
-    "league_epa": -0.053,
+    "league_success": 0.39,
+    "league_epa": -0.054,
     "rank": 25
    },
    {
@@ -613,7 +617,7 @@
     "success": 0.438,
     "ypc": 4.5,
     "league_success": 0.416,
-    "league_epa": -0.005,
+    "league_epa": -0.006,
     "rank": 21
    }
   ],
@@ -624,7 +628,7 @@
    "ypc": 4.5,
    "league_success": 0.406,
    "league_ypc": 4.1,
-   "rank": 4
+   "rank": 5
   },
   "weekly": [
    {

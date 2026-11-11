@@ -1,8 +1,12 @@
 {
+ "week": 6,
+ "written": "2026-10-14",
+ "opponent": "Bye, next at BAL",
+ "season": 2026,
  "topics": [
   {
-   "stat_verdict": "supports",
    "topic": "Shotgun vs under centre",
+   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "espn",
@@ -19,8 +23,8 @@
    ]
   },
   {
-   "stat_verdict": "needs a new metric",
    "topic": "Perine downhill role",
+   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "espn",
@@ -28,8 +32,8 @@
    ]
   },
   {
-   "stat_verdict": "supports",
    "topic": "Offensive line run blocking",
+   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "espn"
@@ -69,29 +73,29 @@
    ]
   },
   {
-   "stat_verdict": "needs a new metric",
    "topic": "Second-and-long play calling",
-   "sources": [
-    "locked-on"
-   ]
-  },
-  {
-   "stat_verdict": "contradicts",
-   "topic": "Pass protection vs quick release",
-   "sources": [
-    "locked-on"
-   ]
-  },
-  {
-   "stat_verdict": "supports",
-   "topic": "Explosive runs allowed",
-   "sources": [
-    "locked-on"
-   ]
-  },
-  {
    "stat_verdict": "needs a new metric",
+   "sources": [
+    "locked-on"
+   ]
+  },
+  {
+   "topic": "Pass protection vs quick release",
+   "stat_verdict": "contradicts",
+   "sources": [
+    "locked-on"
+   ]
+  },
+  {
+   "topic": "Explosive runs allowed",
+   "stat_verdict": "supports",
+   "sources": [
+    "locked-on"
+   ]
+  },
+  {
    "topic": "Dexter Lawrence off-field drop",
+   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on"
    ]
@@ -109,40 +113,36 @@
    ]
   }
  ],
- "week": 6,
  "sources": [
   {
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
    "name": "Locked On Bengals",
    "type": "podcast",
-   "id": "locked-on",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
+   "id": "locked-on"
   },
   {
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
    "name": "ESPN",
    "type": "national",
-   "id": "espn",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
+   "id": "espn"
   },
   {
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
    "name": "NFL.com",
    "type": "national",
-   "id": "nfl-com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
+   "id": "nfl-com"
   },
   {
+   "url": "https://www.theringer.com/nfl",
    "name": "The Ringer",
    "type": "national",
-   "id": "ringer",
-   "url": "https://www.theringer.com/nfl"
+   "id": "ringer"
   },
   {
+   "url": "https://www.pff.com/nfl",
    "name": "PFF",
    "type": "national",
-   "id": "pff",
-   "url": "https://www.pff.com/nfl"
+   "id": "pff"
   }
- ],
- "opponent": "Bye, next at BAL",
- "written": "2026-10-14",
- "season": 2026
+ ]
 }

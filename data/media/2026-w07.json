@@ -1,4 +1,8 @@
 {
+ "week": 7,
+ "written": "2026-10-21",
+ "opponent": "at BAL",
+ "season": 2026,
  "topics": [
   {
    "topic": "Lamar Jackson containment",
@@ -33,8 +37,8 @@
    ]
   },
   {
-   "stat_verdict": "needs a new metric",
    "topic": "Dexter Lawrence impact",
+   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -80,8 +84,8 @@
    ]
   },
   {
-   "stat_verdict": "needs a new metric",
    "topic": "Offensive line vs Ravens rush",
+   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -89,8 +93,8 @@
    ]
   },
   {
-   "stat_verdict": "supports",
    "topic": "Run defence explosives and tackling",
+   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -113,82 +117,78 @@
    ]
   },
   {
-   "stat_verdict": "needs a new metric",
    "topic": "Chase slot alignment",
+   "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on",
     "nfl-com"
    ]
   },
   {
-   "stat_verdict": "needs a new metric",
    "topic": "Blitz rate and dime usage",
+   "stat_verdict": "needs a new metric",
    "sources": [
     "bengals-com",
     "ringer"
    ]
   },
   {
-   "stat_verdict": "contradicts",
    "topic": "Run game efficiency",
+   "stat_verdict": "contradicts",
    "sources": [
     "locked-on",
     "espn"
    ]
   }
  ],
- "week": 7,
  "sources": [
   {
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
    "name": "Locked On Bengals",
    "type": "podcast",
-   "id": "locked-on",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
+   "id": "locked-on"
   },
   {
+   "url": "https://www.bengals.com/news/",
    "name": "Bengals.com",
    "type": "beat",
-   "id": "bengals-com",
-   "url": "https://www.bengals.com/news/"
+   "id": "bengals-com"
   },
   {
+   "url": "https://www.wcpo.com/sports/football/bengals",
    "name": "WCPO",
    "type": "beat",
-   "id": "wcpo",
-   "url": "https://www.wcpo.com/sports/football/bengals"
+   "id": "wcpo"
   },
   {
+   "url": "https://local12.com/sports/bengals",
    "name": "Local 12",
    "type": "beat",
-   "id": "local12",
-   "url": "https://local12.com/sports/bengals"
+   "id": "local12"
   },
   {
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
    "name": "ESPN",
    "type": "national",
-   "id": "espn",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
+   "id": "espn"
   },
   {
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
    "name": "NFL.com",
    "type": "national",
-   "id": "nfl-com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
+   "id": "nfl-com"
   },
   {
+   "url": "https://www.theringer.com/nfl",
    "name": "The Ringer",
    "type": "national",
-   "id": "ringer",
-   "url": "https://www.theringer.com/nfl"
+   "id": "ringer"
   },
   {
+   "url": "https://www.pff.com/nfl",
    "name": "PFF",
    "type": "national",
-   "id": "pff",
-   "url": "https://www.pff.com/nfl"
+   "id": "pff"
   }
- ],
- "opponent": "at BAL",
- "written": "2026-10-21",
- "season": 2026
+ ]
 }

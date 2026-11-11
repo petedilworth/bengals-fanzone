@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T21:29:35+00:00",
+ "generated": "2026-11-11T18:45:43+00:00",
  "season": 2026,
  "team": "CIN",
  "opponent": "PIT",
@@ -8,7 +8,7 @@
    "label": "1st-and-10 at your own 25",
    "why": "Where most drives start after a touchback.",
    "ep": 1.1,
-   "n": 1614
+   "n": 1615
   },
   {
    "label": "3rd-and-8 at your own 30",
@@ -26,13 +26,13 @@
    "label": "1st-and-10 at the opponent's 25",
    "why": "The edge of field-goal range.",
    "ep": 4.4,
-   "n": 952
+   "n": 955
   },
   {
    "label": "1st-and-goal at the 5",
    "why": "Touchdown or settle for three.",
    "ep": 5.8,
-   "n": 326
+   "n": 327
   }
  ],
  "situations_seasons": "2025–26",
