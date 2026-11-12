@@ -1,4 +1,5 @@
 {
+ "week": 6,
  "topics": [
   {
    "topic": "Shotgun vs under centre",
@@ -109,40 +110,39 @@
    ]
   }
  ],
- "season": 2026,
  "written": "2026-10-14",
- "opponent": "Bye, next at BAL",
+ "season": 2026,
  "sources": [
   {
    "type": "podcast",
+   "id": "locked-on",
    "name": "Locked On Bengals",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "id": "locked-on"
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
   },
   {
    "type": "national",
+   "id": "espn",
    "name": "ESPN",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
-   "id": "espn"
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
   },
   {
    "type": "national",
+   "id": "nfl-com",
    "name": "NFL.com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
-   "id": "nfl-com"
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
   },
   {
    "type": "national",
+   "id": "ringer",
    "name": "The Ringer",
-   "url": "https://www.theringer.com/nfl",
-   "id": "ringer"
+   "url": "https://www.theringer.com/nfl"
   },
   {
    "type": "national",
+   "id": "pff",
    "name": "PFF",
-   "url": "https://www.pff.com/nfl",
-   "id": "pff"
+   "url": "https://www.pff.com/nfl"
   }
  ],
- "week": 6
+ "opponent": "Bye, next at BAL"
 }

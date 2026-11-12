@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T03:03:59+00:00",
+ "generated": "2026-11-12T18:59:27+00:00",
  "season": 2026,
  "team": "CIN",
  "status": {
@@ -76,7 +76,7 @@
    "n": 321,
    "pressures": 76,
    "rank": 21,
-   "league": 0.225,
+   "league": 0.226,
    "through_week": 9
   },
   "time_to_throw": {

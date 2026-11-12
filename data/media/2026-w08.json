@@ -1,4 +1,5 @@
 {
+ "week": 8,
  "topics": [
   {
    "topic": "Halftime adjustments",
@@ -150,58 +151,57 @@
    "stat_verdict": "needs a new metric"
   }
  ],
- "season": 2026,
  "written": "2026-10-28",
- "opponent": "vs TEN",
+ "season": 2026,
  "sources": [
   {
    "type": "podcast",
+   "id": "locked-on",
    "name": "Locked On Bengals",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "id": "locked-on"
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
   },
   {
    "type": "beat",
+   "id": "bengals-com",
    "name": "Bengals.com",
-   "url": "https://www.bengals.com/news/",
-   "id": "bengals-com"
+   "url": "https://www.bengals.com/news/"
   },
   {
    "type": "beat",
+   "id": "wcpo",
    "name": "WCPO",
-   "url": "https://www.wcpo.com/sports/football/bengals",
-   "id": "wcpo"
+   "url": "https://www.wcpo.com/sports/football/bengals"
   },
   {
    "type": "beat",
+   "id": "local12",
    "name": "Local 12",
-   "url": "https://local12.com/sports/bengals",
-   "id": "local12"
+   "url": "https://local12.com/sports/bengals"
   },
   {
    "type": "national",
+   "id": "espn",
    "name": "ESPN",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
-   "id": "espn"
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
   },
   {
    "type": "national",
+   "id": "nfl-com",
    "name": "NFL.com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
-   "id": "nfl-com"
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
   },
   {
    "type": "national",
+   "id": "ringer",
    "name": "The Ringer",
-   "url": "https://www.theringer.com/nfl",
-   "id": "ringer"
+   "url": "https://www.theringer.com/nfl"
   },
   {
    "type": "national",
+   "id": "pff",
    "name": "PFF",
-   "url": "https://www.pff.com/nfl",
-   "id": "pff"
+   "url": "https://www.pff.com/nfl"
   }
  ],
- "week": 8
+ "opponent": "vs TEN"
 }
