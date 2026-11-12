@@ -1,8 +1,4 @@
 {
- "week": 10,
- "written": "2026-11-11",
- "opponent": "vs PIT",
- "season": 2026,
  "topics": [
   {
    "topic": "Madrid win",
@@ -44,7 +40,6 @@
   },
   {
    "topic": "Chase vs Terrell and single-high",
-   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -52,11 +47,11 @@
     "espn",
     "nfl-com",
     "ringer"
-   ]
+   ],
+   "stat_verdict": "supports"
   },
   {
    "topic": "Steelers preview",
-   "stat_verdict": "contradicts",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -64,11 +59,11 @@
     "local12",
     "espn",
     "nfl-com"
-   ]
+   ],
+   "stat_verdict": "contradicts"
   },
   {
    "topic": "Pass protection and Mims",
-   "stat_verdict": "contradicts",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -76,7 +71,8 @@
     "espn",
     "nfl-com",
     "pff"
-   ]
+   ],
+   "stat_verdict": "contradicts"
   },
   {
    "topic": "Defence vs Robinson and the opening drive",
@@ -111,13 +107,13 @@
   },
   {
    "topic": "Run game and Chase Brown",
-   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn",
     "pff"
-   ]
+   ],
+   "stat_verdict": "supports"
   },
   {
    "topic": "Linebackers Knight and Carter",
@@ -130,13 +126,13 @@
   },
   {
    "topic": "Howell injury and edge depth",
-   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
     "local12",
     "espn"
-   ]
+   ],
+   "stat_verdict": "supports"
   },
   {
    "topic": "Trade deadline targets",
@@ -157,60 +153,64 @@
   },
   {
    "topic": "Play action and shotgun",
-   "stat_verdict": "supports",
    "sources": [
     "locked-on"
-   ]
+   ],
+   "stat_verdict": "supports"
   }
  ],
+ "season": 2026,
+ "written": "2026-11-11",
+ "opponent": "vs PIT",
  "sources": [
   {
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "name": "Locked On Bengals",
    "type": "podcast",
+   "name": "Locked On Bengals",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
    "id": "locked-on"
   },
   {
-   "url": "https://www.bengals.com/news/",
-   "name": "Bengals.com",
    "type": "beat",
+   "name": "Bengals.com",
+   "url": "https://www.bengals.com/news/",
    "id": "bengals-com"
   },
   {
-   "url": "https://www.wcpo.com/sports/football/bengals",
-   "name": "WCPO",
    "type": "beat",
+   "name": "WCPO",
+   "url": "https://www.wcpo.com/sports/football/bengals",
    "id": "wcpo"
   },
   {
-   "url": "https://local12.com/sports/bengals",
-   "name": "Local 12",
    "type": "beat",
+   "name": "Local 12",
+   "url": "https://local12.com/sports/bengals",
    "id": "local12"
   },
   {
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
-   "name": "ESPN",
    "type": "national",
+   "name": "ESPN",
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
    "id": "espn"
   },
   {
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
-   "name": "NFL.com",
    "type": "national",
+   "name": "NFL.com",
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
    "id": "nfl-com"
   },
   {
-   "url": "https://www.theringer.com/nfl",
-   "name": "The Ringer",
    "type": "national",
+   "name": "The Ringer",
+   "url": "https://www.theringer.com/nfl",
    "id": "ringer"
   },
   {
-   "url": "https://www.pff.com/nfl",
-   "name": "PFF",
    "type": "national",
+   "name": "PFF",
+   "url": "https://www.pff.com/nfl",
    "id": "pff"
   }
- ]
+ ],
+ "week": 10
 }
