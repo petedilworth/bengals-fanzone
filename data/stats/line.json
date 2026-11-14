@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T18:59:27+00:00",
+ "generated": "2026-11-14T17:12:42+00:00",
  "season": 2026,
  "team": "CIN",
  "status": {
@@ -41,7 +41,7 @@
    "n": 321,
    "sacks": 15,
    "rank": 7,
-   "league": 0.064
+   "league": 0.063
   },
   "qb_fault_sacks": {
    "value": 3,
@@ -174,25 +174,25 @@
    "epa": 0.022,
    "success": 0.5,
    "rank": 22,
-   "league": 0.093
+   "league": 0.097
   },
   "no_play_action": {
    "n": 275,
    "epa": 0.305,
    "success": 0.556,
-   "league": 0.033
+   "league": 0.032
   },
   "after_successful_run": {
    "n": 26,
    "epa": 0.593,
    "success": 0.692,
-   "league": 0.135
+   "league": 0.13
   },
   "after_failed_run": {
    "n": 65,
    "epa": 0.209,
    "success": 0.569,
-   "league": 0.064
+   "league": 0.059
   },
   "after_pass": {
    "n": 207,
@@ -275,7 +275,7 @@
     "success": 0.286,
     "ypc": 2.9,
     "league_success": 0.433,
-    "league_epa": -0.022,
+    "league_epa": -0.023,
     "rank": null
    },
    {
@@ -285,8 +285,8 @@
     "success": 0.474,
     "ypc": 4.5,
     "league_success": 0.397,
-    "league_epa": -0.044,
-    "rank": 9
+    "league_epa": -0.045,
+    "rank": 8
    },
    {
     "gap": "left guard",
@@ -295,7 +295,7 @@
     "success": 0.412,
     "ypc": 3.9,
     "league_success": 0.405,
-    "league_epa": -0.079,
+    "league_epa": -0.077,
     "rank": 16
    },
    {
@@ -304,8 +304,8 @@
     "epa": -0.103,
     "success": 0.417,
     "ypc": 3.7,
-    "league_success": 0.412,
-    "league_epa": -0.098,
+    "league_success": 0.411,
+    "league_epa": -0.1,
     "rank": 11
    },
    {
@@ -314,8 +314,8 @@
     "epa": -0.027,
     "success": 0.435,
     "ypc": 4.2,
-    "league_success": 0.38,
-    "league_epa": -0.123,
+    "league_success": 0.383,
+    "league_epa": -0.119,
     "rank": 7
    },
    {
@@ -324,8 +324,8 @@
     "epa": -0.318,
     "success": 0.286,
     "ypc": 3.0,
-    "league_success": 0.39,
-    "league_epa": -0.054,
+    "league_success": 0.392,
+    "league_epa": -0.051,
     "rank": null
    },
    {
@@ -335,7 +335,7 @@
     "success": 0.5,
     "ypc": 4.2,
     "league_success": 0.416,
-    "league_epa": -0.006,
+    "league_epa": -0.005,
     "rank": 6
    }
   ],
@@ -416,7 +416,7 @@
     "success": 0.4,
     "ypc": 3.9,
     "league_success": 0.433,
-    "league_epa": -0.022,
+    "league_epa": -0.023,
     "rank": 13
    },
    {
@@ -426,7 +426,7 @@
     "success": 0.333,
     "ypc": 3.4,
     "league_success": 0.397,
-    "league_epa": -0.044,
+    "league_epa": -0.045,
     "rank": 7
    },
    {
@@ -436,7 +436,7 @@
     "success": 0.296,
     "ypc": 4.0,
     "league_success": 0.405,
-    "league_epa": -0.079,
+    "league_epa": -0.077,
     "rank": 6
    },
    {
@@ -445,8 +445,8 @@
     "epa": -0.238,
     "success": 0.32,
     "ypc": 2.3,
-    "league_success": 0.412,
-    "league_epa": -0.098,
+    "league_success": 0.411,
+    "league_epa": -0.1,
     "rank": 4
    },
    {
@@ -455,9 +455,9 @@
     "epa": -0.194,
     "success": 0.333,
     "ypc": 3.0,
-    "league_success": 0.38,
-    "league_epa": -0.123,
-    "rank": 13
+    "league_success": 0.383,
+    "league_epa": -0.119,
+    "rank": 12
    },
    {
     "gap": "right tackle",
@@ -465,8 +465,8 @@
     "epa": -0.37,
     "success": 0.278,
     "ypc": 2.4,
-    "league_success": 0.39,
-    "league_epa": -0.054,
+    "league_success": 0.392,
+    "league_epa": -0.051,
     "rank": 4
    },
    {
@@ -476,7 +476,7 @@
     "success": 0.583,
     "ypc": 8.2,
     "league_success": 0.416,
-    "league_epa": -0.006,
+    "league_epa": -0.005,
     "rank": 29
    }
   ],
@@ -557,7 +557,7 @@
     "success": 0.467,
     "ypc": 6.8,
     "league_success": 0.433,
-    "league_epa": -0.022,
+    "league_epa": -0.023,
     "rank": 21
    },
    {
@@ -567,7 +567,7 @@
     "success": 0.158,
     "ypc": 2.7,
     "league_success": 0.397,
-    "league_epa": -0.044,
+    "league_epa": -0.045,
     "rank": 1
    },
    {
@@ -577,7 +577,7 @@
     "success": 0.3,
     "ypc": 4.4,
     "league_success": 0.405,
-    "league_epa": -0.079,
+    "league_epa": -0.077,
     "rank": 7
    },
    {
@@ -586,8 +586,8 @@
     "epa": -0.004,
     "success": 0.366,
     "ypc": 3.7,
-    "league_success": 0.412,
-    "league_epa": -0.098,
+    "league_success": 0.411,
+    "league_epa": -0.1,
     "rank": 9
    },
    {
@@ -596,8 +596,8 @@
     "epa": -0.242,
     "success": 0.278,
     "ypc": 3.4,
-    "league_success": 0.38,
-    "league_epa": -0.123,
+    "league_success": 0.383,
+    "league_epa": -0.119,
     "rank": 6
    },
    {
@@ -606,9 +606,9 @@
     "epa": 0.068,
     "success": 0.45,
     "ypc": 5.8,
-    "league_success": 0.39,
-    "league_epa": -0.054,
-    "rank": 25
+    "league_success": 0.392,
+    "league_epa": -0.051,
+    "rank": 24
    },
    {
     "gap": "right end",
@@ -617,7 +617,7 @@
     "success": 0.438,
     "ypc": 4.5,
     "league_success": 0.416,
-    "league_epa": -0.006,
+    "league_epa": -0.005,
     "rank": 21
    }
   ],
