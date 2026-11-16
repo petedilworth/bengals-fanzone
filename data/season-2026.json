@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "record": "6–2",
+  "record": "7–2",
   "games": [
     {
       "week": 1,
@@ -80,7 +80,9 @@
       "date": "Nov 15",
       "opp": "PIT",
       "home": true,
-      "time": "SNF"
+      "time": "SNF",
+      "result": "W",
+      "score": "38–18"
     },
     {
       "week": 11,
