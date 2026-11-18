@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T21:06:21+00:00",
+ "generated": "2026-11-18T19:26:58+00:00",
  "season": 2026,
  "team": "CIN",
  "opponent": "WAS",
@@ -7,8 +7,8 @@
   {
    "label": "1st-and-10 at your own 25",
    "why": "Where most drives start after a touchback.",
-   "ep": 1.1,
-   "n": 1682
+   "ep": 1.0,
+   "n": 1685
   },
   {
    "label": "3rd-and-8 at your own 30",
@@ -19,20 +19,20 @@
   {
    "label": "3rd-and-2 near midfield",
    "why": "Short yardage: run it or throw it quick.",
-   "ep": 2.1,
-   "n": 251
+   "ep": 1.9,
+   "n": 252
   },
   {
    "label": "1st-and-10 at the opponent's 25",
    "why": "The edge of field-goal range.",
-   "ep": 4.4,
-   "n": 985
+   "ep": 4.0,
+   "n": 989
   },
   {
    "label": "1st-and-goal at the 5",
    "why": "Touchdown or settle for three.",
-   "ep": 5.8,
-   "n": 336
+   "ep": 5.5,
+   "n": 337
   }
  ],
  "situations_seasons": "2025–26",
@@ -49,8 +49,8 @@
    "situation": "1st-and-10 at PIT 15",
    "text": "J.Burrow pass short middle to D.Meyers for 15 yards, TOUCHDOWN",
    "ep_before": 3.2,
-   "epa": 3.8,
-   "for_team": 3.8
+   "epa": 3.7,
+   "for_team": 3.7
   },
   {
    "team": "CIN",
@@ -63,9 +63,9 @@
    "clock": "09:04",
    "situation": "3rd-and-6 at PIT 6",
    "text": "J.Burrow pass incomplete short left to M.Gesicki",
-   "ep_before": 4.4,
-   "epa": -1.4,
-   "for_team": -1.4
+   "ep_before": 3.3,
+   "epa": -1.5,
+   "for_team": -1.5
   },
   {
    "team": "CIN",
@@ -78,9 +78,9 @@
    "clock": "00:20",
    "situation": "1st-and-10 at CIN 13",
    "text": "M.Rudolph pass short right to L.Nichols to CIN 11 for 2 yards",
-   "ep_before": 4.2,
-   "epa": -4.2,
-   "for_team": 4.2
+   "ep_before": 4.0,
+   "epa": -4.0,
+   "for_team": 4.0
   },
   {
    "team": "WAS",
@@ -93,9 +93,9 @@
    "clock": "01:05",
    "situation": "3rd-and-4 at NYG 32",
    "text": "J.Daniels pass short middle to S.Diggs for 32 yards, TOUCHDOWN",
-   "ep_before": 2.8,
-   "epa": 4.2,
-   "for_team": 4.2
+   "ep_before": 2.4,
+   "epa": 3.9,
+   "for_team": 3.9
   },
   {
    "team": "WAS",
@@ -108,9 +108,9 @@
    "clock": "05:31",
    "situation": "1st-and-10 at NYG 24",
    "text": "J.Daniels pass deep left intended for C.Okonkwo INTERCEPTED by J.Holland at NYG 0. Touchback",
-   "ep_before": 4.2,
-   "epa": -3.9,
-   "for_team": -3.9
+   "ep_before": 3.4,
+   "epa": -3.1,
+   "for_team": -3.1
   }
  ],
  "source": "nflverse play-by-play (nflfastR expected points model)",

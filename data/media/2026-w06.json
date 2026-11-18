@@ -1,40 +1,40 @@
 {
  "season": 2026,
+ "week": 6,
  "opponent": "Bye, next at BAL",
+ "written": "2026-10-14",
  "sources": [
   {
+   "name": "Locked On Bengals",
    "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "id": "locked-on",
    "type": "podcast",
-   "name": "Locked On Bengals"
+   "id": "locked-on"
   },
   {
+   "name": "ESPN",
    "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
-   "id": "espn",
    "type": "national",
-   "name": "ESPN"
+   "id": "espn"
   },
   {
+   "name": "NFL.com",
    "url": "https://www.nfl.com/teams/cincinnati-bengals/",
-   "id": "nfl-com",
    "type": "national",
-   "name": "NFL.com"
+   "id": "nfl-com"
   },
   {
+   "name": "The Ringer",
    "url": "https://www.theringer.com/nfl",
-   "id": "ringer",
    "type": "national",
-   "name": "The Ringer"
+   "id": "ringer"
   },
   {
+   "name": "PFF",
    "url": "https://www.pff.com/nfl",
-   "id": "pff",
    "type": "national",
-   "name": "PFF"
+   "id": "pff"
   }
  ],
- "written": "2026-10-14",
- "week": 6,
  "topics": [
   {
    "topic": "Shotgun vs under centre",
