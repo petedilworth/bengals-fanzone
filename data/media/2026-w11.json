@@ -1,61 +1,57 @@
 {
- "season": 2026,
- "week": 11,
- "opponent": "at WAS",
- "written": "2026-11-18",
  "sources": [
   {
    "name": "Locked On Bengals",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
+   "id": "locked-on",
    "type": "podcast",
-   "id": "locked-on"
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
   },
   {
    "name": "Bengals.com",
-   "url": "https://www.bengals.com/news/",
+   "id": "bengals-com",
    "type": "beat",
-   "id": "bengals-com"
+   "url": "https://www.bengals.com/news/"
   },
   {
    "name": "WCPO",
-   "url": "https://www.wcpo.com/sports/football/bengals",
+   "id": "wcpo",
    "type": "beat",
-   "id": "wcpo"
+   "url": "https://www.wcpo.com/sports/football/bengals"
   },
   {
    "name": "Local 12",
-   "url": "https://local12.com/sports/bengals",
+   "id": "local12",
    "type": "beat",
-   "id": "local12"
+   "url": "https://local12.com/sports/bengals"
   },
   {
    "name": "ESPN",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "id": "espn",
    "type": "national",
-   "id": "espn"
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
   },
   {
    "name": "NFL.com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "id": "nfl-com",
    "type": "national",
-   "id": "nfl-com"
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
   },
   {
    "name": "The Ringer",
-   "url": "https://www.theringer.com/nfl",
+   "id": "ringer",
    "type": "national",
-   "id": "ringer"
+   "url": "https://www.theringer.com/nfl"
   },
   {
    "name": "PFF",
-   "url": "https://www.pff.com/nfl",
+   "id": "pff",
    "type": "national",
-   "id": "pff"
+   "url": "https://www.pff.com/nfl"
   }
  ],
+ "opponent": "at WAS",
  "topics": [
   {
-   "topic": "Steelers win",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -65,10 +61,10 @@
     "nfl-com",
     "ringer",
     "pff"
-   ]
+   ],
+   "topic": "Steelers win"
   },
   {
-   "topic": "Burrow MVP run",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -78,10 +74,10 @@
     "nfl-com",
     "ringer",
     "pff"
-   ]
+   ],
+   "topic": "Burrow MVP run"
   },
   {
-   "topic": "Chase and Higgins production",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -91,33 +87,32 @@
     "nfl-com",
     "ringer",
     "pff"
-   ]
+   ],
+   "topic": "Chase and Higgins production"
   },
   {
-   "topic": "Pass protection and Mims",
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "local12",
+    "espn",
+    "nfl-com",
+    "pff"
+   ],
    "stat_verdict": "supports",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "local12",
-    "espn",
-    "nfl-com",
-    "pff"
-   ]
+   "topic": "Pass protection and Mims"
   },
   {
-   "topic": "Blitzing Burrow",
-   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn",
     "nfl-com"
-   ]
+   ],
+   "stat_verdict": "supports",
+   "topic": "Blitzing Burrow"
   },
   {
-   "topic": "Defence vs Warren and the run",
-   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -126,10 +121,11 @@
     "espn",
     "nfl-com",
     "pff"
-   ]
+   ],
+   "stat_verdict": "supports",
+   "topic": "Defence vs Warren and the run"
   },
   {
-   "topic": "Commanders preview",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -137,80 +133,84 @@
     "espn",
     "nfl-com",
     "ringer"
-   ]
+   ],
+   "topic": "Commanders preview"
   },
   {
-   "topic": "Jayden Daniels",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn",
     "nfl-com"
-   ]
+   ],
+   "topic": "Jayden Daniels"
   },
   {
-   "topic": "AFC top seed",
    "sources": [
     "locked-on",
     "espn",
     "nfl-com",
     "ringer"
-   ]
+   ],
+   "topic": "AFC top seed"
   },
   {
-   "topic": "Run game and Chase Brown",
-   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn",
     "nfl-com"
-   ]
+   ],
+   "stat_verdict": "supports",
+   "topic": "Run game and Chase Brown"
   },
   {
-   "topic": "Fairchild and Risner, line depth",
    "sources": [
     "locked-on",
     "bengals-com",
     "wcpo",
     "espn",
     "pff"
-   ]
+   ],
+   "topic": "Fairchild and Risner, line depth"
   },
   {
-   "topic": "Linebackers Knight and Carter",
    "sources": [
     "locked-on",
     "bengals-com",
     "local12"
-   ]
+   ],
+   "topic": "Linebackers Knight and Carter"
   },
   {
-   "topic": "Special teams",
    "sources": [
     "locked-on",
     "bengals-com",
     "wcpo",
     "local12",
     "pff"
-   ]
+   ],
+   "topic": "Special teams"
   },
   {
-   "topic": "Trade deadline aftermath",
    "sources": [
     "locked-on",
     "local12",
     "ringer"
-   ]
+   ],
+   "topic": "Trade deadline aftermath"
   },
   {
-   "topic": "Shotgun vs under centre",
-   "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "espn",
     "nfl-com"
-   ]
+   ],
+   "stat_verdict": "supports",
+   "topic": "Shotgun vs under centre"
   }
- ]
+ ],
+ "week": 11,
+ "season": 2026,
+ "written": "2026-11-18"
 }
