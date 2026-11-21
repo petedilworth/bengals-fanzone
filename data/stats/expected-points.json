@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T19:31:20+00:00",
+ "generated": "2026-11-21T18:04:12+00:00",
  "season": 2026,
  "team": "CIN",
  "opponent": "WAS",
@@ -8,7 +8,7 @@
    "label": "1st-and-10 at your own 25",
    "why": "Where most drives start after a touchback.",
    "ep": 1.0,
-   "n": 1685
+   "n": 1689
   },
   {
    "label": "3rd-and-8 at your own 30",
@@ -20,7 +20,7 @@
    "label": "3rd-and-2 near midfield",
    "why": "Short yardage: run it or throw it quick.",
    "ep": 1.9,
-   "n": 252
+   "n": 254
   },
   {
    "label": "1st-and-10 at the opponent's 25",
