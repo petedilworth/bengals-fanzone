@@ -1,216 +1,216 @@
 {
- "week": 10,
- "topics": [
-  {
-   "topic": "Madrid win",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "wcpo",
-    "local12",
-    "espn",
-    "nfl-com",
-    "ringer",
-    "pff"
-   ]
-  },
-  {
-   "topic": "Burrow's MVP case",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "wcpo",
-    "local12",
-    "espn",
-    "nfl-com",
-    "ringer",
-    "pff"
-   ]
-  },
-  {
-   "topic": "Ebiketie trade collapse",
-   "sources": [
-    "locked-on",
-    "wcpo",
-    "local12",
-    "espn",
-    "nfl-com",
-    "ringer",
-    "pff"
-   ]
-  },
-  {
-   "topic": "Chase vs Terrell and single-high",
-   "stat_verdict": "supports",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "local12",
-    "espn",
-    "nfl-com",
-    "ringer"
-   ]
-  },
-  {
-   "topic": "Steelers preview",
-   "stat_verdict": "contradicts",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "wcpo",
-    "local12",
-    "espn",
-    "nfl-com"
-   ]
-  },
-  {
-   "topic": "Pass protection and Mims",
-   "stat_verdict": "contradicts",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "local12",
-    "espn",
-    "nfl-com",
-    "pff"
-   ]
-  },
-  {
-   "topic": "Defence vs Robinson and the opening drive",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "wcpo",
-    "local12",
-    "espn",
-    "nfl-com"
-   ]
-  },
-  {
-   "topic": "Comp pick rules",
-   "sources": [
-    "locked-on",
-    "local12",
-    "espn",
-    "nfl-com",
-    "ringer"
-   ]
-  },
-  {
-   "topic": "AFC North race",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "wcpo",
-    "espn",
-    "nfl-com"
-   ]
-  },
-  {
-   "topic": "Run game and Chase Brown",
-   "stat_verdict": "supports",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "espn",
-    "pff"
-   ]
-  },
-  {
-   "topic": "Linebackers Knight and Carter",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "espn",
-    "nfl-com"
-   ]
-  },
-  {
-   "topic": "Howell injury and edge depth",
-   "stat_verdict": "supports",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "local12",
-    "espn"
-   ]
-  },
-  {
-   "topic": "Trade deadline targets",
-   "sources": [
-    "locked-on",
-    "espn",
-    "ringer",
-    "pff"
-   ]
-  },
-  {
-   "topic": "Sunday night post-travel spot",
-   "sources": [
-    "locked-on",
-    "bengals-com",
-    "espn"
-   ]
-  },
-  {
-   "topic": "Play action and shotgun",
-   "stat_verdict": "supports",
-   "sources": [
-    "locked-on"
-   ]
-  }
- ],
+ "written": "2026-11-11",
  "season": 2026,
  "opponent": "vs PIT",
- "written": "2026-11-11",
  "sources": [
   {
-   "name": "Locked On Bengals",
    "url": "https://podcasts.apple.com/us/podcast/id1159723162",
    "type": "podcast",
+   "name": "Locked On Bengals",
    "id": "locked-on"
   },
   {
-   "name": "Bengals.com",
    "url": "https://www.bengals.com/news/",
    "type": "beat",
+   "name": "Bengals.com",
    "id": "bengals-com"
   },
   {
-   "name": "WCPO",
    "url": "https://www.wcpo.com/sports/football/bengals",
    "type": "beat",
+   "name": "WCPO",
    "id": "wcpo"
   },
   {
-   "name": "Local 12",
    "url": "https://local12.com/sports/bengals",
    "type": "beat",
+   "name": "Local 12",
    "id": "local12"
   },
   {
-   "name": "ESPN",
    "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
    "type": "national",
+   "name": "ESPN",
    "id": "espn"
   },
   {
-   "name": "NFL.com",
    "url": "https://www.nfl.com/teams/cincinnati-bengals/",
    "type": "national",
+   "name": "NFL.com",
    "id": "nfl-com"
   },
   {
-   "name": "The Ringer",
    "url": "https://www.theringer.com/nfl",
    "type": "national",
+   "name": "The Ringer",
    "id": "ringer"
   },
   {
-   "name": "PFF",
    "url": "https://www.pff.com/nfl",
    "type": "national",
+   "name": "PFF",
    "id": "pff"
   }
- ]
+ ],
+ "topics": [
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "wcpo",
+    "local12",
+    "espn",
+    "nfl-com",
+    "ringer",
+    "pff"
+   ],
+   "topic": "Madrid win"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "wcpo",
+    "local12",
+    "espn",
+    "nfl-com",
+    "ringer",
+    "pff"
+   ],
+   "topic": "Burrow's MVP case"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "wcpo",
+    "local12",
+    "espn",
+    "nfl-com",
+    "ringer",
+    "pff"
+   ],
+   "topic": "Ebiketie trade collapse"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "local12",
+    "espn",
+    "nfl-com",
+    "ringer"
+   ],
+   "topic": "Chase vs Terrell and single-high",
+   "stat_verdict": "supports"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "wcpo",
+    "local12",
+    "espn",
+    "nfl-com"
+   ],
+   "topic": "Steelers preview",
+   "stat_verdict": "contradicts"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "local12",
+    "espn",
+    "nfl-com",
+    "pff"
+   ],
+   "topic": "Pass protection and Mims",
+   "stat_verdict": "contradicts"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "wcpo",
+    "local12",
+    "espn",
+    "nfl-com"
+   ],
+   "topic": "Defence vs Robinson and the opening drive"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "local12",
+    "espn",
+    "nfl-com",
+    "ringer"
+   ],
+   "topic": "Comp pick rules"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "wcpo",
+    "espn",
+    "nfl-com"
+   ],
+   "topic": "AFC North race"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "espn",
+    "pff"
+   ],
+   "topic": "Run game and Chase Brown",
+   "stat_verdict": "supports"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "espn",
+    "nfl-com"
+   ],
+   "topic": "Linebackers Knight and Carter"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "local12",
+    "espn"
+   ],
+   "topic": "Howell injury and edge depth",
+   "stat_verdict": "supports"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "espn",
+    "ringer",
+    "pff"
+   ],
+   "topic": "Trade deadline targets"
+  },
+  {
+   "sources": [
+    "locked-on",
+    "bengals-com",
+    "espn"
+   ],
+   "topic": "Sunday night post-travel spot"
+  },
+  {
+   "sources": [
+    "locked-on"
+   ],
+   "topic": "Play action and shotgun",
+   "stat_verdict": "supports"
+  }
+ ],
+ "week": 10
 }
