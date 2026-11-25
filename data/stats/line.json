@@ -1,30 +1,30 @@
 {
- "generated": "2026-11-23T22:44:24+00:00",
+ "generated": "2026-11-25T20:31:16+00:00",
  "season": 2026,
  "team": "CIN",
  "status": {
   "pbp": {
-   "through_week": 10,
-   "team_through_week": 10,
-   "expected_week": 10,
+   "through_week": 11,
+   "team_through_week": 11,
+   "expected_week": 11,
    "pending": false
   },
   "ftn": {
-   "through_week": 10,
-   "team_through_week": 10,
-   "expected_week": 10,
+   "through_week": 11,
+   "team_through_week": 11,
+   "expected_week": 11,
    "pending": false
   },
   "pfr_pass": {
    "through_week": 10,
    "team_through_week": 10,
-   "expected_week": 10,
-   "pending": false
+   "expected_week": 11,
+   "pending": true
   },
   "ngs_passing": {
-   "through_week": 10,
-   "team_through_week": 10,
-   "expected_week": 10,
+   "through_week": 11,
+   "team_through_week": 11,
+   "expected_week": 11,
    "pending": false
   }
  },
@@ -32,29 +32,29 @@
   6
  ],
  "next_opponent": {
-  "abbr": "WAS",
-  "week": 11
+  "abbr": "NO",
+  "week": 12
  },
  "protection": {
   "sack_rate": {
-   "value": 0.044,
-   "n": 365,
-   "sacks": 16,
+   "value": 0.047,
+   "n": 408,
+   "sacks": 19,
    "rank": 6,
    "league": 0.065
   },
   "qb_fault_sacks": {
    "value": 3,
-   "n": 16,
+   "n": 19,
    "label": "FTN charted as QB fault"
   },
   "by_rushers": [
    {
     "label": "3 or fewer",
-    "n": 7,
-    "epa": 0.537,
-    "sacks": 0,
-    "sack_rate": 0.0
+    "n": 50,
+    "epa": 0.238,
+    "sacks": 3,
+    "sack_rate": 0.06
    },
    {
     "label": "4",
@@ -75,15 +75,15 @@
    "value": 0.225,
    "n": 365,
    "pressures": 82,
-   "rank": 14,
-   "league": 0.226,
+   "rank": 16,
+   "league": 0.225,
    "through_week": 10
   },
   "time_to_throw": {
-   "value": 2.7,
-   "n": 340,
+   "value": 2.71,
+   "n": 380,
    "league": 2.85,
-   "rank_fastest": 4
+   "rank_fastest": 7
   },
   "weekly": [
    {
@@ -175,6 +175,14 @@
     "pressures": 6,
     "blitzed": 14,
     "time_to_throw": 2.96
+   },
+   {
+    "week": 11,
+    "opp": "WAS",
+    "dropbacks": 43,
+    "sacks": 3,
+    "epa": 0.19,
+    "time_to_throw": 2.79
    }
   ]
  },
@@ -187,27 +195,27 @@
    "league": 0.08
   },
   "no_play_action": {
-   "n": 316,
-   "epa": 0.292,
-   "success": 0.57,
+   "n": 359,
+   "epa": 0.28,
+   "success": 0.565,
    "league": 0.032
   },
   "after_successful_run": {
-   "n": 36,
-   "epa": 0.49,
-   "success": 0.667,
-   "league": 0.107
+   "n": 37,
+   "epa": 0.465,
+   "success": 0.649,
+   "league": 0.108
   },
   "after_failed_run": {
-   "n": 68,
-   "epa": 0.23,
-   "success": 0.574,
-   "league": 0.035
+   "n": 78,
+   "epa": 0.236,
+   "success": 0.564,
+   "league": 0.037
   },
   "after_pass": {
-   "n": 235,
-   "epa": 0.214,
-   "success": 0.532
+   "n": 265,
+   "epa": 0.21,
+   "success": 0.536
   },
   "weekly": [
    {
@@ -281,6 +289,14 @@
     "epa": 0.471,
     "pa_n": 3,
     "pa_epa": 0.006
+   },
+   {
+    "week": 11,
+    "opp": "WAS",
+    "dropbacks": 43,
+    "epa": 0.19,
+    "pa_n": 0,
+    "pa_epa": null
    }
   ]
  },
@@ -288,23 +304,23 @@
   "gaps": [
    {
     "gap": "left end",
-    "n": 8,
-    "epa": -0.296,
-    "success": 0.375,
-    "ypc": 3.4,
-    "league_success": 0.448,
-    "league_epa": 0.022,
-    "rank": 26
+    "n": 10,
+    "epa": -0.522,
+    "success": 0.3,
+    "ypc": 2.8,
+    "league_success": 0.447,
+    "league_epa": 0.019,
+    "rank": 30
    },
    {
     "gap": "left tackle",
-    "n": 23,
-    "epa": -0.088,
-    "success": 0.435,
-    "ypc": 3.9,
-    "league_success": 0.413,
+    "n": 24,
+    "epa": -0.09,
+    "success": 0.417,
+    "ypc": 4.0,
+    "league_success": 0.412,
     "league_epa": -0.012,
-    "rank": 9
+    "rank": 15
    },
    {
     "gap": "left guard",
@@ -313,58 +329,58 @@
     "success": 0.417,
     "ypc": 4.0,
     "league_success": 0.416,
-    "league_epa": -0.043,
-    "rank": 13
+    "league_epa": -0.042,
+    "rank": 14
    },
    {
     "gap": "middle",
-    "n": 62,
-    "epa": -0.041,
-    "success": 0.419,
-    "ypc": 3.8,
+    "n": 67,
+    "epa": -0.077,
+    "success": 0.388,
+    "ypc": 3.6,
     "league_success": 0.443,
-    "league_epa": -0.045,
-    "rank": 18
+    "league_epa": -0.046,
+    "rank": 26
    },
    {
     "gap": "right guard",
-    "n": 28,
-    "epa": 0.077,
-    "success": 0.5,
-    "ypc": 4.0,
-    "league_success": 0.418,
-    "league_epa": -0.055,
-    "rank": 5
+    "n": 30,
+    "epa": 0.066,
+    "success": 0.467,
+    "ypc": 3.9,
+    "league_success": 0.416,
+    "league_epa": -0.056,
+    "rank": 9
    },
    {
     "gap": "right tackle",
-    "n": 12,
-    "epa": -0.037,
-    "success": 0.417,
-    "ypc": 3.3,
-    "league_success": 0.406,
-    "league_epa": -0.007,
-    "rank": 17
+    "n": 13,
+    "epa": 0.008,
+    "success": 0.462,
+    "ypc": 3.9,
+    "league_success": 0.407,
+    "league_epa": -0.006,
+    "rank": 9
    },
    {
     "gap": "right end",
-    "n": 12,
-    "epa": 0.005,
-    "success": 0.5,
-    "ypc": 4.2,
-    "league_success": 0.438,
-    "league_epa": -0.001,
-    "rank": 8
+    "n": 14,
+    "epa": -0.053,
+    "success": 0.429,
+    "ypc": 3.7,
+    "league_success": 0.436,
+    "league_epa": -0.002,
+    "rank": 15
    }
   ],
   "overall": {
-   "n": 181,
-   "epa": -0.028,
-   "success": 0.436,
-   "ypc": 3.9,
+   "n": 194,
+   "epa": -0.057,
+   "success": 0.412,
+   "ypc": 3.8,
    "league_success": 0.428,
    "league_ypc": 4.1,
-   "rank": 14
+   "rank": 17
   },
   "weekly": [
    {
@@ -429,6 +445,13 @@
     "n": 19,
     "success": 0.474,
     "ypc": 3.7
+   },
+   {
+    "week": 11,
+    "opp": "WAS",
+    "n": 13,
+    "success": 0.077,
+    "ypc": 2.5
    }
   ]
  },
@@ -436,147 +459,154 @@
   "gaps": [
    {
     "gap": "left end",
-    "n": 25,
-    "epa": -0.228,
-    "success": 0.48,
-    "ypc": 3.5,
-    "league_success": 0.448,
-    "league_epa": 0.022,
-    "rank": 23
+    "n": 22,
+    "epa": 0.132,
+    "success": 0.364,
+    "ypc": 7.3,
+    "league_success": 0.447,
+    "league_epa": 0.019,
+    "rank": 6
    },
    {
     "gap": "left tackle",
-    "n": 13,
-    "epa": -0.016,
-    "success": 0.462,
-    "ypc": 4.2,
-    "league_success": 0.413,
+    "n": 35,
+    "epa": -0.131,
+    "success": 0.4,
+    "ypc": 3.3,
+    "league_success": 0.412,
     "league_epa": -0.012,
-    "rank": 23
+    "rank": 15
    },
    {
     "gap": "left guard",
     "n": 34,
-    "epa": 0.105,
-    "success": 0.5,
-    "ypc": 4.0,
+    "epa": 0.079,
+    "success": 0.559,
+    "ypc": 4.1,
     "league_success": 0.416,
-    "league_epa": -0.043,
-    "rank": 28
+    "league_epa": -0.042,
+    "rank": 30
    },
    {
     "gap": "middle",
-    "n": 62,
-    "epa": -0.076,
-    "success": 0.484,
-    "ypc": 2.9,
+    "n": 68,
+    "epa": -0.095,
+    "success": 0.426,
+    "ypc": 4.1,
     "league_success": 0.443,
-    "league_epa": -0.045,
-    "rank": 23
+    "league_epa": -0.046,
+    "rank": 10
    },
    {
     "gap": "right guard",
-    "n": 24,
-    "epa": -0.033,
-    "success": 0.375,
-    "ypc": 4.6,
-    "league_success": 0.418,
-    "league_epa": -0.055,
-    "rank": 11
+    "n": 39,
+    "epa": 0.13,
+    "success": 0.487,
+    "ypc": 4.0,
+    "league_success": 0.416,
+    "league_epa": -0.056,
+    "rank": 27
    },
    {
     "gap": "right tackle",
-    "n": 27,
-    "epa": 0.037,
-    "success": 0.519,
-    "ypc": 4.0,
-    "league_success": 0.406,
-    "league_epa": -0.007,
-    "rank": 28
+    "n": 28,
+    "epa": 0.259,
+    "success": 0.5,
+    "ypc": 6.1,
+    "league_success": 0.407,
+    "league_epa": -0.006,
+    "rank": 26
    },
    {
     "gap": "right end",
-    "n": 21,
-    "epa": 0.081,
-    "success": 0.429,
-    "ypc": 4.0,
-    "league_success": 0.438,
-    "league_epa": -0.001,
-    "rank": 14
+    "n": 36,
+    "epa": -0.147,
+    "success": 0.417,
+    "ypc": 4.1,
+    "league_success": 0.436,
+    "league_epa": -0.002,
+    "rank": 12
    }
   ],
   "overall": {
-   "n": 206,
-   "epa": -0.025,
-   "success": 0.471,
-   "ypc": 3.7,
+   "n": 262,
+   "epa": 0.006,
+   "success": 0.45,
+   "ypc": 4.5,
    "league_success": 0.428,
    "league_ypc": 4.1,
-   "rank": 29
+   "rank": 26
   },
   "weekly": [
    {
     "week": 1,
-    "opp": "PHI",
-    "n": 18,
-    "success": 0.333,
-    "ypc": 5.0
+    "opp": "DET",
+    "n": 31,
+    "success": 0.548,
+    "ypc": 5.3
    },
    {
     "week": 2,
-    "opp": "DAL",
+    "opp": "BAL",
     "n": 18,
-    "success": 0.333,
-    "ypc": 2.4
+    "success": 0.722,
+    "ypc": 4.1
    },
    {
     "week": 3,
-    "opp": "SEA",
-    "n": 17,
-    "success": 0.412,
-    "ypc": 2.3
+    "opp": "LV",
+    "n": 24,
+    "success": 0.333,
+    "ypc": 4.6
    },
    {
     "week": 4,
-    "opp": "IND",
-    "n": 28,
-    "success": 0.607,
-    "ypc": 4.7
+    "opp": "ATL",
+    "n": 33,
+    "success": 0.606,
+    "ypc": 6.3
    },
    {
     "week": 5,
-    "opp": "NYG",
-    "n": 23,
-    "success": 0.348,
-    "ypc": 3.3
+    "opp": "MIN",
+    "n": 25,
+    "success": 0.52,
+    "ypc": 4.5
    },
    {
     "week": 6,
-    "opp": "SF",
-    "n": 26,
-    "success": 0.692,
-    "ypc": 3.9
+    "opp": "NYG",
+    "n": 18,
+    "success": 0.389,
+    "ypc": 3.2
    },
    {
-    "week": 8,
-    "opp": "PHI",
-    "n": 25,
-    "success": 0.36,
-    "ypc": 2.6
+    "week": 7,
+    "opp": "PIT",
+    "n": 27,
+    "success": 0.444,
+    "ypc": 5.3
    },
    {
     "week": 9,
-    "opp": "LA",
-    "n": 28,
-    "success": 0.536,
-    "ypc": 4.4
+    "opp": "CLE",
+    "n": 26,
+    "success": 0.346,
+    "ypc": 2.8
    },
    {
     "week": 10,
-    "opp": "NYG",
-    "n": 23,
-    "success": 0.478,
-    "ypc": 3.8
+    "opp": "CAR",
+    "n": 31,
+    "success": 0.29,
+    "ypc": 3.1
+   },
+   {
+    "week": 11,
+    "opp": "CHI",
+    "n": 29,
+    "success": 0.345,
+    "ypc": 4.7
    }
   ]
  },
@@ -584,83 +614,83 @@
   "gaps": [
    {
     "gap": "left end",
-    "n": 31,
-    "epa": 0.271,
-    "success": 0.484,
-    "ypc": 6.9,
-    "league_success": 0.448,
-    "league_epa": 0.022,
-    "rank": 25
+    "n": 34,
+    "epa": 0.266,
+    "success": 0.471,
+    "ypc": 7.1,
+    "league_success": 0.447,
+    "league_epa": 0.019,
+    "rank": 20
    },
    {
     "gap": "left tackle",
-    "n": 23,
-    "epa": -0.08,
-    "success": 0.304,
-    "ypc": 3.6,
-    "league_success": 0.413,
+    "n": 26,
+    "epa": -0.07,
+    "success": 0.308,
+    "ypc": 3.7,
+    "league_success": 0.412,
     "league_epa": -0.012,
     "rank": 4
    },
    {
     "gap": "left guard",
-    "n": 34,
-    "epa": -0.103,
-    "success": 0.294,
-    "ypc": 4.2,
+    "n": 37,
+    "epa": -0.065,
+    "success": 0.324,
+    "ypc": 4.1,
     "league_success": 0.416,
-    "league_epa": -0.043,
-    "rank": 2
+    "league_epa": -0.042,
+    "rank": 6
    },
    {
     "gap": "middle",
-    "n": 41,
-    "epa": -0.034,
-    "success": 0.415,
+    "n": 49,
+    "epa": -0.027,
+    "success": 0.449,
     "ypc": 3.7,
     "league_success": 0.443,
-    "league_epa": -0.045,
-    "rank": 9
+    "league_epa": -0.046,
+    "rank": 18
    },
    {
     "gap": "right guard",
-    "n": 20,
-    "epa": -0.158,
-    "success": 0.4,
-    "ypc": 3.4,
-    "league_success": 0.418,
-    "league_epa": -0.055,
-    "rank": 17
+    "n": 23,
+    "epa": -0.184,
+    "success": 0.348,
+    "ypc": 3.3,
+    "league_success": 0.416,
+    "league_epa": -0.056,
+    "rank": 9
    },
    {
     "gap": "right tackle",
-    "n": 26,
+    "n": 27,
     "epa": 0.048,
-    "success": 0.462,
+    "success": 0.481,
     "ypc": 5.0,
-    "league_success": 0.406,
-    "league_epa": -0.007,
-    "rank": 22
+    "league_success": 0.407,
+    "league_epa": -0.006,
+    "rank": 25
    },
    {
     "gap": "right end",
-    "n": 18,
-    "epa": -0.035,
-    "success": 0.556,
-    "ypc": 4.9,
-    "league_success": 0.438,
-    "league_epa": -0.001,
+    "n": 19,
+    "epa": -0.037,
+    "success": 0.526,
+    "ypc": 4.8,
+    "league_success": 0.436,
+    "league_epa": -0.002,
     "rank": 27
    }
   ],
   "overall": {
-   "n": 193,
-   "epa": -0.005,
-   "success": 0.409,
+   "n": 215,
+   "epa": -0.001,
+   "success": 0.414,
    "ypc": 4.5,
    "league_success": 0.428,
    "league_ypc": 4.1,
-   "rank": 11
+   "rank": 12
   },
   "weekly": [
    {
@@ -725,6 +755,13 @@
     "n": 19,
     "success": 0.526,
     "ypc": 4.6
+   },
+   {
+    "week": 11,
+    "opp": "WAS",
+    "n": 22,
+    "success": 0.455,
+    "ypc": 4.0
    }
   ]
  },

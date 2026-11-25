@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "record": "7–2",
+  "record": "7–3",
   "games": [
     {
       "week": 1,
@@ -89,7 +89,9 @@
       "date": "Nov 23",
       "opp": "WAS",
       "home": false,
-      "time": "MNF"
+      "time": "MNF",
+      "result": "L",
+      "score": "20–22"
     },
     {
       "week": 12,
