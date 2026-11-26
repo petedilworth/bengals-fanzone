@@ -1,9 +1,8 @@
 {
  "season": 2026,
- "week": 9,
- "written": "2026-11-04",
  "topics": [
   {
+   "topic": "Burrow turnovers",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -13,10 +12,10 @@
     "nfl-com",
     "ringer",
     "pff"
-   ],
-   "topic": "Burrow turnovers"
+   ]
   },
   {
+   "topic": "Chase and Higgins production",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -26,10 +25,10 @@
     "nfl-com",
     "ringer",
     "pff"
-   ],
-   "topic": "Chase and Higgins production"
+   ]
   },
   {
+   "topic": "Trap game and slow starts",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -38,11 +37,10 @@
     "espn",
     "nfl-com",
     "ringer"
-   ],
-   "topic": "Trap game and slow starts"
+   ]
   },
   {
-   "stat_verdict": "supports",
+   "topic": "Dexter Lawrence and Mafe",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -51,9 +49,10 @@
     "espn",
     "nfl-com"
    ],
-   "topic": "Dexter Lawrence and Mafe"
+   "stat_verdict": "supports"
   },
   {
+   "topic": "Cam Ward's career day",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -61,11 +60,10 @@
     "local12",
     "espn",
     "nfl-com"
-   ],
-   "topic": "Cam Ward's career day"
+   ]
   },
   {
-   "stat_verdict": "needs a new metric",
+   "topic": "Defence vs tight ends",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -74,9 +72,10 @@
     "nfl-com",
     "ringer"
    ],
-   "topic": "Defence vs tight ends"
+   "stat_verdict": "needs a new metric"
   },
   {
+   "topic": "Howell injury and edge depth",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -84,11 +83,10 @@
     "local12",
     "espn",
     "nfl-com"
-   ],
-   "topic": "Howell injury and edge depth"
+   ]
   },
   {
-   "stat_verdict": "supports",
+   "topic": "Falcons preview",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -97,20 +95,20 @@
     "nfl-com",
     "ringer"
    ],
-   "topic": "Falcons preview"
+   "stat_verdict": "supports"
   },
   {
+   "topic": "Madrid trip",
    "sources": [
     "locked-on",
     "bengals-com",
     "local12",
     "espn",
     "nfl-com"
-   ],
-   "topic": "Madrid trip"
+   ]
   },
   {
-   "stat_verdict": "supports",
+   "topic": "Run game efficiency",
    "sources": [
     "locked-on",
     "local12",
@@ -118,101 +116,103 @@
     "nfl-com",
     "ringer"
    ],
-   "topic": "Run game efficiency"
+   "stat_verdict": "supports"
   },
   {
-   "stat_verdict": "supports",
+   "topic": "Pass protection",
    "sources": [
     "locked-on",
     "local12",
     "ringer",
     "pff"
    ],
-   "topic": "Pass protection"
+   "stat_verdict": "supports"
   },
   {
+   "topic": "Trade deadline targets",
+   "sources": [
+    "locked-on",
+    "espn",
+    "nfl-com"
+   ]
+  },
+  {
+   "topic": "Back-seven trade needs",
+   "sources": [
+    "locked-on",
+    "espn",
+    "nfl-com"
+   ]
+  },
+  {
+   "topic": "Jonathan Taylor price",
    "sources": [
     "locked-on",
     "espn",
     "nfl-com"
    ],
-   "topic": "Trade deadline targets"
+   "stat_verdict": "needs a new metric"
   },
   {
-   "sources": [
-    "locked-on",
-    "espn",
-    "nfl-com"
-   ],
-   "topic": "Back-seven trade needs"
-  },
-  {
-   "stat_verdict": "needs a new metric",
-   "sources": [
-    "locked-on",
-    "espn",
-    "nfl-com"
-   ],
-   "topic": "Jonathan Taylor price"
-  },
-  {
+   "topic": "AFC North race",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn"
-   ],
-   "topic": "AFC North race"
+   ]
   }
  ],
+ "week": 9,
  "sources": [
   {
    "type": "podcast",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
    "name": "Locked On Bengals",
-   "id": "locked-on"
+   "id": "locked-on",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162"
   },
   {
    "type": "beat",
-   "url": "https://www.bengals.com/news/",
    "name": "Bengals.com",
-   "id": "bengals-com"
+   "id": "bengals-com",
+   "url": "https://www.bengals.com/news/"
   },
   {
    "type": "beat",
-   "url": "https://www.wcpo.com/sports/football/bengals",
    "name": "WCPO",
-   "id": "wcpo"
+   "id": "wcpo",
+   "url": "https://www.wcpo.com/sports/football/bengals"
   },
   {
    "type": "beat",
-   "url": "https://local12.com/sports/bengals",
    "name": "Local 12",
-   "id": "local12"
+   "id": "local12",
+   "url": "https://local12.com/sports/bengals"
   },
   {
    "type": "national",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
    "name": "ESPN",
-   "id": "espn"
+   "id": "espn",
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals"
   },
   {
    "type": "national",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
    "name": "NFL.com",
-   "id": "nfl-com"
+   "id": "nfl-com",
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/"
   },
   {
    "type": "national",
-   "url": "https://www.theringer.com/nfl",
    "name": "The Ringer",
-   "id": "ringer"
+   "id": "ringer",
+   "url": "https://www.theringer.com/nfl"
   },
   {
    "type": "national",
-   "url": "https://www.pff.com/nfl",
    "name": "PFF",
-   "id": "pff"
+   "id": "pff",
+   "url": "https://www.pff.com/nfl"
   }
  ],
+ "written": "2026-11-04",
  "opponent": "vs ATL"
 }
