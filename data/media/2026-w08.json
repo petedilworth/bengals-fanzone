@@ -1,61 +1,9 @@
 {
  "season": 2026,
- "opponent": "vs TEN",
- "sources": [
-  {
-   "name": "Locked On Bengals",
-   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
-   "id": "locked-on",
-   "type": "podcast"
-  },
-  {
-   "name": "Bengals.com",
-   "url": "https://www.bengals.com/news/",
-   "id": "bengals-com",
-   "type": "beat"
-  },
-  {
-   "name": "WCPO",
-   "url": "https://www.wcpo.com/sports/football/bengals",
-   "id": "wcpo",
-   "type": "beat"
-  },
-  {
-   "name": "Local 12",
-   "url": "https://local12.com/sports/bengals",
-   "id": "local12",
-   "type": "beat"
-  },
-  {
-   "name": "ESPN",
-   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
-   "id": "espn",
-   "type": "national"
-  },
-  {
-   "name": "NFL.com",
-   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
-   "id": "nfl-com",
-   "type": "national"
-  },
-  {
-   "name": "The Ringer",
-   "url": "https://www.theringer.com/nfl",
-   "id": "ringer",
-   "type": "national"
-  },
-  {
-   "name": "PFF",
-   "url": "https://www.pff.com/nfl",
-   "id": "pff",
-   "type": "national"
-  }
- ],
- "written": "2026-10-28",
  "week": 8,
+ "written": "2026-10-28",
  "topics": [
   {
-   "topic": "Halftime adjustments",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -65,10 +13,10 @@
     "nfl-com",
     "ringer",
     "pff"
-   ]
+   ],
+   "topic": "Halftime adjustments"
   },
   {
-   "topic": "First-half slow start",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -76,10 +24,10 @@
     "local12",
     "espn",
     "nfl-com"
-   ]
+   ],
+   "topic": "First-half slow start"
   },
   {
-   "topic": "Burrow efficiency",
    "stat_verdict": "supports",
    "sources": [
     "locked-on",
@@ -88,10 +36,10 @@
     "local12",
     "espn",
     "nfl-com"
-   ]
+   ],
+   "topic": "Burrow efficiency"
   },
   {
-   "topic": "Chase gravity and Higgins one-on-ones",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -99,10 +47,10 @@
     "espn",
     "nfl-com",
     "ringer"
-   ]
+   ],
+   "topic": "Chase gravity and Higgins one-on-ones"
   },
   {
-   "topic": "AFC North race",
    "sources": [
     "locked-on",
     "bengals-com",
@@ -110,10 +58,10 @@
     "espn",
     "nfl-com",
     "ringer"
-   ]
+   ],
+   "topic": "AFC North race"
   },
   {
-   "topic": "Hendrickson vs Orlando Brown",
    "stat_verdict": "supports",
    "sources": [
     "locked-on",
@@ -122,10 +70,10 @@
     "espn",
     "nfl-com",
     "pff"
-   ]
+   ],
+   "topic": "Hendrickson vs Orlando Brown"
   },
   {
-   "topic": "Lawrence and Mafe",
    "stat_verdict": "contradicts",
    "sources": [
     "locked-on",
@@ -133,75 +81,127 @@
     "espn",
     "nfl-com",
     "pff"
-   ]
+   ],
+   "topic": "Lawrence and Mafe"
   },
   {
-   "topic": "Titans preview and Pollard",
    "stat_verdict": "supports",
    "sources": [
     "bengals-com",
     "espn",
     "nfl-com",
     "ringer"
-   ]
+   ],
+   "topic": "Titans preview and Pollard"
   },
   {
-   "topic": "Tight end room after All",
    "sources": [
     "bengals-com",
     "wcpo",
     "local12",
     "espn"
-   ]
+   ],
+   "topic": "Tight end room after All"
   },
   {
-   "topic": "Run defence explosives and tackling",
    "stat_verdict": "not testable yet",
    "sources": [
     "locked-on",
     "bengals-com",
     "nfl-com",
     "pff"
-   ]
+   ],
+   "topic": "Run defence explosives and tackling"
   },
   {
-   "topic": "Shotgun vs under centre",
    "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "bengals-com",
     "nfl-com"
-   ]
+   ],
+   "topic": "Shotgun vs under centre"
   },
   {
-   "topic": "Third-down defence",
    "sources": [
     "locked-on",
     "bengals-com",
     "espn"
-   ]
+   ],
+   "topic": "Third-down defence"
   },
   {
-   "topic": "Run game efficiency",
    "stat_verdict": "supports",
    "sources": [
     "locked-on",
     "espn"
-   ]
+   ],
+   "topic": "Run game efficiency"
   },
   {
-   "topic": "Trade deadline targets",
    "sources": [
     "locked-on",
     "espn"
-   ]
+   ],
+   "topic": "Trade deadline targets"
   },
   {
-   "topic": "Chase slot alignment",
    "stat_verdict": "needs a new metric",
    "sources": [
     "locked-on"
-   ]
+   ],
+   "topic": "Chase slot alignment"
   }
- ]
+ ],
+ "sources": [
+  {
+   "type": "podcast",
+   "url": "https://podcasts.apple.com/us/podcast/id1159723162",
+   "name": "Locked On Bengals",
+   "id": "locked-on"
+  },
+  {
+   "type": "beat",
+   "url": "https://www.bengals.com/news/",
+   "name": "Bengals.com",
+   "id": "bengals-com"
+  },
+  {
+   "type": "beat",
+   "url": "https://www.wcpo.com/sports/football/bengals",
+   "name": "WCPO",
+   "id": "wcpo"
+  },
+  {
+   "type": "beat",
+   "url": "https://local12.com/sports/bengals",
+   "name": "Local 12",
+   "id": "local12"
+  },
+  {
+   "type": "national",
+   "url": "https://www.espn.com/nfl/team/_/name/cin/cincinnati-bengals",
+   "name": "ESPN",
+   "id": "espn"
+  },
+  {
+   "type": "national",
+   "url": "https://www.nfl.com/teams/cincinnati-bengals/",
+   "name": "NFL.com",
+   "id": "nfl-com"
+  },
+  {
+   "type": "national",
+   "url": "https://www.theringer.com/nfl",
+   "name": "The Ringer",
+   "id": "ringer"
+  },
+  {
+   "type": "national",
+   "url": "https://www.pff.com/nfl",
+   "name": "PFF",
+   "id": "pff"
+  }
+ ],
+ "opponent": "vs TEN"
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T20:31:16+00:00",
+ "generated": "2026-11-26T04:10:34+00:00",
  "season": 2026,
  "team": "CIN",
  "status": {
@@ -44,31 +44,31 @@
    "league": 0.065
   },
   "qb_fault_sacks": {
-   "value": 3,
+   "value": 6,
    "n": 19,
    "label": "FTN charted as QB fault"
   },
   "by_rushers": [
    {
     "label": "3 or fewer",
-    "n": 50,
-    "epa": 0.238,
-    "sacks": 3,
-    "sack_rate": 0.06
+    "n": 8,
+    "epa": 0.354,
+    "sacks": 0,
+    "sack_rate": 0.0
    },
    {
     "label": "4",
-    "n": 258,
-    "epa": 0.275,
-    "sacks": 8,
-    "sack_rate": 0.031
+    "n": 281,
+    "epa": 0.287,
+    "sacks": 9,
+    "sack_rate": 0.032
    },
    {
     "label": "5 or more",
-    "n": 100,
-    "epa": 0.187,
-    "sacks": 8,
-    "sack_rate": 0.08
+    "n": 119,
+    "epa": 0.153,
+    "sacks": 10,
+    "sack_rate": 0.084
    }
   ],
   "pressure_rate": {
@@ -188,17 +188,17 @@
  },
  "run_sets_up_pass": {
   "play_action": {
-   "n": 49,
-   "epa": 0.027,
-   "success": 0.51,
-   "rank": 18,
-   "league": 0.08
+   "n": 52,
+   "epa": 0.007,
+   "success": 0.5,
+   "rank": 19,
+   "league": 0.081
   },
   "no_play_action": {
-   "n": 359,
-   "epa": 0.28,
-   "success": 0.565,
-   "league": 0.032
+   "n": 356,
+   "epa": 0.285,
+   "success": 0.567,
+   "league": 0.031
   },
   "after_successful_run": {
    "n": 37,
@@ -295,8 +295,8 @@
     "opp": "WAS",
     "dropbacks": 43,
     "epa": 0.19,
-    "pa_n": 0,
-    "pa_epa": null
+    "pa_n": 3,
+    "pa_epa": -0.315
    }
   ]
  },
